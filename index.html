@@ -1,41 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grachiever.Com</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- ......... swiper link for card carousal .................. -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-     <!-- Swiper CSS -->
-     <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css" /> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grachiever.Com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- ......... swiper link for card carousal .................. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> 
 
 </head>
 <body>
-
-  <!--...................  navbar section ...... -->
-  <section>
+    
+    <!--...................  navbar section ...... -->
+<section>
     <div>
-      <nav class="px-2 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 ">
+        <nav class="px-2 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 ">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
-          <a href="#" class="flex items-center">
-            <img src="images/LOGOS/grachiever-02.png" class="h-6 mr-3 sm:h-12" alt="Grachiever Logo" />
-          </a>
-          <!-- login sign-up button for responsive design .... -->
-          <div class="hidden max-md:block flex ">
-            <button type="button"
-              class="text-white bg-blue-700 hover:bg-green-800 px-2 py-1 rounded-md">Sign-In</button>
-            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 px-2 py-1 rounded-md">Sign-Up</button>
-          </div>
+            <a href="#" class="flex items-center">
+                <img src="images/LOGOS/grachiever-02.png" class="h-6 mr-3 sm:h-12" alt="Grachiever Logo" />
+            </a>
+            <!-- login sign-up button for responsive design .... -->
+            <div class="hidden max-md:block flex ">
+                <button type="button" class="text-white bg-blue-700 hover:bg-green-800 px-2 py-1 rounded-md">Sign-In</button>
+                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 px-2 py-1 rounded-md">Sign-Up</button>
+            </div>
 
-          <button data-collapse-toggle="navbar-dropdown" type="button"
-            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-dropdown" aria-expanded="false">
+            <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
             </button>
@@ -74,102 +67,73 @@
                     </div>
                 </li>
             </ul>
-
-          </div>
+           
+            </div>
         </div>
-      </nav>
+        </nav>
 
     </div>
-  </section>
+</section>
 
-  <!-- ........................ home section start ..................................... -->
-  <section>
+<!-- ........................ home section start ..................................... -->
+<section>
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-      <div class="pl-10 mt-20">
-        <p class="font-bold text-5xl">Start monetizing off your skills with passion</p>
-        <p class="mt-5 text-2xl">The only easier, powerful and authoring platform designed for consistent learners to
-          unlock the power of monetizing</p>
-        <!--Search-->
-
-        <div class="flex items-center mt-4">
-          <select class="border-2 border-gray-300 rounded-md mr-2 py-2 px-4">
-            <option >Courses</option>
-            <option >freelancing</option>
-            <option >tools</option>
-          </select>
-          <input type="text" class="border-2 border-gray-300 rounded-md py-2 px-4" placeholder="Search Anything...">
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2">Search</button>
+        <div class="pl-10 mt-20">
+            <p class="font-bold text-5xl">Start monetizing off your skills with passion</p>
+            <p class="mt-5 text-2xl">The only easier, powerful and authoring platform designed for consistent learners to unlock the power of monetizing</p>
+            <input type="search" placeholder=" You can search here...." class="border-2 border-black rounded-full mt-5 h-10 sm:52 md:w-96 lg:w-96">
         </div>
-      </div>
-      <div class="mt-5">
-        <img src="images/1/HOME page.png" class="w-[80%]">
-      </div>
+        <div class="mt-5">
+            <img src="images/1/HOME page.png" class="w-[80%]">
+        </div>
 
     </div>
+    
+</section>
+<!-- ...................... home section end ................................... -->
 
-
-
-  </section>
-  <!-- ...................... home section end ................................... -->
-
-  <!--Trusted Section-->
-  <section>
+    <!--Trusted Section-->   
+    <section> 
     <div class="p-3 mt-5">
-      <h1 class=" text-center text-5xl font-bold">Trusted by world best</h1>
-      <!--Six Circle Section-->
-      <div
-        class="grid grid-cols-2 xs:grid-cols-1 md:grid-cols-6 lg:grid-cols-6 m-5 md:m-5 lg:m-5 h-72 md:h-24 lg:h-24 m-2 text-center">
-        <div class=" w-24  mx-auto">
-          <h1 class="mt-8">
-            <img src="images/2/cisco image.png">
-          </h1>
-        </div>
-        <div class=" w-24  mx-auto">
-          <h1 class="mt-8">
-            <img src="images/2/futurelearn-logo.png">
+        <h1 class=" text-center text-5xl font-bold">Trusted by world best</h1>
+        <!--Six Circle Section--> 
+        <div class="grid grid-cols-2 xs:grid-cols-1 md:grid-cols-6 lg:grid-cols-6 m-5 md:m-5 lg:m-5 h-72 md:h-24 lg:h-24 m-2 text-center">
+            <div class=" w-24  mx-auto"><h1 class="mt-8">
+              <img src="images/2/cisco image.png" >
+            </h1></div>
+            <div class=" w-24  mx-auto"><h1 class="mt-8">
+              <img src="images/2/futurelearn-logo.png" >
 
-          </h1>
+            </h1></div>
+            <div class=" w-24  mx-auto"><h1 class="mt-8">
+              <img src="images/2/google-logo-2.png">
+            </h1></div>
+            <div class=" w-24  mx-auto"><h1 class="mt-8">
+                 <img src="images/2/MIT_logo.png">
+            </h1></div>
+            <div class="w-24  mx-auto"><h1 class="mt-8">
+                   <img src="images/2/nvidia-logo-16.png">
+            </h1></div>
+            <div class="w-24  mx-auto"><h1 class="mt-8">
+                   <img src="images/2/oxford.png" >
+            </h1></div>
         </div>
-        <div class=" w-24  mx-auto">
-          <h1 class="mt-8">
-            <img src="images/2/google-logo-2.png">
-          </h1>
-        </div>
-        <div class=" w-24  mx-auto">
-          <h1 class="mt-8">
-            <img src="images/2/MIT_logo.png">
-          </h1>
-        </div>
-        <div class="w-24  mx-auto">
-          <h1 class="mt-8">
-            <img src="images/2/nvidia-logo-16.png">
-          </h1>
-        </div>
-        <div class="w-24  mx-auto">
-          <h1 class="mt-8">
-            <img src="images/2/oxford.png">
-          </h1>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!--Skill Section-->
-  <div class="h-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 m-2">
-    <div class="lg:h-full md:h-full">
-      <p class="mx-16 text-2xl font-bold mt-5">Track the Trending Skills Over Time</p>
-      <p class="mt-5 mx-5">Our Skill Graph feature helps you stay up-to-date with the latest skills in demand. our Skill
-        Graph displays the trending skills over time, allowing you to identify which skills are gaining popularity and
-        which are losing relevance. With this powerful tool, you can make informed decisions about the skills you want
-        to learn or develop, ensuring you stay ahead of the curve in your chosen field.</p>
-    </div>
+    <!--Skill Section-->
+    <div class="h-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 m-2">
+        <div class="lg:h-full md:h-full">
+            <p class="mx-16 text-2xl font-bold mt-5">Track the Trending Skills Over Time</p>
+            <p class="mt-5 mx-5">Our Skill Graph feature helps you stay up-to-date with the latest skills in demand. our Skill Graph displays the trending skills over time, allowing you to identify which skills are gaining popularity and which are losing relevance. With this powerful tool, you can make informed decisions about the skills you want to learn or develop, ensuring you stay ahead of the curve in your chosen field.</p>
+        </div>
     <!--Graph Section-->
-    <div class="">
-      <img src="https://statisticsanddata.org/wp-content/uploads/2021/03/backend.png">
+        <div class="">
+          <img src="https://statisticsanddata.org/wp-content/uploads/2021/03/backend.png">
+        </div>
     </div>
-  </div>
 
-  <!-- .-================================================ -->
+    <!-- .-================================================ -->
 
     <!-- ........... card slider for codepen -->
 <section class="p-10 mt-10">
@@ -185,9 +149,7 @@
       <!--Card Number - 1 -->
           <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
-              <img class="mx-auto w-full"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9eSUCmx6Tv6Bz6JWHkwWltlXx4Gz2iR2T4VKl4ryBcQ&usqp=CAU&ec=48665699"
-                alt="" />
+                <img class="mx-auto w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9eSUCmx6Tv6Bz6JWHkwWltlXx4Gz2iR2T4VKl4ryBcQ&usqp=CAU&ec=48665699" alt="" />
             </a>
             <div class="p-5">
               <a href="#">
@@ -360,8 +322,8 @@
 
 
 
-  <!--Top Categories Pending-->
-  <!-- 
+    <!--Top Categories Pending-->
+<!-- 
     <div>
         <div>
             <h1 class="text-2xl font-bold text-center">Top Categories</h1>
@@ -383,8 +345,8 @@
     </div> -->
 
 
-  <!--===============================-->
-  <div class="bg bg-red-200 m-2">
+    <!--===============================-->
+    <div class="bg bg-red-200 m-2">
     <h1 class="text-2xl font-bold text-center p-10">Top Categories</h1>
     <div>
 <div class="w-auto overflow-hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-10% bg bg-red-200 justify-center">
@@ -504,136 +466,131 @@
     </div>
     
 
-  <!--Skill Consultancy-->
+    <!--Skill Consultancy-->
 
-  <div class="border border-black m-2 h-auto">
-    <h1 class="text-2xl text-center font-bold mt-7">Skill Consultancy</h1>
-
+    <div class="border border-black m-2 h-auto">
+        <h1 class="text-2xl text-center font-bold mt-7">Skill Consultancy</h1>
+    
     <!--Skill Consultancy left section-->
 
     <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-      <div class="mx-20">
-        <h1 class="font-bold text-2xl">Find Your Dream Career with Grachiever's Skill Consultancy</h1>
-        <p>Our skilled consultancy service provides various offerings to guide you in selecting the most suitable
-          skills. We help you identify in-demand skills, suggest the best courses to develop those skills, and advise
-          you on future-ready skills that AI cannot replace."</p>
+        <div class="mx-20">
+            <h1 class="font-bold text-2xl">Find Your Dream Career with Grachiever's Skill Consultancy</h1>
+            <p>Our skilled consultancy service provides various offerings to guide you in selecting the most suitable skills. We help you identify in-demand skills, suggest the best courses to develop those skills, and advise you on future-ready skills that AI cannot replace."</p>
 
-        <li class="mx-10"><strong>Personalized Guidance:</strong> Tailored advice for your unique path.</li>
-        <li class="mx-10"><strong>Your Skills:</strong>Stay ahead of the robots.</li>
-        <li class="mx-10"><strong>Expert Insights</strong>: Years of experience at your service.</li>
-        <li class="mx-10"><strong>Industry Trends:</strong> Know what's in demand.</li>
-        <li class="mx-10"><strong>Confidence-Boosting:</strong> Empowering you for success.</li>
-        <button class="bg bg-slate-300 rounded hover:border border-black p-2 m-5">Learn more</button>
-      </div>
-
-      <!--Skill Consultancy Rigth section-->
-
-      <div class=" hidden md:hidden lg:block">
-        <div class="">
-          <div class="border-black bg-gray-300 h-72 w-52 rounded-lg mx-auto ">
-          </div>
-
-          <!--This is inside square-->
-
-          <div class="bg bg-white w-40 h-36 border border-black mt-[-33%] ml-48 "></div>
-
-          <!--This is  bottum inside div-->
-
-          <div class="bg bg-gray-400 w-36 h-14 border border-black mt-[6%] ml-40 rounded-lg">
-
-            <!--This is inside Circle -->
-
-            <div class="bg  bg-white w-20 h-20 border border-black mt-[6%] ml-48 rounded-full"></div>
-          </div>
+                <li class="mx-10"><strong>Personalized Guidance:</strong> Tailored advice for your unique path.</li>
+                <li class="mx-10"><strong>Your Skills:</strong>Stay ahead of the robots.</li>
+                <li class="mx-10"><strong>Expert Insights</strong>: Years of experience at your service.</li>
+                <li class="mx-10"><strong>Industry Trends:</strong> Know what's in demand.</li>
+                <li class="mx-10"><strong>Confidence-Boosting:</strong> Empowering you for success.</li>
+                <button class="bg bg-slate-300 rounded hover:border border-black p-2 m-5">Learn more</button>
         </div>
-      </div>
+
+    <!--Skill Consultancy Rigth section-->
+
+    <div class=" hidden md:hidden lg:block">
+        <div class="">
+            <div class="border-black bg-gray-300 h-72 w-52 rounded-lg mx-auto ">
+            </div>
+
+    <!--This is inside square-->
+        
+            <div class="bg bg-white w-40 h-36 border border-black mt-[-33%] ml-48 "></div>
+    
+    <!--This is  bottum inside div-->
+        
+            <div class="bg bg-gray-400 w-36 h-14 border border-black mt-[6%] ml-40 rounded-lg">
+    
+     <!--This is inside Circle -->
+    
+            <div class="bg  bg-white w-20 h-20 border border-black mt-[6%] ml-48 rounded-full"></div>  
+            </div>  
+        </div>
     </div>
-  </div>
+    </div>
+    </div>
 
-  <!--Feature Ready Skills sections-->
+    <!--Feature Ready Skills sections-->
 
-  <div class="border border-black p-3 text-center m-2 h-auto">
-    <h1 class="font-bold text-2xl font-serif">Get Persional Feature Ready Skill Recommented</h1>
-    <h2>Enhance Your Skill With Grachiver</h2>
-
+    <div class="border border-black p-3 text-center m-2 h-auto">
+        <h1 class="font-bold text-2xl font-serif">Get Persional Feature Ready Skill Recommented</h1>
+        <h2 >Enhance Your Skill With Grachiver</h2>
+  
     <div class="text-center m-10">
-
-      <select class="bg bg-blue-500 border rounded p-2 m-2 text-white font-semibold">
-        <option">Category</option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-      </select>
-
-
-      <select class="bg bg-blue-500 border rounded p-2 m-2 text-white font-semibold">
-        <option>Select</option>
-        <option>Option 1</option>
-        <option>Option 2</option>
-        <option>Option 3</option>
-      </select>
-      <button class="bg bg-gray-300 border rounded-full p-2 hover:border-red-300">Get Started Now</button>
+    
+        <select class="bg bg-blue-500 border rounded p-2 m-2 text-white font-semibold">
+            <option">Category</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+    
+   
+        <select class="bg bg-blue-500 border rounded p-2 m-2 text-white font-semibold">
+            <option>Select</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+          <button class="bg bg-gray-300 border rounded-full p-2 hover:border-red-300">Get Started Now</button>
+        </div>
     </div>
-  </div>
 
-  <!--Achivments Sections-->
-  <div class="bg-gray-400 p-3 m-2">
-    <div>
-      <h1 class="font-bold text-center text-2xl">Achivments</h1>
+    <!--Achivments Sections-->
+    <div class="bg-gray-400 p-3 m-2">
+        <div>
+            <h1 class="font-bold text-center text-2xl">Achivments</h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 text-center m-5">
+            <div class="w-28 m-auto">1000 Courses</div>
+            <div class="w-28 m-auto">1000 Courses</div>
+            <div class="w-28 m-auto">1000 Courses</div>
+            <div class="w-28 m-auto">1000 Courses</div>
+            <div class="w-28 m-auto">1000 Courses</div>
+        </div>
+        </div>
+
+       <!-- Benifits -->
+
+       <div class="border border-black m-2 w-auto">
+        <h1 class="font-bold text-2xl text-center m-10">Benifits</h1>
+        <div class="grid grid-cols-1 sm:gird-cols-1 md:grid-cols-3 lg:grid-cols-4 mr-10 ">
+        <div class="w-24 h-24 ml-60 text-center">
+          <img src="images/8/courses(services).png" class="m-auto">
+            <h1 class="mt-5 font-semibold">1.Courses</h1>
+        </div>
+        <div class="w-24 h-24 ml-60 text-center">
+          <img src="images/8/freelancing(services).png" class="m-auto">
+            <h1 class="mt-5 font-semibold">2.Consultancy</h1>
+        </div>
+        <div class="w-24 h-24 ml-60 text-center">
+          <img src="images/8/tools&res.(services).png" class="m-auto">
+            <h1 class="mt-5 font-semibold">3.Freelances</h1>
+        </div>
+        <div class="w-24 h-24 ml-60 text-center">
+          <img src="images/8/webservices.png" class=" m-auto">
+            <h1 class="mt-5 font-semibold">4.Tools</h1>
+        </div>
+        <div class="w-24 h-24 ml-24 text-center">
+          <img src="images/8/freelancing(services).png" class="m-auto">
+            <h1 class="mt-5 font-semibold">5.Skill Graph</h1>
+        </div>
+        <div class="w-24 h-24 ml-24 text-center overflow-hidden">
+          <img src="images/8/freelancing(services).png" class="m-auto">
+            <h1 class="mt-5 font-semibold">6.Customization</h1>
+        </div>
+        <div class="w-24 h-24 ml-24 text-center">
+          <img src="images/8/freelancing(services).png" class="m-auto">
+            <h1 class="mt-5 font-semibold">7.Community</h1>
+        </div>
+        <div class="w-24 h-24 ml-24 text-center">
+          <img src="images/8/freelancing(services).png" class="m-auto">
+            <h1 class="mt-5 font-semibold">8.Progression</h1>
+        </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 text-center m-5">
-      <div class="w-28 m-auto">1000 Courses</div>
-      <div class="w-28 m-auto">1000 Courses</div>
-      <div class="w-28 m-auto">1000 Courses</div>
-      <div class="w-28 m-auto">1000 Courses</div>
-      <div class="w-28 m-auto">1000 Courses</div>
-    </div>
-  </div>
+    <p class="mt-10 mb-6 m-auto text-center w-[50%] ">Grachiever empowers your career growth with personalized guidance, innovative learning options, and a supportive community, making it the perfect platform to achieve your professional goals. With access to expert knowledge, relevant tools, and freelance opportunities, Grachiever offers everything you need to advance your career</p>
 
-  <!-- Benifits -->
-
-  <div class="border border-black m-2 w-auto">
-    <h1 class="font-bold text-2xl text-center m-10">Benifits</h1>
-    <div class="grid grid-cols-1 sm:gird-cols-1 md:grid-cols-3 lg:grid-cols-4 mr-10 ">
-      <div class="w-24 h-24 ml-60 text-center">
-        <img src="images/8/courses(services).png" class="m-auto">
-        <h1 class="mt-5 font-semibold">1.Courses</h1>
-      </div>
-      <div class="w-24 h-24 ml-60 text-center">
-        <img src="images/8/freelancing(services).png" class="m-auto">
-        <h1 class="mt-5 font-semibold">2.Consultancy</h1>
-      </div>
-      <div class="w-24 h-24 ml-60 text-center">
-        <img src="images/8/tools&res.(services).png" class="m-auto">
-        <h1 class="mt-5 font-semibold">3.Freelances</h1>
-      </div>
-      <div class="w-24 h-24 ml-60 text-center">
-        <img src="images/8/webservices.png" class=" m-auto">
-        <h1 class="mt-5 font-semibold">4.Tools</h1>
-      </div>
-      <div class="w-24 h-24 ml-24 text-center">
-        <img src="images/8/freelancing(services).png" class="m-auto">
-        <h1 class="mt-5 font-semibold">5.Skill Graph</h1>
-      </div>
-      <div class="w-24 h-24 ml-24 text-center overflow-hidden">
-        <img src="images/8/freelancing(services).png" class="m-auto">
-        <h1 class="mt-5 font-semibold">6.Customization</h1>
-      </div>
-      <div class="w-24 h-24 ml-24 text-center">
-        <img src="images/8/freelancing(services).png" class="m-auto">
-        <h1 class="mt-5 font-semibold">7.Community</h1>
-      </div>
-      <div class="w-24 h-24 ml-24 text-center">
-        <img src="images/8/freelancing(services).png" class="m-auto">
-        <h1 class="mt-5 font-semibold">8.Progression</h1>
-      </div>
-    </div>
-    <p class="mt-10 mb-6 m-auto text-center w-[50%] ">Grachiever empowers your career growth with personalized guidance,
-      innovative learning options, and a supportive community, making it the perfect platform to achieve your
-      professional goals. With access to expert knowledge, relevant tools, and freelance opportunities, Grachiever
-      offers everything you need to advance your career</p>
-
-  </div>
+</div>
 
 <!-- <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 bg bg-red-200 h-36 m-2">
   <div class="w-24 h-24 text-center mx-auto">
@@ -713,16 +670,15 @@
     
       <!--Finding Your Right Course-->
 
-  <div class="border border-black m-2 p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
-    <div class="m-auto">
-      <h1 class="text-2xl font-bold">Finding Your Right Course</h1>
-      <h1 class="font-medium">From in-demand skills to future-ready courses, Grachiever makes it simple to discover and
-        enroll in the courses you need to achieve your career goals.</h1>
+      <div class="border border-black m-2 p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
+        <div class="m-auto">
+        <h1 class="text-2xl font-bold">Finding Your Right Course</h1>
+        <h1 class="font-medium">From in-demand skills to future-ready courses, Grachiever makes it simple to discover and enroll in the courses you need to achieve your career goals.</h1>
     </div>
     <div class="border bg-gray-300 m-auto  ">
-      <button class="border border-black p-2 rounded-lg">Start Learning For Free</button>
+        <button class="border border-black p-2 rounded-lg">Start Learning For Free</button>
     </div>
-  </div>
+      </div>
 
     <!-- ............ footer section ..................... -->
     <footer class="bg-neutral-900 text-center text-white">
@@ -841,18 +797,34 @@
                       </svg>
                     </a>
 
-          <a href="#!" type="button"
-            class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
-            data-te-ripple-init data-te-ripple-color="light">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-4" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-            </svg>
-          </a>
 
-        </div>
 
-      </div>
+
+                    
+              
+                    <a
+                      href="#!"
+                      type="button"
+                      class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                      data-te-ripple-init
+                      data-te-ripple-color="light">
+
+
+
+                      
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="mx-auto h-full w-4"
+                        fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                          d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                      </svg>
+                    </a>
+              
+                  </div>
+
+            </div>
 
         </div>
       
@@ -886,9 +858,8 @@
         </script>
 
 
-  <!-- ............... main navbar tailwind js link .............  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
-
-  </body>
-
+<!-- ............... main navbar tailwind js link .............  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+  
+</body>
 </html>
