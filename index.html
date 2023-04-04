@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> 
 
+     <!-- Swiper CSS -->
+     <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css" /> -->
+
 </head>
 <body>
     
@@ -42,7 +45,7 @@
                     <div class="dropdown relative inline-block hover:dropdown-menu:block">
                         <button class="flex text-xl">Course <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path  fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                         </button>
-                        <div class="dropdown-menu absolute hidden z-10 bg-blue-200">
+                        <div class="dropdown-menu absolute hidden z-10 bg-[#d3d4d5]">
                             <a class="px-5 py-3 hover:bg-gray-200 block text-xl" href="#">Courses</a><hr>
                             <a class="px-5 py-3 hover:bg-gray-200 block text-xl" href="#">Marketing</a><hr>
                             <a class="px-5 py-3 hover:bg-gray-200 block text-xl" href="#">Animation</a><hr>
@@ -143,11 +146,14 @@
     <button class="bg-blue-200 p-5 rounded-full ml-2">Popular Course</button>
     <button class="bg-green-200 p-5 rounded-full ml-2">Popular Course</button>
   </div>
-  <div #swiperRef="" class="swiper mySwiper pt-5">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <!--Card Number - 1 -->
-          <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+  
+  <div class="container swiper bg-blue-200">
+    <div class="slide-container">
+      <div class="card-wrapper swiper-wrapper">
+        <div class="card swiper-slide bg-red-200">
+         
+           <!--Card Number - 5 -->
+           <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
                 <img class="mx-auto w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9eSUCmx6Tv6Bz6JWHkwWltlXx4Gz2iR2T4VKl4ryBcQ&usqp=CAU&ec=48665699" alt="" />
             </a>
@@ -163,158 +169,169 @@
                 <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Compaire</a>
                 <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Enroll Now</a>
             </div>
-        </div>
-
-      </div>
-      <div class="swiper-slide">
-        <!--Card Number - 2 -->
-        <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-              <img class="mx-auto w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9eSUCmx6Tv6Bz6JWHkwWltlXx4Gz2iR2T4VKl4ryBcQ&usqp=CAU&ec=48665699" alt="" />
-          </a>
-          <div class="p-5">
-              <a href="#">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</h5>
-              </a>
-              <p class="mb-3 font-normal inline-flex">
-                  lession
-                  days
-                  level
-              </p><br>
-              <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Compaire</a>
-              <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Enroll Now</a>
           </div>
+  
         </div>
-      </div>
-
-      <div class="swiper-slide">
-           <!--Card Number - 3 -->
-        <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-              <img class="mx-auto w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9eSUCmx6Tv6Bz6JWHkwWltlXx4Gz2iR2T4VKl4ryBcQ&usqp=CAU&ec=48665699" alt="" />
-          </a>
-          <div class="p-5">
-              <a href="#">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</h5>
-              </a>
-              <p class="mb-3 font-normal inline-flex">
-                  lession
-                  days
-                  level
-              </p><br>
-              <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Compaire</a>
-              <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Enroll Now</a>
+        <div class="card swiper-slide">
+          <!--Card Number - 1 -->
+          <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="mx-auto w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9eSUCmx6Tv6Bz6JWHkwWltlXx4Gz2iR2T4VKl4ryBcQ&usqp=CAU&ec=48665699" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</h5>
+                </a>
+                <p class="mb-3 font-normal inline-flex">
+                    lession
+                    days
+                    level
+                </p><br>
+                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Compaire</a>
+                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Enroll Now</a>
+                </div>
           </div>
+            
         </div>
-      </div>
-
-      <div class="swiper-slide">
-        <!--Card Number - 4 -->
-        <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-              <img class="mx-auto w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9eSUCmx6Tv6Bz6JWHkwWltlXx4Gz2iR2T4VKl4ryBcQ&usqp=CAU&ec=48665699" alt="" />
-          </a>
-          <div class="p-5">
-              <a href="#">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</h5>
-              </a>
-              <p class="mb-3 font-normal inline-flex">
-                  lession
-                  days
-                  level
-              </p><br>
-              <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Compaire</a>
-              <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Enroll Now</a>
-          </div>
+        <div class="card swiper-slide">
+           <!--Card Number - 1 -->
+           <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="mx-auto w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9eSUCmx6Tv6Bz6JWHkwWltlXx4Gz2iR2T4VKl4ryBcQ&usqp=CAU&ec=48665699" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</h5>
+                </a>
+                <p class="mb-3 font-normal inline-flex">
+                    lession
+                    days
+                    level
+                </p><br>
+                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Compaire</a>
+                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Enroll Now</a>
+                </div>
+           </div>
+         
         </div>
-      </div>
-
-      <div class="swiper-slide">
-        <!--Card Number - 5 -->
-        <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-              <img class="mx-auto w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9eSUCmx6Tv6Bz6JWHkwWltlXx4Gz2iR2T4VKl4ryBcQ&usqp=CAU&ec=48665699" alt="" />
-          </a>
-          <div class="p-5">
-              <a href="#">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</h5>
-              </a>
-              <p class="mb-3 font-normal inline-flex">
-                  lession
-                  days
-                  level
-              </p><br>
-              <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Compaire</a>
-              <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Enroll Now</a>
-          </div>
+        <div class="card swiper-slide">
+           <!--Card Number - 1 -->
+           <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="mx-auto w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9eSUCmx6Tv6Bz6JWHkwWltlXx4Gz2iR2T4VKl4ryBcQ&usqp=CAU&ec=48665699" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</h5>
+                </a>
+                <p class="mb-3 font-normal inline-flex">
+                    lession
+                    days
+                    level
+                </p><br>
+                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Compaire</a>
+                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Enroll Now</a>
+                </div>
+            </div>
+  
+        </div>
+        <div class="card swiper-slide bg-yellow-500">
+           <!--Card Number - 1 -->
+           <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="mx-auto w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9eSUCmx6Tv6Bz6JWHkwWltlXx4Gz2iR2T4VKl4ryBcQ&usqp=CAU&ec=48665699" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</h5>
+                </a>
+                <p class="mb-3 font-normal inline-flex">
+                    lession
+                    days
+                    level
+                </p><br>
+                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Compaire</a>
+                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Enroll Now</a>
+                </div>
+            </div>
+          
+        </div>
+  
+        <div class="card swiper-slide bg-green-500">
+           <!--Card Number - 1 -->
+           <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="mx-auto w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9eSUCmx6Tv6Bz6JWHkwWltlXx4Gz2iR2T4VKl4ryBcQ&usqp=CAU&ec=48665699" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</h5>
+                </a>
+                <p class="mb-3 font-normal inline-flex">
+                    lession
+                    days
+                    level
+                </p><br>
+                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Compaire</a>
+                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Enroll Now</a>
+                </div>
+            </div>
+         
+        </div>
+  
+        <div class="card swiper-slide bg-orange-500">
+           <!--Card Number - 1 -->
+           <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="mx-auto w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9eSUCmx6Tv6Bz6JWHkwWltlXx4Gz2iR2T4VKl4ryBcQ&usqp=CAU&ec=48665699" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</h5>
+                </a>
+                <p class="mb-3 font-normal inline-flex">
+                    lession
+                    days
+                    level
+                </p><br>
+                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Compaire</a>
+                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Enroll Now</a>
+                </div>
+           </div>
+          
+        </div>
+  
+        <div class="card swiper-slide bg-pink-500">
+           <!--Card Number - 1 -->
+           <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="mx-auto w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9eSUCmx6Tv6Bz6JWHkwWltlXx4Gz2iR2T4VKl4ryBcQ&usqp=CAU&ec=48665699" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</h5>
+                </a>
+                <p class="mb-3 font-normal inline-flex">
+                    lession
+                    days
+                    level
+                </p><br>
+                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Compaire</a>
+                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  dark:bg-blue-600 dark:hover:bg-blue-700">Enroll Now</a>
+                </div>
+           </div>
+          
         </div>
       </div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next swiper-navBtn scale-75"></div>
+    <div class="swiper-button-prev swiper-navBtn scale-75"></div>
     <div class="swiper-pagination"></div>
   </div>
+  
 </section>
 
-<!-- <p class="append-buttons">
-  <button class="prepend-2-slides">Prepend 2 Slides</button>
-  <button class="prepend-slide">Prepend Slide</button>
-  <button class="append-slide">Append Slide</button>
-  <button class="append-2-slides">Append 2 Slides</button>
-</p> -->
 
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    centeredSlides: true,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
-  var appendNumber = 4;
-  var prependNumber = 1;
-  document
-    .querySelector(".prepend-2-slides")
-    .addEventListener("click", function (e) {
-      e.preventDefault();
-      swiper.prependSlide([
-        '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-        '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-      ]);
-    });
-  document
-    .querySelector(".prepend-slide")
-    .addEventListener("click", function (e) {
-      e.preventDefault();
-      swiper.prependSlide(
-        '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-      );
-    });
-  document
-    .querySelector(".append-slide")
-    .addEventListener("click", function (e) {
-      e.preventDefault();
-      swiper.appendSlide(
-        '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-      );
-    });
-  document
-    .querySelector(".append-2-slides")
-    .addEventListener("click", function (e) {
-      e.preventDefault();
-      swiper.appendSlide([
-        '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-        '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-      ]);
-    });
-</script>
 <!-- ========================================================== -->
 
 
@@ -375,31 +392,10 @@
 </div>
 </div>
 </div>
-    <!--===============================-->
-
-
-    <!--Service FreeLancing Page Pending-->
-
 
     <!--Why choose grachiver Section-->
 
-    < class="border border-blue-900 p-3 m-2">
         <h1 class=" text-center text-2xl">Why Choose Grachiver</h1>
-
-        <!--Six Circle Section--> 
-        <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 m-5 md:m-5 lg:m-5 h-72 md:h-24 lg:h-24">
-            <div class="bg-gray-400 rounded-full md:rounded-full lg:rounded-full w-24  mx-auto"></div>
-            <div class="bg-gray-400 rounded-full md:rounded-full lg:rounded-full w-24  mx-auto"></div>
-            <div class="bg-gray-400 rounded-full md:rounded-full lg:rounded-full w-24  mx-auto"></div>
-            <div class="bg-gray-400 rounded-full md:rounded-full lg:rounded-full w-24  mx-auto"></div>
-        </div>
-        <div class="grid grid-flow-cols-1 md:grid-cols-4 lg:grid-cols-4 m-5 md:m-5 lg:m-5 h-72 md:h-24 lg:h-24">
-            <div class="text-center font-bold ">Tag Line</div>
-            <div class="text-center font-bold">Tag Line</div>
-            <div class="text-center font-bold">Tag Line</div>
-            <div class="text-center font-bold">Tag Line</div>
-        </div>
-    
         <div class="grid grid-flow-cols-1 md:grid-cols-4 lg:grid-cols-4 m-5 md:m-5 lg:m-5 bg-red-200">
             <div class="m-3">
                 <img src="images/8/courses(services).png" class="w-[30%] m-auto mt-10 mb-10">
@@ -425,43 +421,23 @@
     </div>
 
 <!-- ............... PHARA Section (3 card z-index )............ -->
-<section>
+ <!-- .................. z-index section 2 start ............ -->
+<section class=" mx-20">
+  <div class="z_index_card_02">
+    <div class="card_01" id="card1">
+        <p>Card 1 - z-index: 1</p>
+    </div>
+    <div class="card_01" id="card2">
+        <p>Card 2 - z-index: 2</p>
+    </div>
+    <div class="card_01" id="card3">
+        <p>Card 3 - z-index: 3</p>
+    </div>
+  </div>
+  
 </section>
-
-    <!-- Hero Tex
-
-
-    <div class="bg bg-gray-400">
-        <h1 class="text-2xl font-bold text-center">Hero Text</h1>
-        <h1 class="text-center">(tools Service)</h1>
-        <div class="flex bg-blue-500 justify-center">
-        <div class="bg-black w-[30%] h-60 m-5 border border-white rounded-lg">Para1</div>
-        <div class="bg-black w-[30%] h-60 m-5 border border-white rounded-lg">Para1</div>
-        <div class="bg-black w-[30%] h-60 m-5 border border-white rounded-lg">Para1</div>
-    </div>
-    </div> -->
-
-    <div class="border border-black m-2 p-10">
-      <div class="mb-10">
-        <h1 class="text-2xl text-center font-semibold">hero text</h1>
-        <p class="text-center">(tools service)</p>
-      </div>
-      <div class="flex-wrap sm:flex-wrap md:flex lg:flex h-auto justify-center">
-        <div class="h-60 w-auto sm:w-auto md:w-96 lg:w-96  border border-black rounded-2xl relative z-10">
-          <h1 class="text-2xl text-center mt-24">para1</h1>
-          <button class=" ml-24 md:ml-36 lg:ml-36  border border-black px-2 py-1 mt-4">learn more</button>
-        </div>
-        <div class="h-60 w-auto sm:w-auto md:w-96 lg:w-96  border border-black rounded-2xl relative z-10">
-          <h1 class="text-2xl text-center mt-24">para1</h1>
-          <button class=" ml-24 md:ml-36 lg:ml-36  border border-black px-2 py-1 mt-4">learn more</button>
-        </div>
-        <div class="h-60 w-auto sm:w-auto md:w-96 lg:w-96  border border-black rounded-2xl relative z-10">
-          <h1 class="text-2xl text-center mt-24">para1</h1>
-          <button class=" ml-24 md:ml-36 lg:ml-36  border border-black px-2 py-1 mt-4">learn more</button>
-        </div>
-      </div>
-    </div>
-    
+<!-- .................. z-index section 2 end............ -->
+   <!-- ........................ PHARA section end ................... -->
 
     <!--Skill Consultancy-->
 
@@ -589,30 +565,11 @@
 
 </div>
 
-<!-- <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 bg bg-red-200 h-36 m-2">
-  <div class="w-24 h-24 text-center mx-auto">
-    <img src="images/8/courses(services).png" class="m-auto">
-      <h1 class="mt-5 font-semibold">1.Courses</h1>
-  </div>
-  <div class="w-24 h-24 text-center mx-auto">
-    <img src="images/8/freelancing(services).png" class="m-auto">
-      <h1 class="mt-5 font-semibold">2.Consultancy</h1>
-  </div>
-  <div class="w-24 h-24 text-center mx-auto">
-    <img src="images/8/tools&res.(services).png" class="m-auto">
-      <h1 class="mt-5 font-semibold">3.Freelances</h1>
-  </div>
-  <div class="w-24 h-24 text-center mx-auto">
-    <img src="images/8/webservices.png" class=" m-auto">
-      <h1 class="mt-5 font-semibold">4.Tools</h1>
-  </div>
-</div> -->
 
    <!-- Blog Section -->
-    
+<section>
    <div class="border border-black m-2">
     <!--Blog-->
-
      <div class="p-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
        <div class="m-auto">
        <h1 class="font-medium">Blog</h1>
@@ -622,13 +579,9 @@
        <button class="border border-black p-2 rounded-lg">Browse Blog</button>
    </div>
      </div>
-     
      <!--3 Card-->
-
      <div class="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 m-2 h-auto p-5 justify-center gap-40">
-
        <!-- Card_1 -->
-
        <div class="border border-black w-auto overflow-hidden">
            <h1 class="text-center border border-b-black p-1">In Demand Job</h1>
            <div class="bg-gray-400 w-72 h-48 mx-auto m-5 rounded-lg p-10">
@@ -638,9 +591,7 @@
                 reprehenderit soluta harum, quia doloribus minima dolor,
                 nam similique nostrum ipsa nemo id fuga perferendis minus commodi.</p>
        </div>
-
        <!-- Card_2 -->
-
        <div class="border border-black w-auto overflow-hidden">
            <h1 class="text-center border border-b-black p-1">Popular Skill</h1>
            <div class="bg-gray-400 w-72  h-48 mx-auto m-5 rounded-lg p-10">
@@ -650,9 +601,7 @@
                 reprehenderit soluta harum, quia doloribus minima dolor,
                 nam similique nostrum ipsa nemo id fuga perferendis minus commodi.</p>
        </div>
-
        <!-- Card_3 -->
-
         <div class="border border-black w-auto overflow-hidden">
            <h1 class="text-center border border-b-black p-1">AI Is Good</h1>
            <div class="bg-gray-400 w-72  h-48 mx-auto m-5 rounded-lg p-10">
@@ -664,6 +613,114 @@
         </div>
        </div>
    </div>
+</section>
+
+
+   <!-- .................. z-index section 1 start............ -->
+<section class="bg-orange-300 mt-20">
+  <div class="container1">
+    <div class="icon-image">
+          <div class="icon">
+            <img src="images/z_index_images/img1.jpg" alt="">
+          </div>
+        <div class="hover-image one">
+          <div class="img">
+            <img src="images/z_index_images/img2.jpg" alt="">
+          </div>
+        <div class="content">
+          <div class="details">
+            <div class="name">David Marloo</div>
+            <div class="job"> Designer || Developer</div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div class="icon-image">
+          <div class="icon">
+            <img src="images/z_index_images/img1.jpg" alt="">
+          </div>
+        <div class="hover-image one">
+          <div class="img">
+            <img src="images/z_index_images/img2.jpg" alt="">
+          </div>
+        <div class="content">
+          <div class="details">
+            <div class="name">Lilly Carls</div>
+            <div class="job">Blogger || Designer </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div class="icon-image">
+          <div class="icon">
+            <img src="images/z_index_images/img3.jpg" alt="">
+          </div>
+        <div class="hover-image one">
+          <div class="img">
+            <img src="images/z_index_images/img4.jpg" alt="">
+          </div>
+        <div class="content">
+          <div class="details">
+            <div class="name">Stephen Bald</div>
+            <div class="job"> Designer || Developer</div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div class="icon-image">
+          <div class="icon">
+            <img src="images/z_index_images/img5.jpg" alt="">
+          </div>
+        <div class="hover-image one">
+          <div class="img">
+            <img src="images/z_index_images/img6.jpeg" alt="">
+          </div>
+        <div class="content">
+          <div class="details">
+            <div class="name">Mike Tyson</div>
+            <div class="job">Photographer || Youtuber</div>
+
+          </div>
+        </div>
+        </div>
+    </div>
+    <div class="icon-image">
+          <div class="icon">
+            <img src="images/z_index_images/img1.jpg" alt="">
+          </div>
+        <div class="hover-image one">
+          <div class="img">
+            <img src="images/z_index_images/img2.jpg" alt="">
+          </div>
+        <div class="content">
+          <div class="details">
+            <div class="name">Emma Oliva</div>
+            <div class="job">Developer || Designer</div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div class="icon-image last">
+          <div class="icon">
+            <img src="images/z_index_images/img3.jpg" alt="">
+          </div>
+        <div class="hover-image one">
+          <div class="img">
+            <img src="images/z_index_images/img1.jpg" alt="">
+          </div>
+        <div class="content">
+          <div class="details">
+            <div class="name">David Marloo</div>
+            <div class="job">Blogger || Youtuber</div>
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>
+
+</section>
+<!-- .................. z-index section 1 end............ -->
+
     
       <!--Finding Your Right Course-->
 
@@ -680,12 +737,9 @@
     <!-- ............ footer section ..................... -->
     <footer class="bg-neutral-900 text-center text-white">
         <div class="container px-6 pt-6">
-          
-      
           <div>
             <form action="">
-              <div
-                class="gird-cols-1 grid items-center justify-center gap-4 md:grid-cols-3">
+              <div class="gird-cols-1 grid items-center justify-center gap-4 md:grid-cols-3">
                 <div class="md:ml-auto md:mb-6">
                   <p class="">
                     <strong>Sign up for our newsletter</strong>
@@ -721,28 +775,29 @@
         </div>
         <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
             <div class="p-5">
-                <p class="font-bold ">About</p>
-                <p>text</p>
-                <p>text</p>
-                <p>text</p>
-                <p>text</p>
+                <p class="font-bold text-xl ">About</p>
+                <p>Home Page</p>
+                <p>About Page</p>
+                <p>Class Section</p>
+                <p>Contact Us Page</p>
             </div>
             <div class="p-5 ">
-                <p class="font-bold">Categories</p> 
-                <p>text</p> 
-                <p>text</p> 
-                <p>text</p> 
-                <p>text</p> 
+                <p class="font-bold text-xl">Categories</p> 
+                <p>Sales</p> 
+                <p>Courses</p> 
+                <p>Designer</p> 
+                <p>Our Plane</p> 
             </div>
             <div class="p-5">
-                <p class="font-bold">Support</p>
-                <p>text</p>
-                <p>text</p>
-                <p>text</p>
-                <p>text</p>
+                <p class="font-bold text-xl">Support</p>
+                <p>Visit us</p>
+                <p>Pricing </p>
+                <p>service</p>
+                <p>Certificate</p>
             </div>
-            <div class="p-5"></div>
+            <div class=""></div>
             <div class="p-5">
+                <img src="images/LOGOS/g.logo.white1.png" class="-mt-20">
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nihil, nobis ratione in, molestias debitis reprehenderit, unde harum laborum.</p>
                 <p class="mt-5">Follow us social media...</p>
                 <div class="mb-6 flex justify-center mt-5">
@@ -825,6 +880,50 @@
           >
         </div>
       </footer>
+
+
+<!-- ............................. card caruosal section start............................... -->
+
+<!--<script src="js/swiper-bundle.min.js"></script>-->
+<!--<script src="js/script.js"></script>-->
+<script>
+  var swiper = new Swiper(".slide-container", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  sliderPerGroup: 4,
+  loop: false,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1000: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+</script>
+<!-- ............................. card carousal section end............................... -->
+
        
         <script>
             // Get the dropdown element
