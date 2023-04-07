@@ -10,8 +10,9 @@
     <script src="index.js"></script>
     <!-- ......... swiper link for card carousal .................. -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <link rel="icon" type="image/x-icon" href="images/LOGOS/sign_in.jpeg">
      <style>  
       .sc {
           transition: transform 0.4s;
@@ -34,8 +35,8 @@
             </a>
             <!-- login sign-up button for responsive design .... -->
             <div class="hidden max-md:block flex ">
-               <a href="sign_in.html"><button type="button" class="text-white bg-blue-700 hover:bg-green-800 px-2 py-1 rounded-md">Sign-In</button></a> 
-                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 px-2 py-1 rounded-md">Sign-Up</button>
+               <a href="sign_in.html"><button type="button" class="text-white bg-blue-700 hover:bg-green-800 px-2 py-1 rounded-md" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-In</button></a> 
+               <a href="sign_up.html"> <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 px-2 py-1 rounded-md" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-Up</button></a>
             </div>
 
             <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
@@ -70,9 +71,9 @@
                 </li>
                 <li>
                     <div class="flex md:order-2">
-                        <a href="sign_in.html"><button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800  text-xl">Sign-In</button></a>
+                        <a href="sign_in.html"><button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800  text-xl" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-In</button></a>
                         
-                        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ml-3 text-xl">Sign-Up</button>
+                        <a href="sign_up.html"><button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ml-3 text-xl" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-Up</button></a>
                         
                     </div>
                 </li>
@@ -347,28 +348,44 @@
   <center><button class="bg-blue-500 w-48 h-10 rounded-lg justify-self-center">Browse All Card</button></center> 
   
 </section>
+<!-- ye vali javascript ko koi bhi yha se hataye nhi please  -->
+    <script> 
+  var swiper = new Swiper(".slide-container", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  sliderPerGroup: 4,
+  loop: false,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 
-    <!--Top Categories Pending-->
-<!-- 
-    <div>
-        <div>
-            <h1 class="text-3xl font-bold text-center">Top Categories</h1>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 m-2">
-            <div class="bg bg-gray-100 grid grid-cols-2 ">
-                <div class="bg bg-gray-200 w-52 h-60 border border-black rounded rounded-lg m-5">Digital Marketing</div>
-                <div class="bg bg-gray-200 w-72 h-52 border border-black rounded rounded-lg m-5 ml-[-35%]">Digital Marketing</div>
-                <div class="bg bg-gray-200 w-72 h-52 border border-black rounded rounded-lg m-5 mt-[-1%]">Digital Marketing</div>
-                <div class="bg bg-gray-200 w-52 h-60 border border-black rounded rounded-lg m-5 ml-[-15%] mt-[-10%]">Digital Marketing</div>
-            </div>
-            <div class="bg bg-gray-100 grid grid-cols-3">
-            <div class="bg bg-gray-500 w-72 h-[92%] m-auto border border-black rounded-lg ml-[-50%]">Skill Confused </div>
-            <div class="bg bg-gray-200 w-52 h-60 border border-black rounded rounded-lg m-5 ml-[-25%]">Digital Marketing</div>
-            <div class="bg bg-gray-200 w-72 h-52 border border-black rounded rounded-lg m-5 ml-[-125%] mt-[110%]">Digital Marketing</div>
-        </div>
-        </div>
-
-    </div> -->
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1000: {
+      slidesPerView: 4,
+    },
+  },
+});
+</script>
+<!-- ............................ card carousal section end...............................   -->
+        
 
 <!--===============================-->
 <div class="m-2">
@@ -771,10 +788,6 @@
   </div>
 </div>
 </div>
-        
-       
-
-
   
    <!-- Blog Section -->
 <section>
@@ -1091,7 +1104,6 @@
       </footer>
 
 
-<!-- ............................. card caruosal section start............................... -->
 
 
 <!-- ............... main navbar tailwind js link .............  -->
