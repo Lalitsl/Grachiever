@@ -50,3 +50,9 @@
     
 //.................. z-index section 2 end............
 
+
+// ................... forgot password js is start here .......................
+function submitotp(){
+    document.getElementById("otpdiv").style.display="block";
+}
+// ................... forgot password js is end here .......................
