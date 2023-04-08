@@ -260,3 +260,12 @@ input:hover,
   color: white;
 }
 
+ /* Benifits card section  */
+
+ .sc {
+  transition: transform 0.4s;
+}
+
+.crrd:hover .sc {
+    transform: scale(5);
+}
