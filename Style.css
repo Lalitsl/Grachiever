@@ -198,24 +198,20 @@
   top: 0;
   left: 0;
   height: 300px;
-  border: 1px solid black;
   padding: 10px;
 }
 
 #card1 {
-  background-color: #ff8080;
   z-index: 1;
 }
 
 #card2 {
-  background-color: #80b3ff;
   z-index: 2;
   left: 50px;
   top: 50px;
 }
 
 #card3 {
-  background-color: #b3ffb3;
   z-index: 3;
   left: 100px;
   top: 100px;

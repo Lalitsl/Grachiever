@@ -24,21 +24,24 @@
 //.................. z-index section............
  
  function Card_change1(){
-        document.getElementById("card1").style.backgroundColor="green";
+        document.getElementById("card_flip_img_change02").style.display="block";
+        document.getElementById("card_flip_img_change01").style.display="none";
         document.getElementById("card1").style.zIndex="50";
-        document.getElementById("card1").style.margin="10px";
+        // document.getElementById("card1").style.margin="10px";
         document.getElementById("card1").style.transform="rotate(360deg)";
         document.getElementById("card1").style.transitionDuration="4s";
     }
      function Card_change2(){
-        document.getElementById("card2").style.backgroundColor="pink";
+        document.getElementById("card_flip_img_change04").style.display="block";
+        document.getElementById("card_flip_img_change03").style.display="none";
         document.getElementById("card2").style.zIndex="50";
         document.getElementById("card2").style.margin="10px";
         document.getElementById("card2").style.transform="rotate(360deg)";
         document.getElementById("card2").style.transitionDuration="4s";
     }
      function Card_change3(){
-        document.getElementById("card3").style.backgroundColor="blue";
+        document.getElementById("card_flip_img_change06").style.display="block";
+        document.getElementById("card_flip_img_change05").style.display="none";
         document.getElementById("card3").style.zIndex="50";
         document.getElementById("card3").style.margin="10px";
         document.getElementById("card3").style.transform="rotate(360deg)";
