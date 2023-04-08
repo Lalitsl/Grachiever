@@ -263,9 +263,10 @@ input:hover,
  /* Benifits card section  */
 
  .sc {
-  transition: transform 0.4s;
+  transition: transform 0.9s;
 }
 
 .crrd:hover .sc {
     transform: scale(5);
+
 }
