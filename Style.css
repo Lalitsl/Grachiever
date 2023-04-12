@@ -267,3 +267,20 @@ input:hover,
 .crrd:hover .sc {
     transform: scale(5);
 }
+
+/* .............. z-index section  */
+.cd {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.5s;
+}
+.cd.active {
+  z-index: 3;
+}
+@media (max-width: 768px) {
+  .cd {
+    width: 100%;
+  }
+}

@@ -110,8 +110,8 @@
       <p class="mt-5 text-2xl">The only easier, powerful and authoring platform designed for consistent learners to
         unlock the power of monetizing</p>
       <!--Search-->
-      <div class="border border-b-black flex items-center mt-4 w-[80%] sm:w-[80%] md:w-[70%] lg:w-[60%] rounded-r-full ">
-        <input type="text" class="py-2.5 px-4 outline-none " placeholder="Search Anything...">
+      <div class="border-b-blue-700 border-2 flex items-center mt-4 w-[80%] sm:w-[80%] md:w-[70%] lg:w-[60%]  rounded-full outline-none ">
+        <input type="text" class="py-2.5 px-4 outline-none  " placeholder="Search Anything...">
         <select class="mr-2 py-2 px-4 w-auto h-[44px]">
           <option>Courses</option>
           <option>freelancing</option>
@@ -195,9 +195,9 @@
 <section class=" mt-10">
   <p class="text-3xl sm:text-3xl md:text-5xl lg:text-5xl font-bold text-center mx-3">What Are You Searching For ?</p>
   <div class="flex float-right mt-5 mb-5 text-xl">
-    <button class="bg-red-200 p-3 sm:p-3 md:p-5 lg:p-5 text-sm sm:text-sm md:text-xl lg:text-xl rounded-full px-3  mx-3">Popular Course</button>
-    <button class="bg-blue-200 p-3 sm:p-3 md:p-5 lg:p-5 text-sm sm:text-sm md:text-xl lg:text-xl rounded-full ml-2 px-3 mx-3">Popular Course</button>
-    <button class="bg-green-200 p-3 sm:p-3 md:p-5 lg:p-5 text-sm sm:text-sm md:text-xl lg:text-xl rounded-full ml-2 px-3 mx-3">Popular Course</button>
+    <button class="bg-red-200 p-3 sm:p-3 md:p-5 lg:p-5 text-sm sm:text-sm md:text-xl lg:text-xl rounded-xl px-3  mx-3">Popular Course</button>
+    <button class="bg-blue-200 p-3 sm:p-3 md:p-5 lg:p-5 text-sm sm:text-sm md:text-xl lg:text-xl rounded-xl ml-2 px-3 mx-3">Popular Course</button>
+    <button class="bg-green-200 p-3 sm:p-3 md:p-5 lg:p-5 text-sm sm:text-sm md:text-xl lg:text-xl rounded-xl ml-2 px-3 mx-3">Popular Course</button>
   </div>
   
   <div class="container swiper">
@@ -520,9 +520,56 @@
 
    <!-- ........................ PHARA section end ................... -->
 
+
+<!-- ............. z-index card practice start ..........-->
+<section>
+  <div class="flex relative my-20 scale-75">
+    <div id="scard01" class="bg-red-200 p-10 h-60 w-[35%] rounded-2xl z-30 absolute left-20 top-0" onclick="sd01()">
+      <p>welcome to z-index practice section........</p>
+      <button class="p-2 border-2 border-black">Learn More</button>
+    </div>
+    <div id="scard02" class="bg-gray-200 p-10 h-60 w-[35%]  rounded-2xl z-20 absolute  left-[35%] top-0" onclick="sd02()">
+      <p>welcome to z-index practice section........</p>
+      <button class="p-2 border-2 border-black">Learn More</button>      
+    </div>
+    <div id="scard03" class="bg-yellow-200 p-10 h-60 w-[35%] rounded-2xl z-10 absolute  left-[60%] top-0" onclick="sd03()">
+      <p>welcome to z-index practice section........</p>
+      <button class="p-2 border-2 border-black">Learn More</button>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="bg-orange-500 mt-[200px]">
+  <div class="flex flex-wrap justify-center">
+    <div class="card cd bg-red-500 mx-2 my-2"></div>
+    <div class="card cd bg-green-500 mx-2 my-2"></div>
+    <div class="card cd bg-blue-500 mx-2 my-2"></div>
+    <div class="card cd bg-yellow-500 mx-2 my-2"></div>
+  </div>
+  
+</section>
+<script>
+  const cards = document.querySelectorAll('.card');
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    // add 'active' class to clicked card
+    card.classList.add('active');
+    // move clicked card to the front
+    card.parentNode.insertBefore(card, card.parentNode.firstChild);
+  });
+});
+
+</script>
+
+<!-- ............. z-index card practice end ..............-->
+
+
+
     <!--Skill Consultancy-->
   <section>
-    <div class="m-2 h-auto p-2">
+    <div class="m-2 h-auto p-2 mt-[200px]">
         <h1 class="text-3xl sm:text-3xl md:text-5xl lg:text-5xl font-bold text-center my-10">Skill Consultancy</h1>
     
     <!--Skill Consultancy left section-->
@@ -736,17 +783,24 @@
 <section>
    <div class="mt-10">
     <!--Blog-->
-     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
+     <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
        <div class="m-auto">
        <h1 class="text-3xl sm:text-3xl md:text-5xl lg:text-5xl font-bold text-center">Blog</h1>
        <h1 class="mt-2 text-xl mx-10 p-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis qui quibusdam sit repellat necessitatibus animi libero.</h1>
      </div>
-   <div class="m-auto mt-5">
-       <button class="p-2 rounded-lg bg-[#057D98] text-white px-8 text-xl">Browse Blog</button>
-   </div>
-     </div>
+      <div class="m-auto mt-5">
+          <button class="p-2 rounded-lg bg-[#057D98] text-white px-8 text-xl">Browse Blog</button>
+      </div>
+     </div> -->
+     <div class=" ">
+      <h1 class="text-3xl sm:text-3xl md:text-5xl lg:text-5xl font-bold pl-10">Blog</h1>
+        <div class="flex justify-between">
+          <h1 class="mt-2 text-xl mx-10 p-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+          <button class="p-2 rounded-lg bg-[#057D98] text-white px-8 text-xl float-right mx-10">Browse Blog</button>
+        </div>
+    </div>
      <!--3 Card-->
-     <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 m-2 h-auto  gap-10 sm:gap-10 md:gap-40 lg:gap-40">
+     <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 m-2 h-auto  gap-10 sm:gap-10 md:gap-10 lg:gap-20 mx-5 lg:mx-10 md:mx-10 md:mt-10 lg:mt-10">
        <!-- Card_1 -->
        <div class="shadow-lg hover:shadow-gray-500 w-auto overflow-hidden p-5">
            <h1 class="text-center p-1 font-bold text-xl">In Demand Job</h1>
@@ -762,7 +816,7 @@
        <div class="shadow-lg hover:shadow-gray-500 w-auto overflow-hidden p-5">
           <h1 class="text-center p-1 font-bold text-xl">Popular Skill</h1>
           <div class=" h-52">
-          <img src="https://www.shutterstock.com/image-vector/people-configure-application-on-big-600w-1188424468.jpg" class="rounded-xl h-52">
+          <img src="https://www.shutterstock.com/image-vector/people-configure-application-on-big-600w-1188424468.jpg" class="rounded-xl h-52 w-full">
           </div>
           <h1 class="text-3xl font-bold mt-5">Heading 01</h1>
           <p class=" w-auto mb-6 space-x-8 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -773,7 +827,7 @@
        <div class="shadow-lg hover:shadow-gray-500 w-auto overflow-hidden p-5">
           <h1 class="text-center p-1 font-bold text-xl">AI Is Good</h1>
           <div class=" h-52">
-          <img src="https://www.shutterstock.com/image-vector/web-development-coding-programming-responsive-600w-1449924503.jpg" class="rounded-xl h-52">
+          <img src="https://www.shutterstock.com/image-vector/web-development-coding-programming-responsive-600w-1449924503.jpg" class="rounded-xl h-52 w-full">
           </div>
           <h1 class="text-3xl font-bold mt-5">Heading 01</h1>
           <p class=" w-auto mb-6 space-x-8 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -895,20 +949,20 @@
     
       <!--Finding Your Right Course-->
 <section>
-      <div class=" m-2 mx-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
+      <div class=" m-2 mx-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-20">
         <div class="m-auto">
-        <h1 class="text-3xl sm:text-3xl md:text-5xl lg:text-5xl font-bold p-2">Finding Your Right Course</h1>
-        <h1 class="p-2 mt-5 text-xl">From in-demand skills to future-ready courses, Grachiever makes it simple to discover and enroll in the courses you need to achieve your career goals.</h1>
-    </div>
-    <div class=" m-auto  ">
-        <button class="p-2 rounded-lg bg-[#057D98] text-white px-8 text-xl mt-5">Start Learning For Free</button>
-    </div>
+          <h1 class="text-3xl sm:text-3xl md:text-5xl lg:text-5xl font-bold p-2">Finding Your Right Course</h1>
+          <h1 class="p-2 mt-5 text-xl">From in-demand skills to future-ready courses, Grachiever makes it simple to discover and enroll in the courses you need to achieve your career goals.</h1>
+         </div>
+        <div class=" m-auto  ">
+            <button class="p-2 rounded-lg bg-[#057D98] text-white px-8 text-xl mt-5">Start Learning For Free</button>
+        </div>
       </div>
     </section>
 
     <!-- ............ footer section ..................... -->
     <section>
-    <footer class="bg-neutral-900 text-center text-white">
+    <footer class="bg-neutral-900 text-center text-white mt-20">
         <div class="container px-6 pt-6">
           <div>
             <form action="">
@@ -1122,7 +1176,6 @@
       </footer>
 
     </section>
-
 
 <script>
      // Get the dropdown element
