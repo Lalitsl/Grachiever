@@ -28,10 +28,11 @@
 }
 .swiper-navBtn {
   color: #000;
-  height: 40px;
+  height:40px;
   width: 40px;
   background: #220a83;
   border-radius: 25%;
+  padding:30px;
 }
 .swiper-navBtn::before,
 .swiper-navBtn::after {
@@ -268,19 +269,47 @@ input:hover,
     transform: scale(5);
 }
 
-/* .............. z-index section  */
-.cd {
-  width: 200px;
-  height: 300px;
-  position: relative;
+/* ................... z index section add event listener */
+#scard01,#scard02,#scard03{
+  transition: all 0.3s ease-in-out;
+}
+.shift-left{
+  transform: translateX(-50px);
+}
+.shift-right{
+  transform: translateX(50px);
+}
+
+
+.lift-up{
+  z-index: 20;
+}
+/* ..................................................................... */
+
+
+/* ................... popular and demand ............. */
+.stacked {
+  position: absolute;
+  /* padding: 1em; */
+  /* background-color: rgb(163, 25, 25); */
+  /* width: 350px;
+  height: 300px; */
   z-index: 1;
-  transition: transform 0.5s;
+  border-radius: 20px;
+  border: 1px solid black;
 }
-.cd.active {
-  z-index: 3;
+
+.stacked:nth-child(2) {
+  /* top: 0em;
+  left: 15em; */
+  background-color: rgb(105, 25, 163);
+  z-index: 2;
+  border-radius: 20px;
 }
-@media (max-width: 768px) {
-  .cd {
-    width: 100%;
-  }
+
+.stacked:nth-child(3) {
+  /* top: 0em;
+  left: 30em; */
+  background-color: rgb(25, 163, 101);
+  z-index: 1;
 }

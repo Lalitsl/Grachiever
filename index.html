@@ -25,20 +25,21 @@
         }
   </style> -->
 </head>
-<body>
+<body >
     
     <!--...................  navbar section ...... -->
-<section class="bg-white dark:bg-black">
+<section>
     <div>
-        <nav class="px-2 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 ">
-        <div class="container flex flex-wrap items-center justify-between mx-auto">
+        <nav class="px-2 border-gray-200 dark:bg-gray-900 dark:border-gray-700" >
+        <div class="container flex flex-wrap items-center justify-between mx-auto fixed bg-white z-50">
             <a href="#" class="flex items-center">
-                <img src="images/LOGOS/grachiever-02.png" class="h-6 mr-3 sm:h-12" alt="Grachiever Logo" />
+                <img src="images/LOGOS/grachiever-02.png" class="h-12 mr-3 hidden lg:block" alt="Grachiever Logo" />
+                <img src="images/LOGOS/responsive_main_logo.jpg" class="h-12 mr-3 block lg:hidden " alt="Grachiever Logo" />
             </a>
             <!-- login sign-up button for responsive design .... -->
             <div class="hidden max-md:block flex ">
-               <a href="sign_in.html"><button type="button" class="text-white bg-blue-700 hover:bg-green-800 px-2 py-1 rounded-md" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-In</button></a> 
-               <a href="sign_up.html"> <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 px-2 py-1 rounded-md" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-Up</button></a>
+               <a href="sign_in.html"><button type="button" class="bg-[#00dbff] text-white px-3 py-1 rounded-full -ml-5" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log-in</button></a> 
+               <a href="sign_up.html"> <button type="button" class="text-white bg-[#00dbff] px-3 py-1 rounded-full ml-3" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-Up</button></a>
             </div>
 
             <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
@@ -46,10 +47,10 @@
             <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
             </button>
             
-            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-            <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <div class="hidden w-full md:block md:w-auto " id="navbar-dropdown">
+            <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 lg:-translate-x-10">
                 <li>
-                <a href="#" class="block py-2 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent text-xl" aria-current="page">Home</a>
+                <a href="#" class="block py-2 pr-4 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent text-xl" aria-current="page">Home</a>
                 </li>
                 <li>
                     <div class="dropdown relative inline-block hover:dropdown-menu:block">
@@ -72,10 +73,10 @@
                     <a href="#" class="block py-2 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-xl">About</a>
                 </li>
                 <li>
-                    <div class="flex md:order-2 hidden lg:block">
-                        <a href="sign_in.html"><button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800  text-xl -mt-3" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-In</button></a>
+                    <div class="flex md:order-2 hidden md:block lg:block lg:pl-20 lg:ml-10">
+                        <a href="sign_in.html"><button type="button" class="hover:bg-[#00dbff] focus:ring-4 focus:outline-none hover:rounded-full hover:text-white text-sm px-5 py-2.5 text-center mr-3 md:mr-0 text-xl -mt-3" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log-in</button></a>
                         
-                        <a href="sign_up.html"><button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ml-3 text-xl -mt-3" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-Up</button></a>
+                        <a href="sign_up.html"><button type="button" class="bg-[#00dbff] focus:ring-4 focus:outline-none rounded-full text-white text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ml-3 text-xl -mt-3" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-Up</button></a>
                         
                     </div>
                 </li>
@@ -89,7 +90,7 @@
 </section>
 
 <!-- ........................ home section start ..................................... -->
- <section>
+ <section class="px-5 sm:px-5 md:px-10 lg:px-10 pt-10">
   <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
     <div class="pl-5 md:pl-10 lg:pl-10 mt-20">
       <span class="type text-[30px] mt-5 lg:text-[50px] font-bold"></span>
@@ -97,9 +98,9 @@
       <script>
           var typed = new Typed('.type', {
               strings: [
-                  'Start monetizing',
-                  'off your skills ',
-                  'with passion',
+                  'Start Monetizing',
+                  'Off Your Skills ',
+                  'With Passion',
               ],
               typeSpeed: 60,
               backSpeed: 60,
@@ -110,16 +111,16 @@
       <p class="mt-5 text-2xl">The only easier, powerful and authoring platform designed for consistent learners to
         unlock the power of monetizing</p>
       <!--Search-->
-      <div class="border-b-blue-700 border-2 flex items-center mt-4 w-[80%] sm:w-[80%] md:w-[70%] lg:w-[60%]  rounded-full outline-none ">
+      <div class="border-b-blue-700 border-2 flex items-center mt-8 w-[100%] sm:w-[80%] md:w-[100%] lg:w-[80%] rounded-full outline-none">
         <input type="text" class="py-2.5 px-4 outline-none  " placeholder="Search Anything...">
         <select class="mr-2 py-2 px-4 w-auto h-[44px]">
           <option>Courses</option>
           <option>freelancing</option>
           <option>tools</option>
         </select>
-        <span class="w-24 h-11 rounded-full text-center text-blue-700"><i class="fa-solid fa-magnifying-glass p-2 text-xl"></i></span>
+        <span class="w-20 h-12 rounded-full text-center bg-[#349fcf] text-white"><i class="fa-solid fa-magnifying-glass p-2 text-xl"></i></span>
       </div>
-      <div class=" flex flex-wrap mt-7">
+      <!-- <div class=" flex flex-wrap mt-7">
         <img src="https://uxwing.com/wp-content/themes/uxwing/download/education-school/certificate-icon.png" class="w-8"><p class="ml-2">Free Certificate</p> 
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" class="w-8 ml-5"><p class="ml-2">Pyhton</p> 
         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" class="w-8 ml-5"><p class="ml-2">Java</p> 
@@ -130,10 +131,33 @@
         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" class="w-8 ml-5"><p class="ml-2">CSS</p> 
         <img src="https://camo.githubusercontent.com/2512b49c89512f2ff3718f7257f48ed5c46a4e331abbd890b6c5e8c0e458434f/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67" class="w-8 ml-5"><p class="ml-2">Bootstrap</p> 
         <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png" class="w-8 ml-5"><p class="ml-2">JavaScript</p> 
+      </div> -->
+
+      <div class="flex flex-wrap">
+        <button class="px-5 py-3 bg-[#f7c200] rounded-md text-xl text-white font-bold ml-5 mt-10">Book Your Free Trial Now<i class="fa-sharp fa-solid fa-arrow-right ml-3"></i></button>
+        <button class="px-5 py-3 bg-[#349fcf] rounded-md text-xl text-white font-bold ml-5 mt-10">Enquire Now<i class="fa-solid fa-bell ml-3"></i> </button>
+      </div>
+      <div class="flex flex-wrap mt-10">
+        <div class="p-5 w-52">
+          <p class="font-bold text-3xl text-[#f7c200]">95%</p>
+          <p class="mt-3">placed within 8 months of graduation</p>
+        </div>
+        <div class="p-5 w-52">
+          <p class="font-bold text-3xl text-[#349fcf]">11 LPA</p>
+          <p class="mt-3">average dream job CTC</p>
+        </div>
+        <div class="p-5 w-52">
+          <p class="font-bold text-3xl text-[#f7c200]">240+</p>
+          <p class="mt-3">Our Hiring Partners</p>
+        </div>
+        <div class="p-5 w-52">
+          <p class="font-bold text-3xl text-[#349fcf]">1:1</p>
+          <p class="mt-3">Dedicated Mentorship</p>
+        </div>
       </div>
 
     </div>
-    <div class="mt-5">
+    <div class="mt-20">
       <img src="images/1/HOME page.png" class="w-[80%] m-auto">            
     </div>
   </div>
@@ -195,9 +219,9 @@
 <section class=" mt-10">
   <p class="text-3xl sm:text-3xl md:text-5xl lg:text-5xl font-bold text-center mx-3">What Are You Searching For ?</p>
   <div class="flex float-right mt-5 mb-5 text-xl">
-    <button class="bg-red-200 p-3 sm:p-3 md:p-5 lg:p-5 text-sm sm:text-sm md:text-xl lg:text-xl rounded-xl px-3  mx-3">Popular Course</button>
-    <button class="bg-blue-200 p-3 sm:p-3 md:p-5 lg:p-5 text-sm sm:text-sm md:text-xl lg:text-xl rounded-xl ml-2 px-3 mx-3">Popular Course</button>
-    <button class="bg-green-200 p-3 sm:p-3 md:p-5 lg:p-5 text-sm sm:text-sm md:text-xl lg:text-xl rounded-xl ml-2 px-3 mx-3">Popular Course</button>
+    <button class="p-3 sm:p-3 md:p-5 lg:p-5 text-sm sm:text-sm md:text-xl lg:text-xl px-3  mx-3 bg-blue-100 rounded-2xl hover:text-[#6c5fa1]">All</button>
+    <button class="p-3 sm:p-3 md:p-5 lg:p-5 text-sm sm:text-sm md:text-xl lg:text-xl  ml-2 px-3 mx-3 hover:bg-blue-100 hover:rounded-2xl hover:text-[#6c5fa1]">Trending</button>
+    <button class=" p-3 sm:p-3 md:p-5 lg:p-3 text-sm sm:text-sm md:text-xl lg:text-xl ml-2 px-3 mx-3 hover:bg-blue-100 hover:rounded-2xl hover:text-[#6c5fa1]">Popular</button>
   </div>
   
   <div class="container swiper">
@@ -209,9 +233,7 @@
            <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
                 <img class="mx-auto w-full h-52" src="https://5.imimg.com/data5/SELLER/Default/2022/6/SD/NP/XP/113623010/web-development-training-program-1--500x500.jpg" alt="" />
                 <div class="p-5">
-                    <a href="#">
-                        <p class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</p>
-                    </a>
+                        <p class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Pyhton Full Stack Development</p>
                     <p class="mb-3 font-normal inline-flex text-xl">
                         lession
                         days
@@ -226,13 +248,9 @@
         <div class="card swiper-slide">
           <!--Card Number - 2 -->
           <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
-            <a href="#">
                 <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRel084aJaTNo9hFm8eLDzUGUK5TfBA_hQwMJhQN7ZYbE3QgmO9PWFzYH3B3p80krV1MwE&usqp=CAU" alt="" />
-            </a>
             <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</h5>
-                </a>
+                    <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Java Full Stack Development</h5>
                 <p class="mb-3 font-normal inline-flex text-xl">
                     lession
                     days
@@ -251,13 +269,9 @@
         <div class="card swiper-slide">
            <!--Card Number - 3 -->
            <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
-            <a href="#">
                 <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9tMIqCoU9bwPKyj8O1y4soyvbIUh2k3qq_Q&usqp=CAU" alt="" />
-            </a>
             <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</h5>
-                </a>
+                    <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Angular Development</h5>
                 <p class="mb-3 font-normal inline-flex text-xl">
                     lession
                     days
@@ -272,13 +286,9 @@
         <div class="card swiper-slide">
            <!--Card Number - 4 -->
            <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
-            <a href="#">
                 <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5uj_Aoh6g77m6XmA99aD6re4DkPXucU7BVOIQaf1O18m6vgpcQfbizGoH-yWQst5Vcbo&usqp=CAU" alt="" />
-            </a>
             <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</h5>
-                </a>
+                    <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Dotnet Development</h5>
                 <p class="mb-3 font-normal inline-flex text-xl">
                     lession
                     days
@@ -293,13 +303,9 @@
         <div class="card swiper-slide bg-yellow-500">
            <!--Card Number - 5 -->
            <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
-            <a href="#">
                 <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSarDlD09LTHrMQKStJZ22-qRhSOqCyvl-3PA&usqp=CAU" alt="" />
-            </a>
             <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</h5>
-                </a>
+                <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">CLoud Computing</h5>
                 <p class="mb-3 font-normal inline-flex text-xl">
                     lession
                     days
@@ -315,13 +321,9 @@
         <div class="card swiper-slide bg-green-500">
            <!--Card Number - 6 -->
            <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
-            <a href="#">
-                <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSnKHrLgdd7nzLozT8lIgmgNYbO-8mKGvzuzwiKY56_2svqfvbYoTzNL_8aXus6jmlaS4&usqp=CAU" alt="" />
-            </a>
+            <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSnKHrLgdd7nzLozT8lIgmgNYbO-8mKGvzuzwiKY56_2svqfvbYoTzNL_8aXus6jmlaS4&usqp=CAU" alt="" />
             <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</h5>
-                </a>
+                <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Mern Stack Development</h5>
                 <p class="mb-3 font-normal inline-flex text-xl">
                     lession
                     days
@@ -337,13 +339,9 @@
         <div class="card swiper-slide bg-orange-500">
            <!--Card Number - 7 -->
            <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
-            <a href="#">
-                <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvduvdn6-mzK0W5mzghulbKUvHZCoJM9CrWlijq5gs8Yoc6tHjmYY0oHtbq_hmMRFVh4s&usqp=CAU" alt="" />
-            </a>
+            <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvduvdn6-mzK0W5mzghulbKUvHZCoJM9CrWlijq5gs8Yoc6tHjmYY0oHtbq_hmMRFVh4s&usqp=CAU" alt="" />
             <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</h5>
-                </a>
+                <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Mean Stack Development</h5>
                 <p class="mb-3 font-normal inline-flex text-xl">
                     lession
                     days
@@ -361,9 +359,7 @@
            <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
                 <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf0pxILyMxy2nDMIOGfpRrAYHUkUj0F_nDKA&usqp=CAU" alt="" />
             <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Course name</h5>
-                </a>
+                <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Backend Development</h5>
                 <p class="mb-3 font-normal inline-flex text-xl">
                     lession
                     days
@@ -431,21 +427,21 @@
       <div class="">
         <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
           <div class=" w-auto sm:w-auto md:w-auto lg:w-auto h-52 rounded-lg m-2 sm:m-2 md:m-5 lg:m-5 bg-[url('https://img.freepik.com/free-photo/school-children-sitting-with-laptop-looking-blackboard_23-2148039909.jpg?size=626&ext=jpg&ga=GA1.1.701009246.1681326713&semt=ais')] bg-cover">
-          <p class="text-3xl font-semibold text-center mt-20 text-white h-52 p-10 -mt-0" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Web Development</p>
+          <p class="text-3xl font-semibold text-center mt-20 text-white h-52 p-10 -mt-0 rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Web Development</p>
           </div>
     
           <div class="w-auto sm:w-auto md:w-auto lg:w-auto h-52 rounded-lg m-2 sm:m-2 md:m-5 lg:m-5 bg-[url('https://img.freepik.com/free-photo/teamwork-designers_1098-13045.jpg?size=626&ext=jpg&ga=GA1.1.701009246.1681326713&semt=ais')] bg-cover">
-            <p class="text-3xl font-semibold text-center mt-20 text-white h-52 p-10 -mt-0" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Mobile Development</p>
+            <p class="text-3xl font-semibold text-center mt-20 text-white h-52 p-10 -mt-0 rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Mobile Development</p>
           </div>
         </div>
     
         <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2">
           <div class="w-auto sm:w-auto md:w-auto lg:w-auto h-52 rounded-lg m-2 sm:m-2 md:m-5 lg:m-5 bg-[url('https://t3.ftcdn.net/jpg/05/74/64/32/240_F_574643266_68TnEq3NqJxPaMjueFUU8fFjRW0NK9NY.jpg')] bg-cover">
-            <p class="text-3xl font-semibold text-center mt-20 text-white h-52 p-20 -mt-0" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Courses</p>
+            <p class="text-3xl font-semibold text-center mt-20 text-white h-52 p-20 -mt-0 rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Courses</p>
           </div>
     
           <div class="w-auto sm:w-auto md:w-auto lg:w-auto h-52 rounded-lg m-2 sm:m-2 md:m-5 lg:m-5 bg-[url('https://t3.ftcdn.net/jpg/05/42/59/60/240_F_542596077_GO6Xq37dzUgcLTTtahLeN9Ey5zdNfPsw.jpg')] bg-cover">
-            <p class="text-3xl font-semibold text-center mt-20 text-white h-52 p-20 -mt-0" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Website Management</p>
+            <p class="text-3xl font-semibold text-center mt-20 text-white h-52 p-20 -mt-0 rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Website Management</p>
           </div>
         </div>
       </div>
@@ -453,16 +449,14 @@
       <!--Right Side Section-->
         <div class="md:m-5 lg:m-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
           <div class="rounded-lg h-96 sm:h-96 md:h-full lg:h-full w-full bg-[url('https://img.freepik.com/premium-photo/technology-social-networking-concept-smiling-student-girl-with-laptop-school_380164-47767.jpg?size=626&ext=jpg&ga=GA1.1.701009246.1681326713&semt=ais')] bg-cover">
-            <p class="text-3xl font-semibold text-center mt-20 text-white h-full pt-72 -mt-0" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Web Development</p>
+            <p class="text-3xl font-semibold text-center mt-20 text-white h-full pt-72 -mt-0 rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Web Development</p>
           </div>
           <div class="">
             <div class="w-full sm:w-full md:w-full lg:w-full h-52 rounded-lg bg-[url('https://img.freepik.com/free-photo/teamwork-designers_1098-13045.jpg?size=626&ext=jpg&ga=GA1.1.701009246.1681326713&semt=ais')] bg-cover">
-              <p class="text-transparent">Web Development</p>
-               <p class="text-3xl font-semibold text-center mt-14text-3xl font-semibold text-center mt-20 text-white h-52 p-20 -mt-0" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Desktop Application</p>
+               <p class="text-3xl font-semibold text-center text-3xl font-semibold text-center text-white h-52 p-20  rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Desktop Application</p>
             </div>
             <div class="w-full sm:w-full md:w-full lg:w-full h-52 rounded-lg mt-10 bg-[url('https://img.freepik.com/free-photo/teamwork-designers_1098-13045.jpg?size=626&ext=jpg&ga=GA1.1.701009246.1681326713&semt=ais')] bg-cover">
-              <p class="text-transparent">Web Development</p>
-               <p class="text-3xl font-semibold text-center mt-14text-3xl font-semibold text-center mt-20 text-white h-52 p-20 -mt-0" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Andriod Application</p>
+               <p class="text-3xl font-semibold text-center text-3xl font-semibold text-center mt-20 text-white h-52 p-20 -mt-0 rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Andriod Application</p>
             </div>
           </div>
         </div>
@@ -474,22 +468,22 @@
 <section>
         <h1 class=" text-center text-3xl sm:text-3xl md:text-5xl lg:text-5xl font-bold my-10">Why Choose Grachiver</h1>
         <div class="grid grid-flow-cols-1 md:grid-cols-4 lg:grid-cols-4 md:m-5 lg:m-5">
-            <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500">
+            <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500 rounded-lg">
                 <img src="images/8/courses(services).png" class="w-[30%] m-auto mt-10 mb-10">
                 <p class="font-semibold text-2xl">Diverse Offerings:</p>
                 <p>Grachiever offers a diverse range of online courses, freelance work opportunities, and skilled consultancy services, enabling you to build the skills you need for a successful career.</p>
             </div>
-            <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500">
+            <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500 rounded-lg">
                 <img src="images/8/freelancing(services).png" class="w-[30%] m-auto mt-10 mb-10">
                 <p class="font-semibold text-2xl">Unique Tools and Features: </p>
                 <p>With our Skill Graph feature, personalized recommendations, and other unique tools and resources, Grachiever provides a highly personalized learning and work experience.</p>
             </div>
-            <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500">
+            <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500 rounded-lg">
                 <img src="images/8/tools&res.(services).png" class="w-[30%] m-auto mt-10 mb-10">
                 <p class="font-semibold text-2xl">Supportive Community</p>
                 <p>Our community of like-minded learners and professionals is a great resource for networking, collaboration, and mutual support, making your learning and work journey more enjoyable and fulfilling.</p>
             </div>
-            <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500">
+            <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500 rounded-lg">
                 <img src="images/8/webservices.png" class="w-[30%] m-auto mt-16 mb-12">
                 <p class="font-semibold text-2xl">Affordable and Flexible: </p>
                 <p>Grachiever's pricing plans are affordable and flexible, enabling you to access high-quality learning</p>
@@ -524,46 +518,25 @@
 
 
 <!-- ............. z-index card practice start ..........-->
-<section>
-  <div class="flex relative my-20 scale-75">
-    <div id="scard01" class="bg-red-200 p-10 h-60 w-[35%] rounded-2xl z-30 absolute left-20 top-0" onclick="sd01()">
+<section class="bg-blue-100">
+  <div class="flex relative my-20 scale-75 bg-blue-100">
+    <div id="scard01" class="bg-green-200 p-10 h-60 w-[35%] rounded-2xl z-30 absolute left-20 top-0" >
       <p>welcome to z-index practice section........</p>
       <button class="p-2 border-2 border-black">Learn More</button>
     </div>
-    <div id="scard02" class="bg-gray-200 p-10 h-60 w-[35%]  rounded-2xl z-20 absolute  left-[35%] top-0" onclick="sd02()">
+    <div id="scard02" class="bg-gray-200 p-10 h-60 w-[35%]  rounded-2xl z-20 absolute  left-[35%] top-0">
       <p>welcome to z-index practice section........</p>
       <button class="p-2 border-2 border-black">Learn More</button>      
     </div>
-    <div id="scard03" class="bg-yellow-200 p-10 h-60 w-[35%] rounded-2xl z-10 absolute  left-[60%] top-0" onclick="sd03()">
+    <div id="scard03" class="bg-yellow-200 p-10 h-60 w-[35%] rounded-2xl z-10 absolute  left-[60%] top-0">
       <p>welcome to z-index practice section........</p>
       <button class="p-2 border-2 border-black">Learn More</button>
     </div>
-    
   </div>
 </section>
 
 
-<section class="bg-orange-500 mt-[200px]">
-  <div class="flex flex-wrap justify-center">
-    <div class="card cd bg-red-500 mx-2 my-2"></div>
-    <div class="card cd bg-green-500 mx-2 my-2"></div>
-    <div class="card cd bg-blue-500 mx-2 my-2"></div>
-    <div class="card cd bg-yellow-500 mx-2 my-2"></div>
-  </div>
-  
-</section>
-<script>
-  const cards = document.querySelectorAll('.card');
-cards.forEach(card => {
-  card.addEventListener('click', () => {
-    // add 'active' class to clicked card
-    card.classList.add('active');
-    // move clicked card to the front
-    card.parentNode.insertBefore(card, card.parentNode.firstChild);
-  });
-});
 
-</script>
 
 <!-- ............. z-index card practice end ..............-->
 
@@ -809,9 +782,9 @@ cards.forEach(card => {
      </div> -->
      <div class=" ">
       <h1 class="text-3xl sm:text-3xl md:text-5xl lg:text-5xl font-bold pl-10">Blog</h1>
-        <div class="flex justify-between">
+        <div class="flex flex-wrap justify-between">
           <h1 class="mt-2 text-xl mx-10 p-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
-          <button class="p-2 rounded-lg bg-[#057D98] text-white px-8 text-xl float-right mx-10">Browse Blog</button>
+          <button class="p-2 rounded-lg bg-[#057D98] text-white px-8 text-xl float-right mx-10 mt-10 sm:mt-10 md:mt-10 lg:mt-0">Browse Blog</button>
         </div>
     </div>
      <!--3 Card-->
@@ -962,64 +935,7 @@ cards.forEach(card => {
 <!-- .................. z-index section 1 end............ -->
 
 <!-- ....... popular and demand start  ...... -->
-<!-- <section>
-  <div class="bg-red-200 mt-10 relative flex mx-20">
-    <div id="pop01" class=" popand absolute top-0 left-0 bg-orange-500 p-10 z-10 rounded-2xl h-80 w-96">
-      <p>welcome to bhopal</p>
-      <p>welcome to bhopal</p>
-      <p>welcome to bhopal</p>
-    </div>
-    <div id="pop02" class=" popand absolute top-0 left-52 bg-blue-500 p-10 z-20 rounded-2xl h-80 w-96">
-      <p>welcome to bhopal</p>
-      <p>welcome to bhopal</p>
-      <p>welcome to bhopal</p>
-    </div>
-    <div id="pop03" class=" popand absolute top-0 left-96 bg-green-500 p-10 z-10 rounded-2xl h-80 w-96">
-      <p>welcome to bhopal</p>
-      <p>welcome to bhopal</p>
-      <p>welcome to bhopal</p>
-    </div>
 
-  </div>
-</section> -->
-
-<script>
- 
-document.querySelectorAll('.popand').forEach(el => {
-  el.addEventListener('click', () => {
-    el.style.zIndex++
-  })
-})
-</script>
-
-<style>
-  .stacked {
-  position: absolute;
-  /* padding: 1em; */
-  /* background-color: rgb(163, 25, 25); */
-  /* width: 350px;
-  height: 300px; */
-  z-index: 1;
-  border-radius: 20px;
-  border: 1px solid black;
-}
-
-.stacked:nth-child(2) {
-  /* top: 0em;
-  left: 15em; */
-  background-color: rgb(105, 25, 163);
-  z-index: 2;
-  border-radius: 20px;
-}
-
-.stacked:nth-child(3) {
-  /* top: 0em;
-  left: 30em; */
-  background-color: rgb(25, 163, 101);
-  z-index: 1;
-}
-
-</style>
 <center>
 <section>
 <div class="relative mt-[300px] flex mx-5 md:mx-48 lg:mx-20">
@@ -1310,7 +1226,16 @@ document.querySelectorAll('.popand').forEach(el => {
         var dropdownMenu = this.querySelector(".dropdown-menu");
         dropdownMenu.style.display = "none";
     });
+
+    console.log("this is console massage.....")
+
+    document.getElementById('scard01').addEventListener("click",()=>{
+    var id1=this.id;
+    console.log("this is id",id1);
+})
 </script>
+
+<script src="index.js"></script>
 
 <!-- ............... main navbar tailwind js link .............  -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
