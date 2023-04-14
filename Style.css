@@ -270,6 +270,7 @@ input:hover,
 }
 
 /* ................... z index section add event listener */
+
 #scard01,#scard02,#scard03{
   transition: all 0.3s ease-in-out;
 }
@@ -280,9 +281,9 @@ input:hover,
   transform: translateX(50px);
 }
 
-
 .lift-up{
-  z-index: 20;
+   z-index:50;
+   background-color: darkred;
 }
 /* ..................................................................... */
 

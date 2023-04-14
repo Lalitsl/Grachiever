@@ -88,13 +88,13 @@ document.getElementById("scard01").addEventListener("click", ()=>{
 document.getElementById("scard02").addEventListener("click", ()=>{
     document.querySelector("#scard01").classList.remove("lift-up");
     document.querySelector("#scard03").classList.remove("lift-up");
-    document.querySelector("#scard02").classList.add("shift-left");
+    document.querySelector("#scard02").classList.add("shift-right");
     setTimeout(() => {
         document.querySelector("#scard02").classList.toggle("lift-up");
-    }, 2000);
-    setTimeout(() => {
-        document.querySelector("#scard02").classList.remove("shift-left");
     }, 700);
+    setTimeout(() => {
+        document.querySelector("#scard02").classList.remove("shift-right");
+    }, 5000);
 })
 document.getElementById("scard03").addEventListener("click", ()=>{
     document.querySelector("#scard02").classList.remove("lift-up");
