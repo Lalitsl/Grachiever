@@ -94,7 +94,7 @@ document.getElementById("scard02").addEventListener("click", ()=>{
     }, 700);
     setTimeout(() => {
         document.querySelector("#scard02").classList.remove("shift-right");
-    }, 5000);
+    }, 1000);
 })
 document.getElementById("scard03").addEventListener("click", ()=>{
     document.querySelector("#scard02").classList.remove("lift-up");
