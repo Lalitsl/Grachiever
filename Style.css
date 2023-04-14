@@ -284,9 +284,10 @@ input:hover,
 }
 
 .lift-up{
-   z-index:50;
-   background-color: darkred;
+   z-index:20;
 }
+
+
 /* ..................................................................... */
 
 

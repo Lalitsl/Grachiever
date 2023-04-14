@@ -91,10 +91,10 @@ document.getElementById("scard02").addEventListener("click", ()=>{
     document.querySelector("#scard02").classList.add("shift-right");
     setTimeout(() => {
         document.querySelector("#scard02").classList.toggle("lift-up");
-    }, 700);
+    }, 500);
     setTimeout(() => {
         document.querySelector("#scard02").classList.remove("shift-right");
-    }, 1000);
+    }, 700);
 })
 document.getElementById("scard03").addEventListener("click", ()=>{
     document.querySelector("#scard02").classList.remove("lift-up");
@@ -107,3 +107,7 @@ document.getElementById("scard03").addEventListener("click", ()=>{
         document.querySelector("#scard03").classList.remove("shift-right");
     }, 700);
 })
+
+
+
+
