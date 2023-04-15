@@ -19,7 +19,8 @@
   color: #000;
   height:40px;
   width: 40px;
-  background: #220a83;
+  /* background: #220a83; */
+  background-color: #0a0878;
   border-radius: 25%;
   padding:30px;
 }
@@ -178,39 +179,6 @@
 
 /* ................... z-index section 1 css end ....................... */
 
-/* ................... z-index section 2 css end ....................... */
-.z_index_card_02 {
-  position: relative;
-  width: 100%;
-  height: 400px;
-}
-
-.card_01 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 300px;
-  padding: 10px;
-}
-
-#card1 {
-  z-index: 1;
-}
-
-#card2 {
-  z-index: 2;
-  left: 50px;
-  top: 50px;
-}
-
-#card3 {
-  z-index: 3;
-  left: 100px;
-  top: 100px;
-}
-
-/* ................... z-index section 2 css end ....................... */
-
 
 /* ................... sign form css ....................... */
 input,
@@ -258,24 +226,6 @@ input:hover,
     transform: scale(5);
 }
 
-/* ................... z index section add event listener */
-
-#scard01,#scard02,#scard03{
-  transition: all 0.3s ease-in-out;
-}
-.shift-left{
-  transform: translateX(-50px);
-}
-.shift-right{
-  transform: translateX(50px);
-}
-
-.lift-up{
-   z-index:20;
-}
-
-
-/* ..................................................................... */
 
 
 /* ................... popular and demand ............. */
