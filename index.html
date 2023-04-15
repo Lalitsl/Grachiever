@@ -31,16 +31,22 @@
 <section>
     <div>
         <nav class="px-2 border-gray-200 dark:bg-gray-900 dark:border-gray-700" >
-        <div class="container flex flex-wrap items-center justify-between mx-auto fixed bg-white z-50">
+        <div class="container flex flex-wrap items-center justify-between mx-auto fixed bg-[#FAF9F6] z-50">
             <a href="#" class="flex items-center">
                 <img src="images/LOGOS/grachiever-02.png" class="h-12 mr-3 hidden lg:block" alt="Grachiever Logo" />
                 <img src="images/LOGOS/responsive_main_logo.jpg" class="h-12 mr-3 block lg:hidden " alt="Grachiever Logo" />
             </a>
             <!-- login sign-up button for responsive design .... -->
             <div class="hidden max-md:block flex ">
-               <a href="sign_in.html"><button type="button" class="bg-[#00dbff] text-white px-3 py-1 rounded-full -ml-5" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log-in</button></a> 
+               <!-- <a href="sign_in.html"><button type="button" class="bg-[#00dbff] text-white px-3 py-1 rounded-full -ml-5" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log-in</button></a> 
                <a href="sign_up.html"> <button type="button" class="text-white bg-[#00dbff] px-3 py-1 rounded-full ml-3" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-Up</button></a>
-            </div>
+               -->
+               <a href="sign_in.html"> <button type="button" class="px-3 py-1 text-xl font-medium text-gray-900 hover:bg-[#349fcf] border border-gray-200 rounded-l-full bg-gray-100 hover:text-white" onclick="document.getElementById('id01').style.display='block'">
+                Log-in</button> </a>
+                <a href="sign_up.html"><button type="button" class="px-3 py-1 text-xl font-medium text-gray-900 bg-[#349fcf] border border-gray-200 rounded-r-full hover:bg-gray-100 hover:text-black text-white -ml-2" onclick="document.getElementById('id01').style.display='block'">
+                Sign-Up </button></a>
+            
+              </div>
 
             <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
@@ -48,7 +54,7 @@
             </button>
             
             <div class="hidden w-full md:block md:w-auto " id="navbar-dropdown">
-            <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 lg:-translate-x-10 pt-7">
+            <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-[#FAF9F6] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 lg:-translate-x-10 pt-7 ">
                 <li>
                 <a href="#" class="block py-2 pr-4 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent text-xl" aria-current="page">Home</a>
                 </li>
