@@ -8,6 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="index.js"></script>
+    <!-- Scroll Animation Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- ......... swiper link for card carousal .................. -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -15,15 +17,10 @@
     <link rel="icon" type="image/x-icon" href="images/LOGOS/fev_icon.png">
     <!-- .......... cdn link for font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!-- <style>  
-      .sc {
-          transition: transform 0.4s;
-      }
-  
-        .crrd:hover .sc {
-            transform: scale(5);
-        }
-  </style> -->
+
+    <!-- Owl carousal link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="">
     
@@ -190,7 +187,7 @@
         <h1 class=" text-center text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold">Trusted By World Best</h1>
         <!--Six Circle Section--> 
         <!-- <marquee class="  ">    -->
-        <div class="grid grid-cols-2 xs:grid-cols-1 md:grid-cols-6 lg:grid-cols-6 m-5 md:m-5 lg:m-5 h-72 md:h-24 lg:h-24 m-2 text-center">
+        <div class="owl-carousel owl-theme grid grid-cols-2 xs:grid-cols-1 md:grid-cols-6 lg:grid-cols-6 m-5 md:m-5 lg:m-5 h-72 md:h-24 lg:h-24 m-2 text-center">
           <div class=" w-24  mx-auto"><h1 class="mt-8">
               <img src="images/2/cisco image.png" >
             </h1></div>
@@ -212,14 +209,13 @@
             </h1></div>
           <!-- </marquee> -->
         </div>
+        
   </section>
-
-  
 
     <!--Skill Section-->
 
     <section class="p-0 sm:p-0 md:p-10 lg:p-10">
-      <div class="h-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+      <div class="h-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2"  data-aos="zoom-in" data-aos-duration="2000">
         <div class="lg:h-full md:h-full mx-5 sm:mx-5 md:mx-10 lg:mx-10">
             <h1 class=" mt-5 text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold">Track The Trending Skills Over Time</h1>
             <p class="mt-10  text-lg">Our Skill Graph feature helps you stay up-to-date with the latest skills in demand. our Skill Graph displays the trending skills over time.</p>
@@ -235,7 +231,7 @@
     <!-- .-================================================ -->
 
     <!-- ........... card slider for codepen -->
-<section class=" mt-10 bg-gray-50 p-0 sm:p-0 md:p-10 lg:p-10">
+<section class=" mt-10 bg-gray-50 p-0 sm:p-0 md:p-10 lg:p-10"  data-aos="zoom-in" data-aos-duration="2000">
   <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold text-center mx-3 p-5 sm:p-5 p-0 sm:p-0 md:p-10 lg:p-10">What Are You Searching For ?</h1>
   <div class="flex float-right text-lg">
     <button class="p-3 sm:p-3 md:p-5 lg:p-5 text-sm sm:text-sm md:text-lg lg:text-lg px-3  mx-3 bg-blue-100 rounded-2xl hover:text-[#6c5fa1]">All</button>
@@ -439,7 +435,7 @@
 
 <!--Top Categories-->
 
-<section class="m-5 p-0 sm:p-0 md:p-10 lg:p-10">
+<section class="m-5 p-0 sm:p-0 md:p-10 lg:p-10"  data-aos="zoom-in" data-aos-duration="2000">
   <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold text-center m-10 ">Top Categories</h1>
    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
      <!-- <div class="grid grid-cols-2"> -->
@@ -485,26 +481,26 @@
 </section>
 
 <!-- ....... why choose Grachiever .............-->
-<section class="p-0 sm:p-0 md:p-10 lg:p-10">
+<section class="p-0 sm:p-0 md:p-10 lg:p-10"  data-aos="zoom-in" data-aos-duration="2000">
         <h1 class=" text-center text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold my-10">Why Choose Grachiever</h1>
         <div class="grid grid-flow-cols-1 md:grid-cols-4 lg:grid-cols-4 md:m-5 lg:m-5">
             <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500 rounded-lg hover:-translate-y-5 duration-500">
-                <img src="images/8/Diverse.png" class="w-[30%] m-auto mt-10 mb-10">
+                <img src="images/8/Diverse.png" class="w-[50%] h-[30%] m-auto mt-10 mb-10">
                 <p class="font-semibold text-2xl">Diverse Offerings:</p>
                 <p>Grachiever offers a diverse range of online courses, freelance work opportunities, and skilled consultancy services, enabling you to build the skills you need for a successful career.</p>
             </div>
             <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500 rounded-lg hover:-translate-y-5 duration-500">
-                <img src="images/8/2910659.png" class="w-[30%] m-auto mt-10 mb-10">
+                <img src="images/8/2910659.png" class="w-[50%] h-[30%] m-auto mt-10 mb-10">
                 <p class="font-semibold text-2xl">Unique Tools and Features: </p>
                 <p>With our Skill Graph feature, personalized recommendations, and other unique tools and resources, Grachiever provides a highly personalized learning and work experience.</p>
             </div>
             <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500 rounded-lg hover:-translate-y-5 duration-500">
-                <img src="images/8/Support.png" class="w-[30%] m-auto mt-10 mb-10">
+                <img src="images/8/Support.png" class="w-[50%] h-[30%] m-auto mt-10 mb-10">
                 <p class="font-semibold text-2xl">Supportive Community</p>
                 <p>Our community of like-minded learners and professionals is a great resource for networking, collaboration, and mutual support, making your learning and work journey more enjoyable and fulfilling.</p>
             </div>
             <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500 rounded-lg hover:-translate-y-5 duration-500">
-                <img src="images/8/fixiable.png" class="w-[30%] m-auto mt-16 mb-12">
+                <img src="images/8/fixiable.png" class="w-[50%] h-[30%] m-auto mt-16 mb-12">
                 <p class="font-semibold text-2xl">Affordable And Flexible: </p>
                 <p>Grachiever's pricing plans are affordable and flexible, enabling you to access high-quality learning</p>
             </div>
@@ -516,7 +512,7 @@
 <!-- ............... PHARA Section (3 card z-index )............ -->
 
 <!-- .................. z-index section 1 start............ -->
-<section class="p-0 sm:p-0 md:p-10 lg:p-10">
+<section class="p-0 sm:p-0 md:p-10 lg:p-10" data-aos="zoom-in" data-aos-duration="2000">
   <div class="relative mt-[100px] flex mx-5 md:mx-10 lg:mx-10">
     <div class="stacked w-[40%]">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaXoOzCO6xDenUzyta0if2353uScOROh7FJUj1AwdEVkdAfB0C0pAZUJVEZNg3qdIQArg&usqp=CAU" class=" rounded-2xl h-52 sm:h-52 md:h-72 sm:h-72 w-full" >
@@ -546,7 +542,8 @@
   <script>
     document.querySelectorAll('.stacked').forEach(el => {
     el.addEventListener('click', () => {
-      el.style.zIndex++
+      // el.style.zIndex++
+      el.classList.add("border-2")
     })
   })
   </script>
@@ -557,7 +554,7 @@
    <!-- ........................ PHARA section end ................... -->
 
     <!--Skill Consultancy-->
-  <section class="p-0 sm:p-0 md:p-10 lg:p-10">
+  <section class="p-0 sm:p-0 md:p-10 lg:p-10" data-aos="zoom-in" data-aos-duration="2000">
     <div class="m-2 h-auto p-2 mt-[300px]">
         <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold text-center my-10">Skill Consultancy</h1>
     
@@ -586,7 +583,7 @@
     </section>
 
     <!--Feature Ready Skills sections-->
-    <section class="p-0 sm:p-0 md:p-10 lg:p-10">
+    <section class="p-0 sm:p-0 md:p-10 lg:p-10" data-aos="zoom-in" data-aos-duration="2000">
     <div class="p-3 text-center m-2 h-auto">
         <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold my-10 ">Get Persional Feature Ready Skill Recommented</h1>
         <h2 class="text-lg">Enhance Your Skill With Grachiever</h2>
@@ -613,7 +610,7 @@
 </section>
 
  <!--Achivments Sections-->
-<section class="p-0 sm:p-0 md:p-10 lg:p-10">
+<section class="p-0 sm:p-0 md:p-10 lg:p-10"  data-aos="zoom-in" data-aos-duration="2000">
     <div class=" m-2">
             <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold text-center p-5">Achivments</h1>
         <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 text-center ">
@@ -639,9 +636,9 @@
             </div>
         </div>
         </div>
-
+</section>
        <!-- Benefits -->
-      
+   <section class="" data-aos="zoom-in" data-aos-duration="2000">   
           <h1 class=" text-center text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold mt-10">Benefits</h1>
           <p class="mx-5 sm:mx-5 md:mx-20 lg:mx-20 text-lg mt-10 ">Grachiever empowers your career growth with personalized guidance, innovative
             learning options, and a supportive community, making it the perfect platform to achieve your professional goals. With
@@ -783,7 +780,7 @@
           </section>
   
    <!-- Blog Section -->
-<section class="p-0 sm:p-0 md:p-10 lg:p-10">
+<section class="p-0 sm:p-0 md:p-10 lg:p-10"  data-aos="zoom-in" data-aos-duration="2000">
    <div class="mt-10">
     <!--Blog-->
      <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
@@ -935,8 +932,8 @@
     
       <!--Finding Your Right Course-->
 <section class="p-0 sm:p-0 md:p-10 lg:p-10">
-      <div class=" m-2 mx-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-20">
-        <div class="m-auto">
+      <div class=" m-2 mx-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mt-20">
+        <div class="m-auto md:col-span-2">
           <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold p-2">Finding Your Right Course</h1>
           <h1 class="p-2 mt-5 text-lg">From in-demand skills to future-ready courses, Grachiever makes it simple to discover and enroll in the courses you need to achieve your career goals.</h1>
          </div>
@@ -1121,5 +1118,37 @@
 <!-- ............... main navbar tailwind js link .............  -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 
-</body>
+    <!-- Scroll Animation Script -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+
+   <!-- OwlCarousel JQuery link -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!-- Owl carousal Script -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:2000,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+   </script>
+  </body>
+
 </html>
