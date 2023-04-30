@@ -1,1154 +1,1155 @@
-<!DOCTYPE html>
-<html lang="en"  class="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grachiever.Com</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="index.js"></script>
-    <!-- Scroll Animation Link -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- ......... swiper link for card carousal .................. -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    
-    <link rel="icon" type="image/x-icon" href="images/LOGOS/fev_icon.png">
-    <!-- .......... cdn link for font awesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!DOCTYPE html>
+  <html lang="en"  class="dark">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Grachiever.Com</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="index.js"></script>
+      <!-- Scroll Animation Link -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <!-- ......... swiper link for card carousal .................. -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      
+      <link rel="icon" type="image/x-icon" href="images/LOGOS/fev_icon.png">
+      <!-- .......... cdn link for font awesome  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Owl carousal link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body class="">
+      <!-- Owl carousal link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="">
+      
+      <!--...................  navbar section ...... -->
+      <section class="">
+        <div class="">
+            <nav class="px-2 border-gray-200 dark:bg-gray-900 dark:border-gray-700" >
+            <div class="flex flex-wrap items-center justify-between mx-auto top-0 fixed bg-[#FAF9F6] z-50 w-full sm:w-full md:w-full lg:w-full">
+                <a href="index.html" class="flex items-center">
+                    <img src="images/LOGOS/grachiever-02.png" class="h-12 mr-3 hidden lg:block" alt="Grachiever Logo" />
+                    <img src="images/LOGOS/responsive_main_logo.jpg" class="h-12 mr-3 block lg:hidden " alt="Grachiever Logo" />
+                </a>
+                <!-- login sign-up button for responsive design .... -->
+                <div class="hidden max-md:block flex ">
+                  <!-- <a href="sign_in.html"><button type="button" class="bg-[#00dbff] text-white px-3 py-1 rounded-full -ml-5" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log-in</button></a> 
+                  <a href="sign_up.html"> <button type="button" class="text-white bg-[#00dbff] px-3 py-1 rounded-full ml-3" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-Up</button></a>
+                  -->
+                  <a href="sign_in.html"> <button type="button" class="px-3 py-1 text-lg font-medium text-gray-900 hover:bg-[#349fcf] border border-gray-200 rounded-l-full bg-gray-100 hover:text-white" onclick="document.getElementById('id01').style.display='block'">
+                    Log-in</button> </a>
+                    <a href="sign_up.html"><button type="button" class="px-3 py-1 text-lg font-medium text-gray-900 bg-[#349fcf] border border-gray-200 rounded-r-full hover:bg-gray-100 hover:text-black text-white -ml-2" onclick="document.getElementById('id01').style.display='block'">
+                    Sign-Up </button></a>
+                
+                  </div>
     
-    <!--...................  navbar section ...... -->
-    <section class="">
-      <div class="">
-          <nav class="px-2 border-gray-200 dark:bg-gray-900 dark:border-gray-700" >
-          <div class="flex flex-wrap items-center justify-between mx-auto top-0 fixed bg-[#FAF9F6] z-50 w-full sm:w-full md:w-full lg:w-full">
-              <a href="index.html" class="flex items-center">
-                  <img src="images/LOGOS/grachiever-02.png" class="h-12 mr-3 hidden lg:block" alt="Grachiever Logo" />
-                  <img src="images/LOGOS/responsive_main_logo.jpg" class="h-12 mr-3 block lg:hidden " alt="Grachiever Logo" />
-              </a>
-              <!-- login sign-up button for responsive design .... -->
-              <div class="hidden max-md:block flex ">
-                 <!-- <a href="sign_in.html"><button type="button" class="bg-[#00dbff] text-white px-3 py-1 rounded-full -ml-5" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log-in</button></a> 
-                 <a href="sign_up.html"> <button type="button" class="text-white bg-[#00dbff] px-3 py-1 rounded-full ml-3" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-Up</button></a>
-                 -->
-                 <a href="sign_in.html"> <button type="button" class="px-3 py-1 text-lg font-medium text-gray-900 hover:bg-[#349fcf] border border-gray-200 rounded-l-full bg-gray-100 hover:text-white" onclick="document.getElementById('id01').style.display='block'">
-                  Log-in</button> </a>
-                  <a href="sign_up.html"><button type="button" class="px-3 py-1 text-lg font-medium text-gray-900 bg-[#349fcf] border border-gray-200 rounded-r-full hover:bg-gray-100 hover:text-black text-white -ml-2" onclick="document.getElementById('id01').style.display='block'">
-                  Sign-Up </button></a>
+                <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                </button>
+                
+                <div class="hidden w-full md:block md:w-auto " id="navbar-dropdown">
+                <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-[#FAF9F6] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 lg:-translate-x-10 pt-7 ">
+                    <li>
+                    <a href="index.html" class="block py-2 pr-4 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent text-lg" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <div class="dropdown relative inline-block hover:dropdown-menu:block">
+                            <button class="flex text-lg hover:text-blue-700">Course <svg class="w-5 h-5 ml-1 mt-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path  fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </button>
+                            <div class="dropdown-menu absolute hidden z-10 bg-[#d3d4d5]">
+                                <a class="px-5 py-3 hover:bg-gray-200 block text-lg hover:text-blue-700" href="#">Courses</a><hr>
+                                <a class="px-5 py-3 hover:bg-gray-200 block text-lg hover:text-blue-700" href="#">Marketing</a><hr>
+                                <a class="px-5 py-3 hover:bg-gray-200 block text-lg hover:text-blue-700" href="#">Animation</a><hr>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    <a href="Blog.html" class="block py-2 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-lg">Blog</a>
+                    </li>
+                    <li>
+                      <a href="contact.html" class="block py-2 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-lg">Contact</a>
+                      </li>
+                    <li>
+                        <a href="about.html" class="block py-2 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-lg">About</a>
+                    </li>
+                    <li>
+                        <div class="flex md:order-2 hidden md:block lg:block lg:pl-20 lg:ml-10 -mt-3">
+                          <!--   <a href="sign_in.html"><button type="button" class="hover:bg-[#00dbff] focus:ring-4 focus:outline-none hover:rounded-full hover:text-white text-sm px-5 py-2.5 text-center mr-3 md:mr-0 text-lg -mt-3" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log-in</button></a>
+                            
+                            <a href="sign_up.html"><button type="button" class="bg-[#00dbff] focus:ring-4 focus:outline-none rounded-full text-white text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ml-3 text-lg -mt-3" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-Up</button></a> -->
+                            
+                              <a href="sign_in.html">
+                              <button type="button" class="px-6 py-2 text-lg font-medium text-gray-900 hover:bg-[#349fcf] border border-gray-200 rounded-l-full bg-gray-100 hover:text-white">
+                                    Log-in
+                                  </button>
+                                </a>
+                              <a href="sign_up.html">
+                                  <button type="button" class="px-6 py-2 text-lg font-medium text-gray-900 bg-[#349fcf] border border-gray-200 rounded-r-full hover:bg-gray-100 hover:text-black text-white -ml-2">
+                                    Sign-Up
+                              </button>
+                              </a>
+                        </div>
+                    </li>
+                </ul>
               
                 </div>
-  
-              <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-              </button>
+            </div>
+            </nav>
+    
+        </div>
+    </section>
+
+  <!-- ........................ home section start ..................................... -->
+  <section class="px-5 sm:px-5 md:px-10 lg:px-10 pt-10">
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+      <div class="pl-5 md:pl-10 lg:pl-10 mt-20">
+        <span class="type text-[30px] mt-5 lg:text-[50px] font-bold text-[#349fcf]"></span>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed('.type', {
+                strings: [
+                    'Start Monetizing',
+                    'Off Your Skills ',
+                    'With Passion',
+                ],
+                typeSpeed: 60,
+                backSpeed: 60,
+                loop: true,
+            });
+        </script>
+        <!-- <p class="font-bold text-3xl sm:text-3xl md:text-3xl lg:text-3xl">Start monetizing off your skills with passion</p> -->
+        <p class="mt-5 text-2xl">The only easier, powerful and authoring platform designed for consistent learners to
+          unlock the power of monetizing</p>
+        <!--Search-->
+        <div class="border-b-blue-700 border-2 flex items-center mt-8 w-[100%] sm:w-[80%] md:w-[100%] lg:w-[80%] rounded-full outline-none">
+          <input type="text" class="py-2.5 px-4 outline-none  " placeholder="Search Anything...">
+          <select class="mr-2 py-2 px-4 w-auto h-[44px]">
+            <option>Courses</option>
+            <option>freelancing</option>
+            <option>tools</option>
+          </select>
+          <span class="w-20 h-12 rounded-full text-center bg-[#349fcf] text-white"><i class="fa-solid fa-magnifying-glass p-2 text-lg"></i></span>
+        </div>
+        <div class="flex flex-wrap">
+          <button class="px-5 py-3 bg-[#f7c200] rounded-md text-lg text-white font-bold mt-10">Book Your Free Trial Now<i class="fa-sharp fa-solid fa-arrow-right ml-3 animate-bounce"></i></button>
+          <button class="px-5 py-3 bg-[#349fcf] rounded-md text-lg text-white font-bold ml-5 mt-10">Enquire Now<i class="fa-solid fa-bell ml-3 animate-bounce"></i> </button>
+        </div>
+
+        <div class=" flex flex-wrap mt-7">
+          <img src="https://cdn-icons-png.flaticon.com/512/1532/1532556.png" class="w-12 rounded-full bg-yellow-100 p-2 hover:-translate-y-1 hover:scale-110 duration-300"><p class="ml-2 mt-3">HTML</p> 
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" class="w-12 ml-5 bg-blue-100 rounded-full p-2 hover:-translate-y-1 hover:scale-110 duration-300"><p class="ml-2 mt-3">Python</p> 
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" class="w-12 bg-red-100 rounded-full p-2 ml-5 hover:-translate-y-1 hover:scale-110 duration-300"><p class="ml-2 mt-3">Java</p> 
+        </div>
+        <div class=" flex flex-wrap mt-7">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" class="w-12 rounded-full bg-orange-100 p-2 hover:-translate-y-1 hover:scale-110 duration-300"><p class="ml-2 mt-3">CSS</p> 
+          <img src="https://camo.githubusercontent.com/2512b49c89512f2ff3718f7257f48ed5c46a4e331abbd890b6c5e8c0e458434f/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67" class="w-12 rounded-full bg-gray-300 p-2 ml-5 hover:-translate-y-1 hover:scale-110 duration-300"><p class="ml-2 mt-3">Bootstrap</p> 
+          <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png" class="w-12 rounded-full bg-green-100 p-2 ml-5 hover:-translate-y-1 hover:scale-110 duration-300"><p class="ml-2 mt-3">JavaScript</p> 
+        </div>
+
+        
+        <!-- <div class="flex flex-wrap mt-5">
+          <div class="p-5 w-52">
+            <p class="font-bold text-3xl text-[#f7c200]">95%</p>
+            <p class="mt-3">placed within 8 months of graduation</p>
+          </div>
+          <div class="p-5 w-52">
+            <p class="font-bold text-3xl text-[#349fcf]">11 LPA</p>
+            <p class="mt-3">average dream job CTC</p>
+          </div>
+          <div class="p-5 w-52">
+            <p class="font-bold text-3xl text-[#f7c200]">240+</p>
+            <p class="mt-3">Our Hiring Partners</p>
+          </div>
+          <div class="p-5 w-52">
+            <p class="font-bold text-3xl text-[#349fcf]">1:1</p>
+            <p class="mt-3">Dedicated Mentorship</p>
+          </div>
+        </div> -->
+
+      </div>
+      <div class="mt-20 pt-5">
+        <img src="images/1/HOME page.png" class="w-[80%] m-auto">            
+      </div>
+    </div>
+        <!-- <a href="sign_up.html" class="bg-red-500"><img src="images/LOGOS/Resiter_now_button.png" class="fixed top-96 right-0 w-40 animate-bounce z-50"></a>
+          <a href="#"><img src="images/LOGOS/whatsapp-icon-unscreen.gif" class="float-right fixed right-0 w-40 z-50"></a> -->
+
+  </section>
+  <!-- ...................... home section end ................................... -->
+
+      <!--Trusted Section-->   
+      
+    <section class="p-0 sm:p-0 md:p-10 lg:p-10"> 
+      <div class="p-3 mt-5">
+          <h1 class=" text-center text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold">Trusted By World Best</h1>
+          <!--Six Circle Section--> 
+          <!-- <marquee class="  ">    -->
+          <div class="owl-carousel owl-theme grid grid-cols-2 xs:grid-cols-1 md:grid-cols-6 lg:grid-cols-6 m-5 md:m-5 lg:m-5 h-72 md:h-24 lg:h-24 m-2 text-center">
+            <div class=" w-24  mx-auto"><h1 class="mt-8">
+                <img src="images/2/cisco image.png" >
+              </h1></div>
+              <div class=" w-24  mx-auto"><h1 class="mt-8">
+                <img src="images/2/futurelearn-logo.png" >
+
+              </h1></div>
+              <div class=" w-24  mx-auto"><h1 class="mt-8">
+                <img src="images/2/google-logo-2.png">
+              </h1></div>
+              <div class=" w-24  mx-auto"><h1 class="mt-8">
+                  <img src="images/2/MIT_logo.png">
+              </h1></div>
+              <div class="w-24  mx-auto"><h1 class="mt-8">
+                    <img src="images/2/nvidia-logo-16.png">
+              </h1></div>
+              <div class="w-24  mx-auto"><h1 class="mt-8">
+                    <img src="images/2/oxford.png" >
+              </h1></div>
+            <!-- </marquee> -->
+          </div>
+          
+    </section>
+
+      <!--Skill Section-->
+
+      <section class="p-0 sm:p-0 md:p-10 lg:p-10">
+        <div class="h-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2"  data-aos="zoom-in" data-aos-duration="2000">
+          <div class="lg:h-full md:h-full mx-5 sm:mx-5 md:mx-10 lg:mx-10">
+              <h1 class=" mt-5 text-3xl sm:text-3xl md:text-3xl lg:text-4xl font-bold"><span class="text-[#4eb0e1]">Track</span> The Trending <br> Skills Over Time</h1>
+              <p class="mt-10  text-lg">Our Skill Graph feature helps you stay up-to-date with the latest skills in demand. our Skill Graph displays the trending skills over time.</p>
+              <p  class="mt-5 text-lg">allowing you to identify which skills are gaining popularity and which are losing relevance. With this powerful tool, you can make informed decisions about the skills you want to learn or develop, ensuring you stay ahead of the curve in your chosen field.</p>
+          </div>
+      <!--Graph Section-->
+          <div class="m-auto">
+            <img src="images/skillgraph.png" >
+          </div>
+      </div>
+      </section>
+
+      <!-- .-================================================ -->
+
+      <!-- ........... card slider for codepen -->
+  <section class=" mt-10 bg-gray-50 p-0 sm:p-0 md:p-10 lg:p-10"  data-aos="zoom-in" data-aos-duration="2000">
+    <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold text-center mx-3 p-5 sm:p-5 p-0 sm:p-0 md:p-10 lg:p-10">What Are You Searching For ?</h1>
+    <div class="flex float-right text-lg">
+      <button class="p-3 sm:p-3 md:p-5 lg:p-5 text-sm sm:text-sm md:text-lg lg:text-lg px-3  mx-3 bg-blue-100 rounded-2xl hover:text-[#6c5fa1]">All</button>
+      <button class="p-3 sm:p-3 md:p-5 lg:p-5 text-sm sm:text-sm md:text-lg lg:text-lg  ml-2 px-3 mx-3 hover:bg-blue-100 hover:rounded-2xl">Trending</button>
+      <button class=" p-3 sm:p-3 md:p-5 lg:p-3 text-sm sm:text-sm md:text-lg lg:text-lg ml-2 px-3 mx-3 hover:bg-blue-100 hover:rounded-2xl hover:text-[#6c5fa1]">Popular</button>
+    </div>
+    
+    <div class="container swiper">
+      <div class="slide-container mt-10 mx-5 sm:mx-5 md:mx-5 lg:mx-10 ">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide ">
+          
+            <!--Card Number - 1 -->
+            <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
+                  <img class="mx-auto w-full h-52" src="https://5.imimg.com/data5/SELLER/Default/2022/6/SD/NP/XP/113623010/web-development-training-program-1--500x500.jpg" alt="" />
+                  <div class="p-5">
+                          <p class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Pyhton Full Stack Development</p>
+                      <p class="mb-3 font-normal inline-flex text-lg">
+                          lession
+                          days
+                          leve
+                      </p><br>
+                      <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg">Compaire</a>
+                      <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg md:mt-5">Enroll Now</a>
+                  </div>
+              </div>
+    
+          </div>
+          <div class="card swiper-slide">
+            <!--Card Number - 2 -->
+            <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
+                  <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRel084aJaTNo9hFm8eLDzUGUK5TfBA_hQwMJhQN7ZYbE3QgmO9PWFzYH3B3p80krV1MwE&usqp=CAU" alt="" />
+              <div class="p-5">
+                      <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Java Full Stack Development</h5>
+                  <p class="mb-3 font-normal inline-flex text-lg">
+                      lession
+                      days
+                      level
+                      lession
+                      days
+                      level
+
+                  </p><br>
+                  <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg">Compaire</a>
+                  <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg md:mt-5">Enroll Now</a>
+                  </div>
+            </div>
               
-              <div class="hidden w-full md:block md:w-auto " id="navbar-dropdown">
-              <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-[#FAF9F6] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 lg:-translate-x-10 pt-7 ">
-                  <li>
-                  <a href="index.html" class="block py-2 pr-4 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent text-lg" aria-current="page">Home</a>
-                  </li>
-                  <li>
-                      <div class="dropdown relative inline-block hover:dropdown-menu:block">
-                          <button class="flex text-lg hover:text-blue-700">Course <svg class="w-5 h-5 ml-1 mt-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path  fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                          </button>
-                          <div class="dropdown-menu absolute hidden z-10 bg-[#d3d4d5]">
-                              <a class="px-5 py-3 hover:bg-gray-200 block text-lg hover:text-blue-700" href="#">Courses</a><hr>
-                              <a class="px-5 py-3 hover:bg-gray-200 block text-lg hover:text-blue-700" href="#">Marketing</a><hr>
-                              <a class="px-5 py-3 hover:bg-gray-200 block text-lg hover:text-blue-700" href="#">Animation</a><hr>
-                          </div>
-                      </div>
-                  </li>
-                  <li>
-                  <a href="Blog.html" class="block py-2 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-lg">Blog</a>
-                  </li>
-                  <li>
-                    <a href="contact.html" class="block py-2 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-lg">Contact</a>
-                    </li>
-                  <li>
-                      <a href="about.html" class="block py-2 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-lg">About</a>
-                  </li>
-                  <li>
-                      <div class="flex md:order-2 hidden md:block lg:block lg:pl-20 lg:ml-10 -mt-3">
-                        <!--   <a href="sign_in.html"><button type="button" class="hover:bg-[#00dbff] focus:ring-4 focus:outline-none hover:rounded-full hover:text-white text-sm px-5 py-2.5 text-center mr-3 md:mr-0 text-lg -mt-3" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log-in</button></a>
-                          
-                          <a href="sign_up.html"><button type="button" class="bg-[#00dbff] focus:ring-4 focus:outline-none rounded-full text-white text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ml-3 text-lg -mt-3" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-Up</button></a> -->
-                          
-                            <a href="sign_in.html">
-                             <button type="button" class="px-6 py-2 text-lg font-medium text-gray-900 hover:bg-[#349fcf] border border-gray-200 rounded-l-full bg-gray-100 hover:text-white">
-                                  Log-in
-                                </button>
-                              </a>
-                            <a href="sign_up.html">
-                                <button type="button" class="px-6 py-2 text-lg font-medium text-gray-900 bg-[#349fcf] border border-gray-200 rounded-r-full hover:bg-gray-100 hover:text-black text-white -ml-2">
-                                  Sign-Up
-                            </button>
-                            </a>
-                      </div>
-                  </li>
-              </ul>
-             
+          </div>
+          <div class="card swiper-slide">
+            <!--Card Number - 3 -->
+            <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
+                  <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9tMIqCoU9bwPKyj8O1y4soyvbIUh2k3qq_Q&usqp=CAU" alt="" />
+              <div class="p-5">
+                      <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Angular Development</h5>
+                  <p class="mb-3 font-normal inline-flex text-lg">
+                      lession
+                      days
+                      level
+                  </p><br>
+                  <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg">Compaire</a>
+                  <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg md:mt-5">Enroll Now</a>
+                  </div>
+            </div>
+          
+          </div>
+          <div class="card swiper-slide">
+            <!--Card Number - 4 -->
+            <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
+                  <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5uj_Aoh6g77m6XmA99aD6re4DkPXucU7BVOIQaf1O18m6vgpcQfbizGoH-yWQst5Vcbo&usqp=CAU" alt="" />
+              <div class="p-5">
+                      <h5 class="mb-2 text-3xl font-bold tracking-tight text-[#0A0878]">Dotnet Development</h5>
+                  <p class="mb-3 font-normal inline-flex text-lg">
+                      lession
+                      days
+                      level
+                  </p><br>
+                  <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg">Compaire</a>
+                  <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg md:mt-5">Enroll Now</a>
+                  </div>
+              </div>
+    
+          </div>
+          <div class="card swiper-slide bg-yellow-500">
+            <!--Card Number - 5 -->
+            <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
+                  <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSarDlD09LTHrMQKStJZ22-qRhSOqCyvl-3PA&usqp=CAU" alt="" />
+              <div class="p-5">
+                  <h5 class="mb-2 text-3xl font-bold tracking-tight text-[#0A0878]">CLoud Computing</h5>
+                  <p class="mb-3 font-normal inline-flex text-lg">
+                      lession
+                      days
+                      level
+                  </p><br>
+                  <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg">Compaire</a>
+                  <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg md:mt-5">Enroll Now</a>
+                  </div>
+              </div>
+            
+          </div>
+    
+          <div class="card swiper-slide bg-green-500">
+            <!--Card Number - 6 -->
+            <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
+              <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSnKHrLgdd7nzLozT8lIgmgNYbO-8mKGvzuzwiKY56_2svqfvbYoTzNL_8aXus6jmlaS4&usqp=CAU" alt="" />
+              <div class="p-5">
+                  <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Mern Stack Development</h5>
+                  <p class="mb-3 font-normal inline-flex text-lg">
+                      lession
+                      days
+                      level
+                  </p><br>
+                  <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg">Compaire</a>
+                  <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg md:mt-5">Enroll Now</a>
+                  </div>
+              </div>
+          
+          </div>
+    
+          <div class="card swiper-slide bg-orange-500">
+            <!--Card Number - 7 -->
+            <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
+              <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvduvdn6-mzK0W5mzghulbKUvHZCoJM9CrWlijq5gs8Yoc6tHjmYY0oHtbq_hmMRFVh4s&usqp=CAU" alt="" />
+              <div class="p-5">
+                  <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Mean Stack Development</h5>
+                  <p class="mb-3 font-normal inline-flex text-lg">
+                      lession
+                      days
+                      level
+                  </p><br>
+                  <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg">Compaire</a>
+                  <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg md:mt-5">Enroll Now</a>
+                  </div>
+            </div>
+            
+          </div>
+    
+          <div class="card swiper-slide bg-pink-500">
+            <!--Card Number - 8 -->
+            <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
+                  <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf0pxILyMxy2nDMIOGfpRrAYHUkUj0F_nDKA&usqp=CAU" alt="" />
+              <div class="p-5">
+                  <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Backend Development</h5>
+                  <p class="mb-3 font-normal inline-flex text-lg">
+                      lession
+                      days
+                      level
+                  </p><br>
+                  <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg">Compaire</a>
+                  <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg md:mt-5">Enroll Now</a>
+                  </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn scale-75"></div>
+      <div class="swiper-button-prev swiper-navBtn scale-75"></div>
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+    <center><button class=" w-60 h-10 rounded-lg justify-self-center mt-10 text-lg mb-10 bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf]">Browse All Card</button></center> 
+    
+  </section>
+  <!-- ye vali javascript ko koi bhi yha se hataye nhi please  -->
+  <script> 
+    var swiper = new Swiper(".slide-container", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    sliderPerGroup: 4,
+    loop: false,
+    centerSlide: "true",
+    fade: "true",
+    grabCursor: "true",
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      520: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1000: {
+        slidesPerView: 4,
+      },
+    },
+  });
+  </script>
+  <!-- ............................ card carousal section end...............................   -->
+
+  <!--Top Categories-->
+
+  <section class="m-5 p-0 sm:p-0 md:p-10 lg:p-10"  data-aos="zoom-in" data-aos-duration="2000">
+    <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold text-center m-10 ">Top Categories</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+      <!-- <div class="grid grid-cols-2"> -->
+        <div class="">
+          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+            <div class=" w-auto sm:w-auto md:w-auto lg:w-auto h-52 rounded-lg m-2 sm:m-2 md:m-5 lg:m-5 bg-[url('images/digital_marketing.jpg')] bg-cover">
+            <p class="text-lg text-center sm:text-lg md:text-2xl lg:text-3xl font-semibold text-center mt-20 text-white h-52 p-10 -mt-0 rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);"><br>Digital Marketing</p>
+            </div>
+      
+            <div class="w-auto sm:w-auto md:w-auto lg:w-auto h-52 rounded-lg m-2 sm:m-2 md:m-5 lg:m-5 bg-[url('images/data.jpg')] bg-cover">
+              <p class="text-lg text-center sm:text-lg md:text-2xl lg:text-3xl font-semibold text-center mt-26 text-white h-52 p-10 -mt-0 rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">
+                <br>Data</p>
+            </div>
+          </div>
+      
+          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2">
+            <div class="w-auto sm:w-auto md:w-auto lg:w-auto h-52 rounded-lg m-2 sm:m-2 md:m-5 lg:m-5 bg-[url('images/graphics_design.jpg')] bg-cover">
+              <p class="text-lg text-center sm:text-lg md:text-2xl lg:text-2xl font-semibold text-center mt-20 text-white h-52 p-20 -mt-0 rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Graphics and Design</p>
+            </div>
+      
+            <div class="w-auto sm:w-auto md:w-auto lg:w-auto h-52 rounded-lg m-2 sm:m-2 md:m-5 lg:m-5 bg-[url('https://t3.ftcdn.net/jpg/05/42/59/60/240_F_542596077_GO6Xq37dzUgcLTTtahLeN9Ey5zdNfPsw.jpg')] bg-cover">
+              <p class="text-lg text-center sm:text-lg md:text-2xl lg:text-3xl font-semibold text-center mt-20 text-white h-52 p-20 -mt-0 rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Technology</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Right Side Section-->
+          <div class="md:m-5 lg:m-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+            <div class="rounded-lg h-96 sm:h-96 md:h-full lg:h-full w-full bg-[url('images/still_confused(cate.).png')] " style="background-size: contain; background-repeat: no-repeat; margin-top: ;">
+              <p class="text-lg text-center sm:text-lg md:text-2xl lg:text-3xl font-semibold text-center text-white h-full pt-72 rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);"><strong class="mt-[-50%]">Still Confused?</strong></p>
+              <p class="mt-[-40%] text-lg text-center sm:text-lg md:text-md lg:text-md font-semibold text-center text-white">explore our skill consultancy services to get clear answer of which skill is best for you.</p>
+            </div>
+            <div class="">
+              <div class="w-full sm:w-full md:w-full lg:w-full h-52 rounded-lg bg-[url('images/Business.jpg')] bg-cover">
+                <p class="text-lg text-center sm:text-lg md:text-2xl lg:text-3xl font-semibold font-semibold text-center text-white h-52 p-20  rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Business</p>
+              </div>
+              <div class="w-full sm:w-full md:w-full lg:w-full h-52 rounded-lg mt-10 bg-[url('images/video_animation.jpg')] bg-cover">
+                <p class="text-lg text-center sm:text-lg md:text-2xl lg:text-3xl font-semibold font-semibold text-center mt-20 text-white h-52 p-20 -mt-0 rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5) ">Video and Animation</p>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- </div> -->
+  </section>
+
+  <!-- ....... why choose Grachiever .............-->
+  <section class="p-0 sm:p-0 md:p-10 lg:p-10"  data-aos="zoom-in" data-aos-duration="2000">
+          <h1 class=" text-center text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold my-10">Why Choose Grachiever</h1>
+          <div class="grid grid-flow-cols-1 md:grid-cols-4 lg:grid-cols-4 md:m-5 lg:m-5">
+              <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500 rounded-lg hover:-translate-y-5 duration-500">
+                  <img src="images/diverse offering.png" class="w-[50%] m-auto mt-14 mb-32">
+                  <p class="font-semibold text-2xl">Diverse Offerings</p>
+                  <p>Grachiever provides a variety of services, including online courses, freelancing opportunities, and expert consultancy, to help you develop the skills necessary for a successful career.</p>
+              </div>
+              <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500 rounded-lg hover:-translate-y-5 duration-500">
+                  <img src="images/unique tools and features.png" class="w-[50%]  m-auto mt-10 mb-8">
+                  <p class="font-semibold text-2xl">Unique Tools & Features </p>
+                  <p>Grachiever's Skill Graph feature and other innovative tools provide a personalized learning and work experience, tailored to your unique needs and goals.</p>
+              </div>
+              <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500 rounded-lg hover:-translate-y-5 duration-500">
+                  <img src="images/supportive community.png" class="w-[50%] m-auto mt-16 mb-12">
+                  <p class="font-semibold text-2xl">Supportive Community</p>
+                  <p>Grachiever's supportive community fosters networking, collaboration, and mutual support among learners and professionals, enhancing learning and work experiences.</p>
+              </div>
+              <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500 rounded-lg hover:-translate-y-5 duration-500">
+                  <img src="images/affordable and flexible.png" class="w-[50%] m-auto mt-16 mb-24">
+                  <p class="font-semibold text-2xl">Affordable And Flexible</p>
+                  <p>Grachiever's budget-friendly and adaptable pricing options provide access to excellent educational resources and opportunities for skill development.</p>
               </div>
           </div>
-          </nav>
-  
+      </div>
+      
+      </section>
+
+  <!-- ............... PHARA Section (3 card z-index )............ -->
+
+  <!-- .................. z-index section 1 start............ -->
+  <section class="p-0 sm:p-0 md:p-10 lg:p-10" data-aos="zoom-in" data-aos-duration="2000">
+    <div class="relative mt-[100px] flex mx-5 md:mx-10 lg:mx-10">
+      <div class="stacked w-[40%]">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaXoOzCO6xDenUzyta0if2353uScOROh7FJUj1AwdEVkdAfB0C0pAZUJVEZNg3qdIQArg&usqp=CAU" class=" rounded-2xl h-52 sm:h-52 md:h-72 sm:h-72 w-full" >
+          <div >
+            <p class="absolute top-0 left-0 text-white lg:text-lg font-bold rounded-2xl lg:p-10 h-52 sm:h-52 md:h-72 lg:h-72 w-full" style=" background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5); " >welcome to Our Website . You Can Get Job From Here....</p>
+            <button class="absolute top-52 left-5 text-white lg:text-lg font-bold bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] px-3 rounded-md">Learn More <i class="fa-solid fa-arrow-right ml-3 animate-bounce"></i></button>
+          </div>
+      </div>
+      <div class="stacked top-0 left-[30%] w-[40%]">
+        <img src="https://st.depositphotos.com/1658644/4186/v/950/depositphotos_41863297-stock-illustration-female-software-engineer.jpg" class=" rounded-2xl h-52 sm:h-52 md:h-72 sm:h-72 w-full">
+          <div >
+            <p class="absolute top-0 left-0 text-white lg:text-lg font-bold rounded-2xl lg:p-10 w-full h-52 sm:h-52 md:h-72 sm:h-72" style=" background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);" >You Can Leran Here Web Development...</p>
+            <button class="absolute top-52 left-5 text-white lg:text-lg font-bold bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] px-3 rounded-md">Learn More <i class="fa-solid fa-arrow-right ml-3 animate-bounce"></i></button>
+          </div>
+      </div>
+      <div class="stacked top-0 left-[60%] w-[40%]">
+        <img src="https://cdn.computercareers.org/wp-content/uploads/computers-and-technology.jpg" class=" rounded-2xl w-full h-52 sm:h-52 md:h-72 sm:h-72">
+          <div >
+            <p class="absolute top-0 left-0 text-white lg:text-lg font-bold rounded-2xl lg:p-10 w-full h-52 sm:h-52 md:h-72 sm:h-72" style=" background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);" >we Are Providing Course And Releted Job here....</p>
+            <button class="absolute top-52 left-5 text-white lg:text-lg font-bold bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] px-3 rounded-md">Learn More <i class="fa-solid fa-arrow-right ml-3 animate-bounce"></i></button>
+          </div>
+      </div>
+    
+    </div>
+    </section>
+    
+    <script>
+      document.querySelectorAll('.stacked').forEach(el => {
+      el.addEventListener('click', () => {
+        // el.style.zIndex++
+        el.classList.add("border-2")
+      })
+    })
+    </script>
+    
+    <!-- w-24 sm:w-28 md:w-52 lg:w-96 -->
+    <!-- .................. z-index section 1 end............ -->
+    
+    <!-- ........................ PHARA section end ................... -->
+
+      <!--Skill Consultancy-->
+    <section class="p-0 sm:p-0 md:p-10 lg:p-10" data-aos="zoom-in" data-aos-duration="2000">
+      <div class="m-2 h-auto p-2 mt-[300px]">
+          <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-5xl mx-20 font-bold my-10">Skill <span class="text-[#4eb0e1]">Consultancy</span></h1>
+      
+      <!--Skill Consultancy left section-->
+
+      <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+          <div class="mx-0 sm:mx-5 md:mx-20 lg:mx-20 mb-10">
+              <h1 class="font-bold text-2xl">Find Your Dream Career With Grachiever's Skill Consultancy</h1>
+              <p class="text-lg mt-5">Our skilled consultancy service provides various offerings to guide you in selecting the most suitable skills. We help you identify in-demand skills, suggest the best courses to develop those skills, and advise you on future-ready skills that AI cannot replace."</p>
+
+                  <li class="mx-5 mt-5"><strong>Personalized Guidance:</strong> Tailored advice for your unique path.</li>
+                  <li class="mx-5"><strong>Your Skills:</strong> Stay ahead of the robots.</li>
+                  <li class="mx-5"><strong>Expert Insights</strong>: Years of experience at your service.</li>
+                  <li class="mx-5"><strong>Industry Trends:</strong> Know what's in demand.</li>
+                  <li class="mx-5"><strong>Confidence-Boosting:</strong> Empowering you for success.</li>
+                  <button class="bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded p-2  mt-5 ml-3 px-5">Learn more</button>
+          </div>
+
+      <!--Skill Consultancy Rigth section-->
+
+      <div class="">
+        <img src="images/skill consultancy.png" width="60%" class="mx-auto">
+      </div>
+      </div>
+      </div>
+      </section>
+
+      <!--Feature Ready Skills sections-->
+      <section class="p-0 sm:p-0 md:p-10 lg:p-10" data-aos="zoom-in" data-aos-duration="2000">
+      <div class="p-3 text-center m-2 h-auto">
+          <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold my-10 ">Get Persional Feature Ready Skill Recommented</h1>
+          <h2 class="text-lg">Enhance Your Skill With Grachiever</h2>
+    
+      <div class="text-center m-10">
+      
+          <select class=" border rounded p-2 m-2 font-semibold">
+              <option">Category</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </select>
+      
+    
+          <select class="border rounded p-2 m-2 font-semibold">
+              <option>Select</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </select>
+            <button class="bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-full p-2 px-5">Get Started Now</button>
+          </div>
       </div>
   </section>
 
-<!-- ........................ home section start ..................................... -->
- <section class="px-5 sm:px-5 md:px-10 lg:px-10 pt-10">
-  <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-    <div class="pl-5 md:pl-10 lg:pl-10 mt-20">
-      <span class="type text-[30px] mt-5 lg:text-[50px] font-bold text-[#349fcf]"></span>
-      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-      <script>
-          var typed = new Typed('.type', {
-              strings: [
-                  'Start Monetizing',
-                  'Off Your Skills ',
-                  'With Passion',
-              ],
-              typeSpeed: 60,
-              backSpeed: 60,
-              loop: true,
-          });
-      </script>
-      <!-- <p class="font-bold text-3xl sm:text-3xl md:text-3xl lg:text-3xl">Start monetizing off your skills with passion</p> -->
-      <p class="mt-5 text-2xl">The only easier, powerful and authoring platform designed for consistent learners to
-        unlock the power of monetizing</p>
-      <!--Search-->
-      <div class="border-b-blue-700 border-2 flex items-center mt-8 w-[100%] sm:w-[80%] md:w-[100%] lg:w-[80%] rounded-full outline-none">
-        <input type="text" class="py-2.5 px-4 outline-none  " placeholder="Search Anything...">
-        <select class="mr-2 py-2 px-4 w-auto h-[44px]">
-          <option>Courses</option>
-          <option>freelancing</option>
-          <option>tools</option>
-        </select>
-        <span class="w-20 h-12 rounded-full text-center bg-[#349fcf] text-white"><i class="fa-solid fa-magnifying-glass p-2 text-lg"></i></span>
-      </div>
-      <div class="flex flex-wrap">
-        <button class="px-5 py-3 bg-[#f7c200] rounded-md text-lg text-white font-bold mt-10">Book Your Free Trial Now<i class="fa-sharp fa-solid fa-arrow-right ml-3 animate-bounce"></i></button>
-        <button class="px-5 py-3 bg-[#349fcf] rounded-md text-lg text-white font-bold ml-5 mt-10">Enquire Now<i class="fa-solid fa-bell ml-3 animate-bounce"></i> </button>
-      </div>
+  <!--Achivments Sections-->
+  <section class="p-0 sm:p-0 md:p-10 lg:p-10"  data-aos="zoom-in" data-aos-duration="2000">
+      <div class=" m-2">
+              <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold text-center p-5">Achivments</h1>
+          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 text-center ">
+              <div class="bg-blue-100 hover:bg-blue-200 h-52 m-5 rounded-lg">
+                <i class="fa fa-graduation-cap text-3xl text-blue-400 mt-10"></i>
+                <p class="text-2xl font-bold">350+</p>
+                <p>Student worldwide</p>
+              </div>
+              <div class="bg-blue-100 hover:bg-blue-200 h-52 m-5 rounded-lg">
+                <i class="fa fa-list text-3xl text-blue-400 mt-10"></i>              
+                <p class="text-2xl font-bold">450+</p>
+                <p>Total Course Views</p>
+              </div>
+              <div class="bg-blue-100 hover:bg-blue-200 h-52 m-5 rounded-lg">
+                <i class="fa-regular fa-star text-3xl text-blue-400 mt-10"></i>
+                <p class="text-2xl font-bold">550+</p>
+                <p>Five-Star Course Reviews</p>
+              </div>
+              <div class="bg-blue-100 hover:bg-blue-200 h-52 m-5 rounded-lg">
+                <i class="fa fa-people-group text-3xl text-blue-400 mt-10"></i>
+                <p class="text-2xl font-bold">650+</p>
+                <p>Student Community</p>
+              </div>
+          </div>
+          </div>
+  </section>
+        <!-- Benefits -->
+    <section class="" data-aos="zoom-in" data-aos-duration="2000">   
+            <h1 class=" text-center text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold mt-10">Benefits</h1>
+            <p class="mx-5 sm:mx-5 md:mx-20 lg:mx-20 text-lg mt-10 ">Grachiever empowers your career growth with personalized guidance, innovative
+              learning options, and a supportive community, making it the perfect platform to achieve your professional goals. With
+              access to expert knowledge, relevant tools, and freelance opportunities, Grachiever offers everything you need to
+              advance your career</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-2 w-[100%] sm:w-[70%] md:w-[80%] lg:w-[100%] m-auto">
+              <a href="#" class="block md:w-60 md:h-80 h-80 md:ml-10 md:mt-20 p-5 rounded-lg shadow-2xl mt-5 crrd transition delay-150 bg-[#F8F9F9]  hover:scale-110 duration-100"
+                style="transition: all 0.3s ease-out; overflow: hidden;">
+                <!--======-->
+                <div class=" sc w-32 h-32 flex rounded-full m-auto mt-10" style="z-index: 4; background-color: #ffd861;">
+                </div>
+                <!--======-->
+            
+                <div style="transition: all 0.3s ease-out; position: relative;">
+                  <img src="images/8/webservices.png" width="100" class=" m-auto mt-[-100px]">
+                </div>
+                <div class="mt-12 relative">
+                  <p class="font-bold text-2xl text-center">1.Courses</p>
+                </div>
+              </a>
+              <a href="#" class="block md:w-60 md:h-80 h-80 md:ml-10 md:mt-20 p-5 rounded-lg shadow-2xl mt-20 crrd transition delay-150 bg-[#F8F9F9]  hover:scale-110 duration-100"
+                style="transition: all 0.3s ease-out; overflow: hidden;">
+            
+                <div class="sc w-32 h-32 flex rounded-full m-auto mt-10" style="z-index: 4; background-color: #B8F9D3;">
+                </div>
+                <!--======-->
+                <div style="transition: all 0.3s ease-out; position: relative;">
+                  <img src="images/8/webservices.png" width="100" class=" m-auto mt-[-100px]">
+                </div>
+                <div class="mt-12 relative">
+            
+                  <p class="font-bold text-2xl text-center mt-2">2.Consultancy</p>
+                </div>
+              </a>
+            
+              <!--======-->
+            
+              <a href="#" class="block md:w-60 md:h-80 h-80 md:ml-10 md:mt-20 p-5 rounded-lg shadow-2xl mt-20 crrd transition delay-150 bg-[#F8F9F9] hover:scale-110 duration-100"
+                style="transition: all 0.3s ease-out; overflow: hidden;">
+            
+                <div class="sc w-32 h-32 flex rounded-full m-auto mt-10" style="z-index: 4; background-color:#FAD7A0;">
+                </div>
+                <!--======-->
+                <div style="transition: all 0.3s ease-out; position: relative;">
+                  <img src="images/8/webservices.png" width="100" class=" m-auto mt-[-100px]">
+                </div>
+                <div class="mt-12 relative">
+            
+                  <p class="font-bold text-2xl text-center mt-2">3.Freelances</p>
+                </div>
+              </a>
+              <a href="#" class="block md:w-60 md:h-80 h-80 md:ml-10 md:mt-20 p-5 rounded-lg shadow-2xl mt-20 crrd transition delay-150 bg-[#F8F9F9] hover:scale-110 duration-100"
+                style="transition: all 0.3s ease-out; overflow: hidden;">
+            
+                <div class="sc w-32 h-32 flex rounded-full m-auto mt-10" style="z-index: 4; background-color:#EC7063;">
+                </div>
+                <div style="transition: all 0.3s ease-out; position: relative;">
+                  <img src="images/8/webservices.png" width="100" class=" m-auto mt-[-100px]">
+                </div>
+                <div class="mt-12 relative">
+            
+                  <p class="font-bold text-2xl text-center mt-2">4.Tools</p>
+                  
+                </div>
+              </a>
+            </div>
+            </div>
+            </div>
+            </div>
+            
+            <!-- fivth part start from card no.5-->
+            
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[100%] sm:w-[70%] md:w-[80%] lg:w-[100%] m-auto mb-20">
+              <a href="#" class="block md:w-60 md:h-80 h-80 md:ml-10 md:mt-20 p-5 rounded-lg shadow-2xl mt-20 crrd transition delay-150 bg-[#F8F9F9] hover:scale-110 duration-100"
+                style="transition: all 0.3s ease-out; overflow: hidden;">
+                <!--======-->
+                <div class=" sc w-32 h-32 flex rounded-full m-auto mt-10" style="z-index: 4; background-color:#138D75;">
+                </div>
+                <!--======-->
+                <div style="transition: all 0.3s ease-out; position: relative;">
+                  <img src="images/8/webservices.png" width="100" class=" m-auto mt-[-100px]">
+                </div>
+                <div class="mt-12 relative">
+            
+                  <p class="font-bold text-2xl text-center mt-2">5.Skill Graph</p>
+                </div>
+              </a>
+              <!--======-->
+              <a href="#" class="block md:w-60 md:h-80 h-80 md:ml-10 md:mt-20 p-5 rounded-lg shadow-2xl mt-20 crrd transition delay-150 bg-[#F8F9F9] hover:scale-110 duration-100"
+                style="transition: all 0.3s ease-out; overflow: hidden;">
+            
+                <div class="sc w-32 h-32 flex rounded-full m-auto mt-10" style="z-index: 4; background-color: #A9CCE3;">
+                </div>
+                <div style="transition: all 0.3s ease-out; position: relative;">
+                  <img src="images/8/webservices.png" width="100" class=" m-auto mt-[-100px]">
+                </div>
+                <div class="mt-12 relative">
+            
+                  <p class="font-bold text-2xl text-center mt-2">6.Consultancy</p>
+                </div>
+              </a>
+            
+              <!--======-->
+            
+              <a href="#" class="block md:w-60 md:h-80 h-80 md:ml-10 md:mt-20 p-5 rounded-lg shadow-2xl mt-20 crrd transition delay-150 bg-[#F8F9F9] hover:scale-110 duration-100"
+                style="transition: all 0.3s ease-out; overflow: hidden;">
+            
+                <div class="sc w-32 h-32 flex rounded-full m-auto mt-10" style="z-index: 4; background-color: #D2B4DE;">
+                </div>
+                <!--======-->
+                <div style="transition: all 0.3s ease-out; position: relative;">
+                  <img src="images/8/webservices.png" width="100" class=" m-auto mt-[-100px]">
+                </div>
+                <div class="mt-12 relative">
+            
+                  <p class="font-bold text-2xl text-center mt-2">7.Community</p>
+                </div>
+              </a>
+              <a href="#" class="block md:w-60 md:h-80 h-80 md:ml-10 md:mt-20 p-5 rounded-lg shadow-2xl mt-20 crrd transition delay-150 bg-[#F8F9F9]  hover:scale-110 duration-100"
+                style="transition: all 0.3s ease-out; overflow: hidden;">
+            
+                <div class="sc w-32 h-32 flex rounded-full m-auto mt-10" style="z-index: 4; background-color:#F5B7B1;">
+                </div>
+                <div style="transition: all 0.3s ease-out; position: relative;">
+                  <img src="images/8/webservices.png" width="100" class=" m-auto mt-[-100px]">
+                </div>
+                <div class="mt-12 relative">
+            
+                  <p class="font-bold text-2xl text-center mt-2">8.Progression</p>
+                </div>
+              </a>
+            </div>
+            </div>
+            </div>
+        
+            </div>
 
-      <div class=" flex flex-wrap mt-7">
-        <img src="https://cdn-icons-png.flaticon.com/512/1532/1532556.png" class="w-12 rounded-full bg-yellow-100 p-2 hover:-translate-y-1 hover:scale-110 duration-300"><p class="ml-2 mt-3">HTML</p> 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" class="w-12 ml-5 bg-blue-100 rounded-full p-2 hover:-translate-y-1 hover:scale-110 duration-300"><p class="ml-2 mt-3">Python</p> 
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" class="w-12 bg-red-100 rounded-full p-2 ml-5 hover:-translate-y-1 hover:scale-110 duration-300"><p class="ml-2 mt-3">Java</p> 
+            </section>
+    
+    <!-- Blog Section -->
+  <section class="p-0 sm:p-0 md:p-10 lg:p-10"  data-aos="zoom-in" data-aos-duration="2000">
+    <div class="mt-10">
+      <!--Blog-->
+      <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
+        <div class="m-auto">
+        <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold text-center">Blog</h1>
+        <h1 class="mt-2 text-lg mx-10 p-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis qui quibusdam sit repellat necessitatibus animi libero.</h1>
       </div>
-      <div class=" flex flex-wrap mt-7">
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" class="w-12 rounded-full bg-orange-100 p-2 hover:-translate-y-1 hover:scale-110 duration-300"><p class="ml-2 mt-3">CSS</p> 
-        <img src="https://camo.githubusercontent.com/2512b49c89512f2ff3718f7257f48ed5c46a4e331abbd890b6c5e8c0e458434f/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67" class="w-12 rounded-full bg-gray-300 p-2 ml-5 hover:-translate-y-1 hover:scale-110 duration-300"><p class="ml-2 mt-3">Bootstrap</p> 
-        <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png" class="w-12 rounded-full bg-green-100 p-2 ml-5 hover:-translate-y-1 hover:scale-110 duration-300"><p class="ml-2 mt-3">JavaScript</p> 
-      </div>
-
-      
-      <!-- <div class="flex flex-wrap mt-5">
-        <div class="p-5 w-52">
-          <p class="font-bold text-3xl text-[#f7c200]">95%</p>
-          <p class="mt-3">placed within 8 months of graduation</p>
-        </div>
-        <div class="p-5 w-52">
-          <p class="font-bold text-3xl text-[#349fcf]">11 LPA</p>
-          <p class="mt-3">average dream job CTC</p>
-        </div>
-        <div class="p-5 w-52">
-          <p class="font-bold text-3xl text-[#f7c200]">240+</p>
-          <p class="mt-3">Our Hiring Partners</p>
-        </div>
-        <div class="p-5 w-52">
-          <p class="font-bold text-3xl text-[#349fcf]">1:1</p>
-          <p class="mt-3">Dedicated Mentorship</p>
+        <div class="m-auto mt-5">
+            <button class="p-2 rounded-lg bg-[#057D98] text-white px-8 text-lg">Browse Blog</button>
         </div>
       </div> -->
-
-    </div>
-    <div class="mt-20 pt-5">
-      <img src="images/1/HOME page.png" class="w-[80%] m-auto">            
-    </div>
-  </div>
-      <!-- <a href="sign_up.html" class="bg-red-500"><img src="images/LOGOS/Resiter_now_button.png" class="fixed top-96 right-0 w-40 animate-bounce z-50"></a>
-        <a href="#"><img src="images/LOGOS/whatsapp-icon-unscreen.gif" class="float-right fixed right-0 w-40 z-50"></a> -->
-
-</section>
-<!-- ...................... home section end ................................... -->
-
-    <!--Trusted Section-->   
-    
-  <section class="p-0 sm:p-0 md:p-10 lg:p-10"> 
-    <div class="p-3 mt-5">
-        <h1 class=" text-center text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold">Trusted By World Best</h1>
-        <!--Six Circle Section--> 
-        <!-- <marquee class="  ">    -->
-        <div class="owl-carousel owl-theme grid grid-cols-2 xs:grid-cols-1 md:grid-cols-6 lg:grid-cols-6 m-5 md:m-5 lg:m-5 h-72 md:h-24 lg:h-24 m-2 text-center">
-          <div class=" w-24  mx-auto"><h1 class="mt-8">
-              <img src="images/2/cisco image.png" >
-            </h1></div>
-            <div class=" w-24  mx-auto"><h1 class="mt-8">
-              <img src="images/2/futurelearn-logo.png" >
-
-            </h1></div>
-            <div class=" w-24  mx-auto"><h1 class="mt-8">
-              <img src="images/2/google-logo-2.png">
-            </h1></div>
-            <div class=" w-24  mx-auto"><h1 class="mt-8">
-                 <img src="images/2/MIT_logo.png">
-            </h1></div>
-            <div class="w-24  mx-auto"><h1 class="mt-8">
-                   <img src="images/2/nvidia-logo-16.png">
-            </h1></div>
-            <div class="w-24  mx-auto"><h1 class="mt-8">
-                   <img src="images/2/oxford.png" >
-            </h1></div>
-          <!-- </marquee> -->
-        </div>
-        
-  </section>
-
-    <!--Skill Section-->
-
-    <section class="p-0 sm:p-0 md:p-10 lg:p-10">
-      <div class="h-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2"  data-aos="zoom-in" data-aos-duration="2000">
-        <div class="lg:h-full md:h-full mx-5 sm:mx-5 md:mx-10 lg:mx-10">
-            <h1 class=" mt-5 text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold">Track The Trending Skills Over Time</h1>
-            <p class="mt-10  text-lg">Our Skill Graph feature helps you stay up-to-date with the latest skills in demand. our Skill Graph displays the trending skills over time.</p>
-            <p  class="mt-5 text-lg">allowing you to identify which skills are gaining popularity and which are losing relevance. With this powerful tool, you can make informed decisions about the skills you want to learn or develop, ensuring you stay ahead of the curve in your chosen field.</p>
-        </div>
-    <!--Graph Section-->
-        <div class="">
-          <img src="https://statisticsanddata.org/wp-content/uploads/2021/03/backend.png">
-        </div>
-    </div>
-    </section>
-
-    <!-- .-================================================ -->
-
-    <!-- ........... card slider for codepen -->
-<section class=" mt-10 bg-gray-50 p-0 sm:p-0 md:p-10 lg:p-10"  data-aos="zoom-in" data-aos-duration="2000">
-  <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold text-center mx-3 p-5 sm:p-5 p-0 sm:p-0 md:p-10 lg:p-10">What Are You Searching For ?</h1>
-  <div class="flex float-right text-lg">
-    <button class="p-3 sm:p-3 md:p-5 lg:p-5 text-sm sm:text-sm md:text-lg lg:text-lg px-3  mx-3 bg-blue-100 rounded-2xl hover:text-[#6c5fa1]">All</button>
-    <button class="p-3 sm:p-3 md:p-5 lg:p-5 text-sm sm:text-sm md:text-lg lg:text-lg  ml-2 px-3 mx-3 hover:bg-blue-100 hover:rounded-2xl">Trending</button>
-    <button class=" p-3 sm:p-3 md:p-5 lg:p-3 text-sm sm:text-sm md:text-lg lg:text-lg ml-2 px-3 mx-3 hover:bg-blue-100 hover:rounded-2xl hover:text-[#6c5fa1]">Popular</button>
-  </div>
-  
-  <div class="container swiper">
-    <div class="slide-container mt-10 mx-5 sm:mx-5 md:mx-5 lg:mx-10 ">
-      <div class="card-wrapper swiper-wrapper">
-        <div class="card swiper-slide ">
-         
-           <!--Card Number - 1 -->
-           <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
-                <img class="mx-auto w-full h-52" src="https://5.imimg.com/data5/SELLER/Default/2022/6/SD/NP/XP/113623010/web-development-training-program-1--500x500.jpg" alt="" />
-                <div class="p-5">
-                        <p class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Pyhton Full Stack Development</p>
-                    <p class="mb-3 font-normal inline-flex text-lg">
-                        lession
-                        days
-                        leve
-                    </p><br>
-                    <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg">Compaire</a>
-                    <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg md:mt-5">Enroll Now</a>
-                </div>
-            </div>
-  
-        </div>
-        <div class="card swiper-slide">
-          <!--Card Number - 2 -->
-          <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
-                <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRel084aJaTNo9hFm8eLDzUGUK5TfBA_hQwMJhQN7ZYbE3QgmO9PWFzYH3B3p80krV1MwE&usqp=CAU" alt="" />
-            <div class="p-5">
-                    <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Java Full Stack Development</h5>
-                <p class="mb-3 font-normal inline-flex text-lg">
-                    lession
-                    days
-                    level
-                    lession
-                    days
-                    level
-
-                </p><br>
-                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg">Compaire</a>
-                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg md:mt-5">Enroll Now</a>
-                </div>
+      <div class=" ">
+        <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold pl-10">Blog</h1>
+          <div class="flex flex-wrap justify-between">
+            <h1 class="mt-2 text-lg mx-10 p-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+            <button class="p-2 rounded-lg bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] px-8 text-lg float-right mx-10 mt-10 sm:mt-10 md:mt-10 lg:mt-0">Browse Blog</button>
           </div>
-            
-        </div>
-        <div class="card swiper-slide">
-           <!--Card Number - 3 -->
-           <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
-                <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9tMIqCoU9bwPKyj8O1y4soyvbIUh2k3qq_Q&usqp=CAU" alt="" />
-            <div class="p-5">
-                    <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Angular Development</h5>
-                <p class="mb-3 font-normal inline-flex text-lg">
-                    lession
-                    days
-                    level
-                </p><br>
-                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg">Compaire</a>
-                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg md:mt-5">Enroll Now</a>
-                </div>
-           </div>
-         
-        </div>
-        <div class="card swiper-slide">
-           <!--Card Number - 4 -->
-           <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
-                <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5uj_Aoh6g77m6XmA99aD6re4DkPXucU7BVOIQaf1O18m6vgpcQfbizGoH-yWQst5Vcbo&usqp=CAU" alt="" />
-            <div class="p-5">
-                    <h5 class="mb-2 text-3xl font-bold tracking-tight text-[#0A0878]">Dotnet Development</h5>
-                <p class="mb-3 font-normal inline-flex text-lg">
-                    lession
-                    days
-                    level
-                </p><br>
-                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg">Compaire</a>
-                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg md:mt-5">Enroll Now</a>
-                </div>
-            </div>
-  
-        </div>
-        <div class="card swiper-slide bg-yellow-500">
-           <!--Card Number - 5 -->
-           <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
-                <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSarDlD09LTHrMQKStJZ22-qRhSOqCyvl-3PA&usqp=CAU" alt="" />
-            <div class="p-5">
-                <h5 class="mb-2 text-3xl font-bold tracking-tight text-[#0A0878]">CLoud Computing</h5>
-                <p class="mb-3 font-normal inline-flex text-lg">
-                    lession
-                    days
-                    level
-                </p><br>
-                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg">Compaire</a>
-                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg md:mt-5">Enroll Now</a>
-                </div>
-            </div>
-          
-        </div>
-  
-        <div class="card swiper-slide bg-green-500">
-           <!--Card Number - 6 -->
-           <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
-            <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSnKHrLgdd7nzLozT8lIgmgNYbO-8mKGvzuzwiKY56_2svqfvbYoTzNL_8aXus6jmlaS4&usqp=CAU" alt="" />
-            <div class="p-5">
-                <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Mern Stack Development</h5>
-                <p class="mb-3 font-normal inline-flex text-lg">
-                    lession
-                    days
-                    level
-                </p><br>
-                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg">Compaire</a>
-                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg md:mt-5">Enroll Now</a>
-                </div>
-            </div>
-         
-        </div>
-  
-        <div class="card swiper-slide bg-orange-500">
-           <!--Card Number - 7 -->
-           <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
-            <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvduvdn6-mzK0W5mzghulbKUvHZCoJM9CrWlijq5gs8Yoc6tHjmYY0oHtbq_hmMRFVh4s&usqp=CAU" alt="" />
-            <div class="p-5">
-                <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Mean Stack Development</h5>
-                <p class="mb-3 font-normal inline-flex text-lg">
-                    lession
-                    days
-                    level
-                </p><br>
-                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg">Compaire</a>
-                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg md:mt-5">Enroll Now</a>
-                </div>
-           </div>
-          
-        </div>
-  
-        <div class="card swiper-slide bg-pink-500">
-           <!--Card Number - 8 -->
-           <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[450px] hover:-translate-y-1 hover:scale-110 duration-500">
-                <img class="mx-auto w-full h-52" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf0pxILyMxy2nDMIOGfpRrAYHUkUj0F_nDKA&usqp=CAU" alt="" />
-            <div class="p-5">
-                <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Backend Development</h5>
-                <p class="mb-3 font-normal inline-flex text-lg">
-                    lession
-                    days
-                    level
-                </p><br>
-                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg">Compaire</a>
-                <a href="#" class="inline-flex  px-3 py-2 text-sm font-medium text-center bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-lg md:mt-5">Enroll Now</a>
-                </div>
-           </div>
-          
-        </div>
       </div>
-    </div>
-    <div class="swiper-button-next swiper-navBtn scale-75"></div>
-    <div class="swiper-button-prev swiper-navBtn scale-75"></div>
-    <!-- <div class="swiper-pagination"></div> -->
-  </div>
-  <center><button class=" w-60 h-10 rounded-lg justify-self-center mt-10 text-lg mb-10 bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf]">Browse All Card</button></center> 
-  
-</section>
-<!-- ye vali javascript ko koi bhi yha se hataye nhi please  -->
-<script> 
-  var swiper = new Swiper(".slide-container", {
-  slidesPerView: 4,
-  spaceBetween: 20,
-  sliderPerGroup: 4,
-  loop: false,
-  centerSlide: "true",
-  fade: "true",
-  grabCursor: "true",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    520: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-    1000: {
-      slidesPerView: 4,
-    },
-  },
-});
-</script>
-<!-- ............................ card carousal section end...............................   -->
-
-<!--Top Categories-->
-
-<section class="m-5 p-0 sm:p-0 md:p-10 lg:p-10"  data-aos="zoom-in" data-aos-duration="2000">
-  <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold text-center m-10 ">Top Categories</h1>
-   <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-     <!-- <div class="grid grid-cols-2"> -->
-      <div class="">
-        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-          <div class=" w-auto sm:w-auto md:w-auto lg:w-auto h-52 rounded-lg m-2 sm:m-2 md:m-5 lg:m-5 bg-[url('https://img.freepik.com/free-photo/school-children-sitting-with-laptop-looking-blackboard_23-2148039909.jpg?size=626&ext=jpg&ga=GA1.1.701009246.1681326713&semt=ais')] bg-cover">
-          <p class="text-lg text-center sm:text-lg md:text-2xl lg:text-3xl font-semibold text-center mt-20 text-white h-52 p-10 -mt-0 rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Digital Marketing</p>
-          </div>
-    
-          <div class="w-auto sm:w-auto md:w-auto lg:w-auto h-52 rounded-lg m-2 sm:m-2 md:m-5 lg:m-5 bg-[url('https://img.freepik.com/free-photo/teamwork-designers_1098-13045.jpg?size=626&ext=jpg&ga=GA1.1.701009246.1681326713&semt=ais')] bg-cover">
-            <p class="text-lg text-center sm:text-lg md:text-2xl lg:text-3xl font-semibold text-center mt-20 text-white h-52 p-10 -mt-0 rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Finance</p>
-          </div>
-        </div>
-    
-        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2">
-          <div class="w-auto sm:w-auto md:w-auto lg:w-auto h-52 rounded-lg m-2 sm:m-2 md:m-5 lg:m-5 bg-[url('https://t3.ftcdn.net/jpg/05/74/64/32/240_F_574643266_68TnEq3NqJxPaMjueFUU8fFjRW0NK9NY.jpg')] bg-cover">
-            <p class="text-lg text-center sm:text-lg md:text-2xl lg:text-3xl font-semibold text-center mt-20 text-white h-52 p-20 -mt-0 rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Development</p>
-          </div>
-    
-          <div class="w-auto sm:w-auto md:w-auto lg:w-auto h-52 rounded-lg m-2 sm:m-2 md:m-5 lg:m-5 bg-[url('https://t3.ftcdn.net/jpg/05/42/59/60/240_F_542596077_GO6Xq37dzUgcLTTtahLeN9Ey5zdNfPsw.jpg')] bg-cover">
-            <p class="text-lg text-center sm:text-lg md:text-2xl lg:text-3xl font-semibold text-center mt-20 text-white h-52 p-20 -mt-0 rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Technology</p>
-          </div>
-        </div>
-      </div>
-
-      <!--Right Side Section-->
-        <div class="md:m-5 lg:m-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
-          <div class="rounded-lg h-96 sm:h-96 md:h-full lg:h-full w-full bg-[url('https://img.freepik.com/premium-photo/technology-social-networking-concept-smiling-student-girl-with-laptop-school_380164-47767.jpg?size=626&ext=jpg&ga=GA1.1.701009246.1681326713&semt=ais')] bg-cover">
-            <p class="text-lg text-center sm:text-lg md:text-2xl lg:text-3xl font-semibold text-center text-white h-full pt-72 rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);"><strong class="mt-[-50%]">Still Confused?</strong></p>
-            <p class="mt-[-40%] text-lg text-center sm:text-lg md:text-md lg:text-md font-semibold text-center text-white">explore our skill consultancy services to get clear answer of which skill is best for you.</p>
-          </div>
-          <div class="">
-            <div class="w-full sm:w-full md:w-full lg:w-full h-52 rounded-lg bg-[url('https://img.freepik.com/free-photo/teamwork-designers_1098-13045.jpg?size=626&ext=jpg&ga=GA1.1.701009246.1681326713&semt=ais')] bg-cover">
-               <p class="text-lg text-center sm:text-lg md:text-2xl lg:text-3xl font-semibold font-semibold text-center text-white h-52 p-20  rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Business</p>
+      <!--3 Card-->
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 m-2 h-auto  gap-10 sm:gap-10 md:gap-10 lg:gap-20 mx-5 lg:mx-10 md:mx-10 md:mt-10 lg:mt-10">
+        <!-- Card_1 -->
+        <div class="shadow-lg hover:shadow-gray-500 w-auto overflow-hidden p-5 rounded-2xl">
+            <h1 class="text-center p-1 font-bold text-lg">In Demand Job</h1>
+            <div class=" h-52">
+              <img src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=900&t=st=1681155268~exp=1681155868~hmac=25aa8907aca742eadee509f6f432b5b673f2644d27ece00b2383cff5aab10349" width="100%" class="rounded-xl hover:scale-105 duration-300 h-52">
             </div>
-            <div class="w-full sm:w-full md:w-full lg:w-full h-52 rounded-lg mt-10 bg-[url('https://img.freepik.com/free-photo/teamwork-designers_1098-13045.jpg?size=626&ext=jpg&ga=GA1.1.701009246.1681326713&semt=ais')] bg-cover">
-               <p class="text-lg text-center sm:text-lg md:text-2xl lg:text-3xl font-semibold font-semibold text-center mt-20 text-white h-52 p-20 -mt-0 rounded-lg" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);">Arts and Humanities</p>
+            <h1 class="text-3xl font-bold mt-5">Heading 01</h1>
+            <p class=" w-auto mb-6 space-x-8 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  reprehenderit soluta harum, quia doloribus minima dolor,
+                  nam similique nostrum ipsa nemo id fuga perferendis minus commodi.</p>
+        </div>
+        <!-- Card_2 -->
+        <div class="shadow-lg hover:shadow-gray-500 w-auto overflow-hidden p-5 rounded-2xl">
+            <h1 class="text-center p-1 font-bold text-lg">Popular Skill</h1>
+            <div class=" h-52">
+            <img src="https://www.shutterstock.com/image-vector/people-configure-application-on-big-600w-1188424468.jpg" class="rounded-xl hover:scale-105 duration-300 h-52 w-full">
             </div>
-          </div>
-        </div>
-   </div>
-   <!-- </div> -->
-</section>
-
-<!-- ....... why choose Grachiever .............-->
-<section class="p-0 sm:p-0 md:p-10 lg:p-10"  data-aos="zoom-in" data-aos-duration="2000">
-        <h1 class=" text-center text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold my-10">Why Choose Grachiever</h1>
-        <div class="grid grid-flow-cols-1 md:grid-cols-4 lg:grid-cols-4 md:m-5 lg:m-5">
-            <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500 rounded-lg hover:-translate-y-5 duration-500">
-                <img src="images/8/Diverse.png" class="w-[50%] h-[30%] m-auto mt-10 mb-10">
-                <p class="font-semibold text-2xl">Diverse Offerings:</p>
-                <p>Grachiever offers a diverse range of online courses, freelance work opportunities, and skilled consultancy services, enabling you to build the skills you need for a successful career.</p>
-            </div>
-            <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500 rounded-lg hover:-translate-y-5 duration-500">
-                <img src="images/8/2910659.png" class="w-[50%] h-[30%] m-auto mt-10 mb-10">
-                <p class="font-semibold text-2xl">Unique Tools and Features: </p>
-                <p>With our Skill Graph feature, personalized recommendations, and other unique tools and resources, Grachiever provides a highly personalized learning and work experience.</p>
-            </div>
-            <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500 rounded-lg hover:-translate-y-5 duration-500">
-                <img src="images/8/Support.png" class="w-[50%] h-[30%] m-auto mt-10 mb-10">
-                <p class="font-semibold text-2xl">Supportive Community</p>
-                <p>Our community of like-minded learners and professionals is a great resource for networking, collaboration, and mutual support, making your learning and work journey more enjoyable and fulfilling.</p>
-            </div>
-            <div class="m-3 border p-5 shadow-lg hover:shadow-gray-500 rounded-lg hover:-translate-y-5 duration-500">
-                <img src="images/8/fixiable.png" class="w-[50%] h-[30%] m-auto mt-16 mb-12">
-                <p class="font-semibold text-2xl">Affordable And Flexible: </p>
-                <p>Grachiever's pricing plans are affordable and flexible, enabling you to access high-quality learning</p>
-            </div>
-        </div>
-    </div>
-    
-    </section>
-
-<!-- ............... PHARA Section (3 card z-index )............ -->
-
-<!-- .................. z-index section 1 start............ -->
-<section class="p-0 sm:p-0 md:p-10 lg:p-10" data-aos="zoom-in" data-aos-duration="2000">
-  <div class="relative mt-[100px] flex mx-5 md:mx-10 lg:mx-10">
-    <div class="stacked w-[40%]">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaXoOzCO6xDenUzyta0if2353uScOROh7FJUj1AwdEVkdAfB0C0pAZUJVEZNg3qdIQArg&usqp=CAU" class=" rounded-2xl h-52 sm:h-52 md:h-72 sm:h-72 w-full" >
-        <div >
-          <p class="absolute top-0 left-0 text-white lg:text-lg font-bold rounded-2xl lg:p-10 h-52 sm:h-52 md:h-72 lg:h-72 w-full" style=" background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5); " >welcome to Our Website . You Can Get Job From Here....</p>
-          <button class="absolute top-52 left-5 text-white lg:text-lg font-bold bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] px-3 rounded-md">Learn More <i class="fa-solid fa-arrow-right ml-3 animate-bounce"></i></button>
-        </div>
-    </div>
-    <div class="stacked top-0 left-[30%] w-[40%]">
-      <img src="https://st.depositphotos.com/1658644/4186/v/950/depositphotos_41863297-stock-illustration-female-software-engineer.jpg" class=" rounded-2xl h-52 sm:h-52 md:h-72 sm:h-72 w-full">
-        <div >
-          <p class="absolute top-0 left-0 text-white lg:text-lg font-bold rounded-2xl lg:p-10 w-full h-52 sm:h-52 md:h-72 sm:h-72" style=" background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);" >You Can Leran Here Web Development...</p>
-          <button class="absolute top-52 left-5 text-white lg:text-lg font-bold bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] px-3 rounded-md">Learn More <i class="fa-solid fa-arrow-right ml-3 animate-bounce"></i></button>
-        </div>
-    </div>
-    <div class="stacked top-0 left-[60%] w-[40%]">
-      <img src="https://cdn.computercareers.org/wp-content/uploads/computers-and-technology.jpg" class=" rounded-2xl w-full h-52 sm:h-52 md:h-72 sm:h-72">
-        <div >
-          <p class="absolute top-0 left-0 text-white lg:text-lg font-bold rounded-2xl lg:p-10 w-full h-52 sm:h-52 md:h-72 sm:h-72" style=" background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);" >we Are Providing Course And Releted Job here....</p>
-          <button class="absolute top-52 left-5 text-white lg:text-lg font-bold bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] px-3 rounded-md">Learn More <i class="fa-solid fa-arrow-right ml-3 animate-bounce"></i></button>
-        </div>
-    </div>
-   
-  </div>
-  </section>
-  
-  <script>
-    document.querySelectorAll('.stacked').forEach(el => {
-    el.addEventListener('click', () => {
-      // el.style.zIndex++
-      el.classList.add("border-2")
-    })
-  })
-  </script>
-  
-  <!-- w-24 sm:w-28 md:w-52 lg:w-96 -->
-  <!-- .................. z-index section 1 end............ -->
-  
-   <!-- ........................ PHARA section end ................... -->
-
-    <!--Skill Consultancy-->
-  <section class="p-0 sm:p-0 md:p-10 lg:p-10" data-aos="zoom-in" data-aos-duration="2000">
-    <div class="m-2 h-auto p-2 mt-[300px]">
-        <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold text-center my-10">Skill Consultancy</h1>
-    
-    <!--Skill Consultancy left section-->
-
-    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-        <div class="mx-0 sm:mx-5 md:mx-20 lg:mx-20 mb-10">
-            <h1 class="font-bold text-2xl">Find Your Dream Career With Grachiever's Skill Consultancy</h1>
-            <p class="text-lg mt-5">Our skilled consultancy service provides various offerings to guide you in selecting the most suitable skills. We help you identify in-demand skills, suggest the best courses to develop those skills, and advise you on future-ready skills that AI cannot replace."</p>
-
-                <li class="mx-5 mt-5"><strong>Personalized Guidance:</strong> Tailored advice for your unique path.</li>
-                <li class="mx-5"><strong>Your Skills:</strong> Stay ahead of the robots.</li>
-                <li class="mx-5"><strong>Expert Insights</strong>: Years of experience at your service.</li>
-                <li class="mx-5"><strong>Industry Trends:</strong> Know what's in demand.</li>
-                <li class="mx-5"><strong>Confidence-Boosting:</strong> Empowering you for success.</li>
-                <button class="bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded p-2  mt-5 ml-3 px-5">Learn more</button>
-        </div>
-
-    <!--Skill Consultancy Rigth section-->
-
-    <div class="">
-      <img src="images/9/consulting_2.png" class="rounded-lg">
-    </div>
-    </div>
-    </div>
-    </section>
-
-    <!--Feature Ready Skills sections-->
-    <section class="p-0 sm:p-0 md:p-10 lg:p-10" data-aos="zoom-in" data-aos-duration="2000">
-    <div class="p-3 text-center m-2 h-auto">
-        <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold my-10 ">Get Persional Feature Ready Skill Recommented</h1>
-        <h2 class="text-lg">Enhance Your Skill With Grachiever</h2>
-  
-    <div class="text-center m-10">
-    
-        <select class=" border rounded p-2 m-2 font-semibold">
-            <option">Category</option>
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-          </select>
-    
-   
-        <select class="border rounded p-2 m-2 font-semibold">
-            <option>Select</option>
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-          </select>
-          <button class="bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] rounded-full p-2 px-5">Get Started Now</button>
-        </div>
-    </div>
-</section>
-
- <!--Achivments Sections-->
-<section class="p-0 sm:p-0 md:p-10 lg:p-10"  data-aos="zoom-in" data-aos-duration="2000">
-    <div class=" m-2">
-            <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold text-center p-5">Achivments</h1>
-        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 text-center ">
-            <div class="bg-blue-100 hover:bg-blue-200 h-52 m-5 rounded-lg">
-              <i class="fa fa-graduation-cap text-3xl text-blue-400 mt-10"></i>
-              <p class="text-2xl font-bold">350+</p>
-              <p>Student worldwide</p>
-            </div>
-            <div class="bg-blue-100 hover:bg-blue-200 h-52 m-5 rounded-lg">
-              <i class="fa fa-list text-3xl text-blue-400 mt-10"></i>              
-              <p class="text-2xl font-bold">450+</p>
-              <p>Total Course Views</p>
-            </div>
-            <div class="bg-blue-100 hover:bg-blue-200 h-52 m-5 rounded-lg">
-              <i class="fa-regular fa-star text-3xl text-blue-400 mt-10"></i>
-              <p class="text-2xl font-bold">550+</p>
-              <p>Five-Star Course Reviews</p>
-            </div>
-            <div class="bg-blue-100 hover:bg-blue-200 h-52 m-5 rounded-lg">
-              <i class="fa fa-people-group text-3xl text-blue-400 mt-10"></i>
-              <p class="text-2xl font-bold">650+</p>
-              <p>Student Community</p>
-            </div>
-        </div>
-        </div>
-</section>
-       <!-- Benefits -->
-   <section class="" data-aos="zoom-in" data-aos-duration="2000">   
-          <h1 class=" text-center text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold mt-10">Benefits</h1>
-          <p class="mx-5 sm:mx-5 md:mx-20 lg:mx-20 text-lg mt-10 ">Grachiever empowers your career growth with personalized guidance, innovative
-            learning options, and a supportive community, making it the perfect platform to achieve your professional goals. With
-            access to expert knowledge, relevant tools, and freelance opportunities, Grachiever offers everything you need to
-            advance your career</p>
-          
-          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-2 w-[100%] sm:w-[70%] md:w-[80%] lg:w-[100%] m-auto">
-            <a href="#" class="block md:w-60 md:h-80 h-80 md:ml-10 md:mt-20 p-5 rounded-lg shadow-2xl mt-5 crrd transition delay-150 bg-[#F8F9F9]  hover:scale-110 duration-100"
-              style="transition: all 0.3s ease-out; overflow: hidden;">
-              <!--======-->
-              <div class=" sc w-32 h-32 flex rounded-full m-auto mt-10" style="z-index: 4; background-color: #ffd861;">
-              </div>
-              <!--======-->
-          
-              <div style="transition: all 0.3s ease-out; position: relative;">
-                <img src="images/8/webservices.png" width="100" class=" m-auto mt-[-100px]">
-              </div>
-              <div class="mt-12 relative">
-                <p class="font-bold text-2xl text-center">1.Courses</p>
-              </div>
-            </a>
-            <a href="#" class="block md:w-60 md:h-80 h-80 md:ml-10 md:mt-20 p-5 rounded-lg shadow-2xl mt-20 crrd transition delay-150 bg-[#F8F9F9]  hover:scale-110 duration-100"
-              style="transition: all 0.3s ease-out; overflow: hidden;">
-          
-              <div class="sc w-32 h-32 flex rounded-full m-auto mt-10" style="z-index: 4; background-color: #B8F9D3;">
-              </div>
-              <!--======-->
-              <div style="transition: all 0.3s ease-out; position: relative;">
-                <img src="images/8/webservices.png" width="100" class=" m-auto mt-[-100px]">
-              </div>
-              <div class="mt-12 relative">
-          
-                <p class="font-bold text-2xl text-center mt-2">2.Consultancy</p>
-              </div>
-            </a>
-          
-            <!--======-->
-          
-            <a href="#" class="block md:w-60 md:h-80 h-80 md:ml-10 md:mt-20 p-5 rounded-lg shadow-2xl mt-20 crrd transition delay-150 bg-[#F8F9F9] hover:scale-110 duration-100"
-              style="transition: all 0.3s ease-out; overflow: hidden;">
-          
-              <div class="sc w-32 h-32 flex rounded-full m-auto mt-10" style="z-index: 4; background-color:#FAD7A0;">
-              </div>
-              <!--======-->
-              <div style="transition: all 0.3s ease-out; position: relative;">
-                <img src="images/8/webservices.png" width="100" class=" m-auto mt-[-100px]">
-              </div>
-              <div class="mt-12 relative">
-          
-                <p class="font-bold text-2xl text-center mt-2">3.Freelances</p>
-              </div>
-            </a>
-            <a href="#" class="block md:w-60 md:h-80 h-80 md:ml-10 md:mt-20 p-5 rounded-lg shadow-2xl mt-20 crrd transition delay-150 bg-[#F8F9F9] hover:scale-110 duration-100"
-              style="transition: all 0.3s ease-out; overflow: hidden;">
-          
-              <div class="sc w-32 h-32 flex rounded-full m-auto mt-10" style="z-index: 4; background-color:#EC7063;">
-              </div>
-              <div style="transition: all 0.3s ease-out; position: relative;">
-                <img src="images/8/webservices.png" width="100" class=" m-auto mt-[-100px]">
-              </div>
-              <div class="mt-12 relative">
-          
-                <p class="font-bold text-2xl text-center mt-2">4.Tools</p>
-                
-              </div>
-            </a>
-          </div>
-          </div>
-          </div>
-          </div>
-          
-          <!-- fivth part start from card no.5-->
-          
-          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[100%] sm:w-[70%] md:w-[80%] lg:w-[100%] m-auto mb-20">
-            <a href="#" class="block md:w-60 md:h-80 h-80 md:ml-10 md:mt-20 p-5 rounded-lg shadow-2xl mt-20 crrd transition delay-150 bg-[#F8F9F9] hover:scale-110 duration-100"
-              style="transition: all 0.3s ease-out; overflow: hidden;">
-              <!--======-->
-              <div class=" sc w-32 h-32 flex rounded-full m-auto mt-10" style="z-index: 4; background-color:#138D75;">
-              </div>
-              <!--======-->
-              <div style="transition: all 0.3s ease-out; position: relative;">
-                <img src="images/8/webservices.png" width="100" class=" m-auto mt-[-100px]">
-              </div>
-              <div class="mt-12 relative">
-          
-                <p class="font-bold text-2xl text-center mt-2">5.Skill Graph</p>
-              </div>
-            </a>
-             <!--======-->
-            <a href="#" class="block md:w-60 md:h-80 h-80 md:ml-10 md:mt-20 p-5 rounded-lg shadow-2xl mt-20 crrd transition delay-150 bg-[#F8F9F9] hover:scale-110 duration-100"
-              style="transition: all 0.3s ease-out; overflow: hidden;">
-          
-              <div class="sc w-32 h-32 flex rounded-full m-auto mt-10" style="z-index: 4; background-color: #A9CCE3;">
-              </div>
-              <div style="transition: all 0.3s ease-out; position: relative;">
-                <img src="images/8/webservices.png" width="100" class=" m-auto mt-[-100px]">
-              </div>
-              <div class="mt-12 relative">
-          
-                <p class="font-bold text-2xl text-center mt-2">6.Consultancy</p>
-              </div>
-            </a>
-          
-            <!--======-->
-          
-            <a href="#" class="block md:w-60 md:h-80 h-80 md:ml-10 md:mt-20 p-5 rounded-lg shadow-2xl mt-20 crrd transition delay-150 bg-[#F8F9F9] hover:scale-110 duration-100"
-              style="transition: all 0.3s ease-out; overflow: hidden;">
-          
-              <div class="sc w-32 h-32 flex rounded-full m-auto mt-10" style="z-index: 4; background-color: #D2B4DE;">
-              </div>
-              <!--======-->
-              <div style="transition: all 0.3s ease-out; position: relative;">
-                <img src="images/8/webservices.png" width="100" class=" m-auto mt-[-100px]">
-              </div>
-              <div class="mt-12 relative">
-          
-                <p class="font-bold text-2xl text-center mt-2">7.Community</p>
-              </div>
-            </a>
-            <a href="#" class="block md:w-60 md:h-80 h-80 md:ml-10 md:mt-20 p-5 rounded-lg shadow-2xl mt-20 crrd transition delay-150 bg-[#F8F9F9]  hover:scale-110 duration-100"
-              style="transition: all 0.3s ease-out; overflow: hidden;">
-          
-              <div class="sc w-32 h-32 flex rounded-full m-auto mt-10" style="z-index: 4; background-color:#F5B7B1;">
-              </div>
-              <div style="transition: all 0.3s ease-out; position: relative;">
-                <img src="images/8/webservices.png" width="100" class=" m-auto mt-[-100px]">
-              </div>
-              <div class="mt-12 relative">
-          
-                <p class="font-bold text-2xl text-center mt-2">8.Progression</p>
-              </div>
-            </a>
-          </div>
-          </div>
-          </div>
-       
-          </div>
-
-          </section>
-  
-   <!-- Blog Section -->
-<section class="p-0 sm:p-0 md:p-10 lg:p-10"  data-aos="zoom-in" data-aos-duration="2000">
-   <div class="mt-10">
-    <!--Blog-->
-     <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
-       <div class="m-auto">
-       <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold text-center">Blog</h1>
-       <h1 class="mt-2 text-lg mx-10 p-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis qui quibusdam sit repellat necessitatibus animi libero.</h1>
-     </div>
-      <div class="m-auto mt-5">
-          <button class="p-2 rounded-lg bg-[#057D98] text-white px-8 text-lg">Browse Blog</button>
-      </div>
-     </div> -->
-     <div class=" ">
-      <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold pl-10">Blog</h1>
-        <div class="flex flex-wrap justify-between">
-          <h1 class="mt-2 text-lg mx-10 p-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
-          <button class="p-2 rounded-lg bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] px-8 text-lg float-right mx-10 mt-10 sm:mt-10 md:mt-10 lg:mt-0">Browse Blog</button>
-        </div>
-    </div>
-     <!--3 Card-->
-     <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 m-2 h-auto  gap-10 sm:gap-10 md:gap-10 lg:gap-20 mx-5 lg:mx-10 md:mx-10 md:mt-10 lg:mt-10">
-       <!-- Card_1 -->
-       <div class="shadow-lg hover:shadow-gray-500 w-auto overflow-hidden p-5 rounded-2xl">
-           <h1 class="text-center p-1 font-bold text-lg">In Demand Job</h1>
-           <div class=" h-52">
-            <img src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=900&t=st=1681155268~exp=1681155868~hmac=25aa8907aca742eadee509f6f432b5b673f2644d27ece00b2383cff5aab10349" width="100%" class="rounded-xl hover:scale-105 duration-300 h-52">
-           </div>
-           <h1 class="text-3xl font-bold mt-5">Heading 01</h1>
-           <p class=" w-auto mb-6 space-x-8 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            <h1 class="text-3xl font-bold mt-5">Heading 02</h1>
+            <p class=" w-auto mb-6 space-x-8 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 reprehenderit soluta harum, quia doloribus minima dolor,
                 nam similique nostrum ipsa nemo id fuga perferendis minus commodi.</p>
-       </div>
-       <!-- Card_2 -->
-       <div class="shadow-lg hover:shadow-gray-500 w-auto overflow-hidden p-5 rounded-2xl">
-          <h1 class="text-center p-1 font-bold text-lg">Popular Skill</h1>
-          <div class=" h-52">
-          <img src="https://www.shutterstock.com/image-vector/people-configure-application-on-big-600w-1188424468.jpg" class="rounded-xl hover:scale-105 duration-300 h-52 w-full">
-          </div>
-          <h1 class="text-3xl font-bold mt-5">Heading 02</h1>
-          <p class=" w-auto mb-6 space-x-8 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              reprehenderit soluta harum, quia doloribus minima dolor,
-              nam similique nostrum ipsa nemo id fuga perferendis minus commodi.</p>
-       </div>
-       <!-- Card_3 -->
-       <div class="shadow-lg hover:shadow-gray-500 w-auto overflow-hidden p-5 rounded-2xl">
-          <h1 class="text-center p-1 font-bold text-lg">AI Is Good</h1>
-          <div class=" h-52">
-          <img src="https://www.shutterstock.com/image-vector/web-development-coding-programming-responsive-600w-1449924503.jpg" class="rounded-xl hover:scale-105 duration-300 h-52 w-full">
-          </div>
-          <h1 class="text-3xl font-bold mt-5">Heading 03</h1>
-          <p class=" w-auto mb-6 space-x-8 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              reprehenderit soluta harum, quia doloribus minima dolor,
-              nam similique nostrum ipsa nemo id fuga perferendis minus commodi.</p>
         </div>
-       </div>
-   </div>
-</section>
-
-
-<!-- ....... popular and demand start  ...... -->
-
-<section class="mt-0 sm:mt-0 md:mt-20 lg:mt-20 scale-50 sm:scale-100 md:scale-100 lg:scale-100 w-auto p-0 sm:p-0 md:p-10 lg:p-10">
-  <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold text-center m-5 p-5 mt-10">Popular In Demand Services</h1>
-  <div class="container1 w-auto">
-    <div class="icon-image">
-          <div class="icon">
-            <img src="images/z_index_images/img1.jpg" alt="">
+        <!-- Card_3 -->
+        <div class="shadow-lg hover:shadow-gray-500 w-auto overflow-hidden p-5 rounded-2xl">
+            <h1 class="text-center p-1 font-bold text-lg">AI Is Good</h1>
+            <div class=" h-52">
+            <img src="https://www.shutterstock.com/image-vector/web-development-coding-programming-responsive-600w-1449924503.jpg" class="rounded-xl hover:scale-105 duration-300 h-52 w-full">
+            </div>
+            <h1 class="text-3xl font-bold mt-5">Heading 03</h1>
+            <p class=" w-auto mb-6 space-x-8 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                reprehenderit soluta harum, quia doloribus minima dolor,
+                nam similique nostrum ipsa nemo id fuga perferendis minus commodi.</p>
           </div>
-        <div class="hover-image one">
-          <div class="img">
-            <img src="images/z_index_images/img2.jpg" alt="">
-          </div>
-        <div class="content">
-          <div class="details">
-            <div class="name">Lilly Carls</div>
-            <div class="job">Blogger || Designer </div>
-          </div>
-        </div>
         </div>
     </div>
-    <div class="icon-image">
-          <div class="icon">
-            <img src="images/z_index_images/img3.jpg" alt="">
-          </div>
-        <div class="hover-image one">
-          <div class="img">
-            <img src="images/z_index_images/img4.jpg" alt="">
-          </div>
-        <div class="content">
-          <div class="details">
-            <div class="name">Stephen Bald</div>
-            <div class="job"> Designer || Developer</div>
-          </div>
-        </div>
-        </div>
-    </div>
-    <div class="icon-image">
-          <div class="icon">
-            <img src="images/z_index_images/img5.jpg" alt="">
-          </div>
-        <div class="hover-image one">
-          <div class="img">
-            <img src="images/z_index_images/img6.jpeg" alt="">
-          </div>
-        <div class="content">
-          <div class="details">
-            <div class="name">Mike Tyson</div>
-            <div class="job">Photographer || Youtuber</div>
+  </section>
 
-          </div>
-        </div>
-        </div>
-    </div>
-    <div class="icon-image">
-          <div class="icon">
-            <img src="images/z_index_images/img1.jpg" alt="">
-          </div>
-        <div class="hover-image one">
-          <div class="img">
-            <img src="images/z_index_images/img2.jpg" alt="">
-          </div>
-        <div class="content">
-          <div class="details">
-            <div class="name">Emma Oliva</div>
-            <div class="job">Developer || Designer</div>
-          </div>
-        </div>
-        </div>
-    </div>
-    <div class="icon-image last">
-          <div class="icon">
-            <img src="images/z_index_images/img3.jpg" alt="">
-          </div>
-        <div class="hover-image one">
-          <div class="img">
-            <img src="images/z_index_images/img1.jpg" alt="">
-          </div>
-        <div class="content">
-          <div class="details">
-            <div class="name">David Marloo</div>
-            <div class="job">Blogger || Youtuber</div>
-          </div>
-        </div>
-        </div>
-    </div>
-  </div>
 
-</section>
-<!-- ....... popular and demand end ...... -->
-    
-      <!--Finding Your Right Course-->
-<section class="p-0 sm:p-0 md:p-10 lg:p-10">
-      <div class=" m-2 mx-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mt-20">
-        <div class="m-auto md:col-span-2">
-          <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold p-2">Finding Your Right Course</h1>
-          <h1 class="p-2 mt-5 text-lg">From in-demand skills to future-ready courses, Grachiever makes it simple to discover and enroll in the courses you need to achieve your career goals.</h1>
-         </div>
-        <div class=" m-auto  ">
-            <button class="p-2 rounded-lg bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] px-8 text-lg mt-5">Start Learning For Free</button>
-        </div>
+  <!-- ....... popular and demand start  ...... -->
+
+  <section class="mt-0 sm:mt-0 md:mt-20 lg:mt-20 scale-50 sm:scale-100 md:scale-100 lg:scale-100 w-auto p-0 sm:p-0 md:p-10 lg:p-10">
+    <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold text-center m-5 p-5 mt-10">Popular In Demand Services</h1>
+    <div class="container1 w-auto">
+      <div class="icon-image">
+            <div class="icon">
+              <img src="images/z_index_images/img1.jpg" alt="">
+            </div>
+          <div class="hover-image one">
+            <div class="img">
+              <img src="images/z_index_images/img2.jpg" alt="">
+            </div>
+          <div class="content">
+            <div class="details">
+              <div class="name">Lilly Carls</div>
+              <div class="job">Blogger || Designer </div>
+            </div>
+          </div>
+          </div>
       </div>
-    </section>
+      <div class="icon-image">
+            <div class="icon">
+              <img src="images/z_index_images/img3.jpg" alt="">
+            </div>
+          <div class="hover-image one">
+            <div class="img">
+              <img src="images/z_index_images/img4.jpg" alt="">
+            </div>
+          <div class="content">
+            <div class="details">
+              <div class="name">Stephen Bald</div>
+              <div class="job"> Designer || Developer</div>
+            </div>
+          </div>
+          </div>
+      </div>
+      <div class="icon-image">
+            <div class="icon">
+              <img src="images/z_index_images/img5.jpg" alt="">
+            </div>
+          <div class="hover-image one">
+            <div class="img">
+              <img src="images/z_index_images/img6.jpeg" alt="">
+            </div>
+          <div class="content">
+            <div class="details">
+              <div class="name">Mike Tyson</div>
+              <div class="job">Photographer || Youtuber</div>
 
-    <!-- ............ footer section ..................... -->
-    <section class="">
-    <footer class="bg-[#313131] text-center text-white mt-20">
-      <!-- bg-neutral-900  -->
-        <div class="container px-6 pt-6">
-          <div>
-            <form action="">
-              <div class="gird-cols-1 grid items-center justify-center gap-4 md:grid-cols-3">
-                <div class="md:ml-auto md:mb-6">
-                  <p class="">
-                    <strong>Sign Up For Our Newsletter</strong>
-                  </p>
-                </div>
+            </div>
+          </div>
+          </div>
+      </div>
+      <div class="icon-image">
+            <div class="icon">
+              <img src="images/z_index_images/img1.jpg" alt="">
+            </div>
+          <div class="hover-image one">
+            <div class="img">
+              <img src="images/z_index_images/img2.jpg" alt="">
+            </div>
+          <div class="content">
+            <div class="details">
+              <div class="name">Emma Oliva</div>
+              <div class="job">Developer || Designer</div>
+            </div>
+          </div>
+          </div>
+      </div>
+      <div class="icon-image last">
+            <div class="icon">
+              <img src="images/z_index_images/img3.jpg" alt="">
+            </div>
+          <div class="hover-image one">
+            <div class="img">
+              <img src="images/z_index_images/img1.jpg" alt="">
+            </div>
+          <div class="content">
+            <div class="details">
+              <div class="name">David Marloo</div>
+              <div class="job">Blogger || Youtuber</div>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- ....... popular and demand end ...... -->
       
-                <div class="relative md:mb-6 text-black" data-te-input-wrapper-init>
-                  <input
-                    type="text"
-                    class="peer block min-h-[auto] w-full rounded py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear border-white border-2 rounded-full"
-                    id="exampleFormControlInput1"
-                    placeholder="Email address" />
+        <!--Finding Your Right Course-->
+  <section class="p-0 sm:p-0 md:p-10 lg:p-10">
+        <div class=" m-2 mx-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mt-20">
+          <div class="m-auto md:col-span-2">
+            <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl font-bold p-2">Finding Your Right Course</h1>
+            <h1 class="p-2 mt-5 text-lg">From in-demand skills to future-ready courses, Grachiever makes it simple to discover and enroll in the courses you need to achieve your career goals.</h1>
+          </div>
+          <div class=" m-auto  ">
+              <button class="p-2 rounded-lg bg-[#349fcf] hover:bg-white text-white hover:text-black border-2 border-[#349fcf] px-8 text-lg mt-5">Start Learning For Free</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ............ footer section ..................... -->
+      <section class="">
+      <footer class="bg-[#313131] text-center text-white mt-20">
+        <!-- bg-neutral-900  -->
+          <div class="container px-6 pt-6">
+            <div>
+              <form action="">
+                <div class="gird-cols-1 grid items-center justify-center gap-4 md:grid-cols-3">
+                  <div class="md:ml-auto md:mb-6">
+                    <p class="">
+                      <strong>Sign Up For Our Newsletter</strong>
+                    </p>
+                  </div>
+        
+                  <div class="relative md:mb-6 text-black" data-te-input-wrapper-init>
+                    <input
+                      type="text"
+                      class="peer block min-h-[auto] w-full rounded py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear border-white border-2 rounded-full"
+                      id="exampleFormControlInput1"
+                      placeholder="Email address" />
+                  </div>
+        
+                  <div class="mb-6 md:mr-auto">
+                    <button
+                      type="submit"
+                      class="inline-block rounded-full border-2 border-neutral-50 px-6 pt-2 pb-[6px]  font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:bg-white hover:text-black"
+                      data-te-ripple-init
+                      data-te-ripple-color="light">
+                      Subscribe
+                    </button>
+                  </div>
                 </div>
-      
-                <div class="mb-6 md:mr-auto">
-                  <button
-                    type="submit"
-                    class="inline-block rounded-full border-2 border-neutral-50 px-6 pt-2 pb-[6px]  font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:bg-white hover:text-black"
+              </form>
+            </div>
+
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+            <!--===============-->
+            <div class="p-5 lg:mt-10">
+              <img src="images/LOGOS/g.logo.white1.png" class="mt-0 sm:mt-0 md:-mt-10 lg:mt-[-120px] mb-3 sm:scale-50 md:scale-50">
+              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nihil, nobis ratione in, molestias debitis reprehenderit, unde harum laborum.</p>
+              <p class="mt-5">Follow us social media...</p>
+              <div class="mb-6 flex justify-center mt-5">
+                  <a
+                    href="#!"
+                    type="button"
+                    class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 hover:-translate-y-1 hover:scale-110 duration-300 hover:border-[#349fcf]"
                     data-te-ripple-init
                     data-te-ripple-color="light">
-                    Subscribe
-                  </button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="mx-auto h-full w-4"
+                      fill="currentColor"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                    </svg>
+                  </a>
+            
+                  <a
+                    href="#!"
+                    type="button"
+                    class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 hover:-translate-y-1 hover:scale-110 duration-300 hover:border-[#349fcf]"
+                    data-te-ripple-init
+                    data-te-ripple-color="light">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="mx-auto h-full w-4"
+                      fill="currentColor"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                    </svg>
+                  </a>
+            
+                  <a
+                    href="https://instagram.com/grachiever?igshid=ZDdkNTZiNTM="
+                    type="button"
+                    class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 hover:-translate-y-1 hover:scale-110 duration-300 hover:border-[#349fcf]"
+                    data-te-ripple-init
+                    data-te-ripple-color="light">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="mx-auto h-full w-4"
+                      fill="currentColor"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/grachiever/"
+                    type="button"
+                    class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 hover:-translate-y-1 hover:scale-110 duration-300 hover:border-[#349fcf]"
+                    data-te-ripple-init
+                    data-te-ripple-color="light">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="mx-auto h-full w-4"
+                      fill="currentColor"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                    </svg>
+                  </a>
+            
                 </div>
-              </div>
-            </form>
+
           </div>
-
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
-          <!--===============-->
-          <div class="p-5 lg:mt-10">
-            <img src="images/LOGOS/g.logo.white1.png" class="mt-0 sm:mt-0 md:-mt-10 lg:mt-[-120px] mb-3 sm:scale-50 md:scale-50">
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nihil, nobis ratione in, molestias debitis reprehenderit, unde harum laborum.</p>
-            <p class="mt-5">Follow us social media...</p>
-            <div class="mb-6 flex justify-center mt-5">
-                <a
-                  href="#!"
-                  type="button"
-                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 hover:-translate-y-1 hover:scale-110 duration-300 hover:border-[#349fcf]"
-                  data-te-ripple-init
-                  data-te-ripple-color="light">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="mx-auto h-full w-4"
-                    fill="currentColor"
-                    viewBox="0 0 24 24">
-                    <path
-                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
-                  </svg>
-                </a>
-          
-                <a
-                  href="#!"
-                  type="button"
-                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 hover:-translate-y-1 hover:scale-110 duration-300 hover:border-[#349fcf]"
-                  data-te-ripple-init
-                  data-te-ripple-color="light">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="mx-auto h-full w-4"
-                    fill="currentColor"
-                    viewBox="0 0 24 24">
-                    <path
-                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
-                  </svg>
-                </a>
-          
-                <a
-                  href="https://instagram.com/grachiever?igshid=ZDdkNTZiNTM="
-                  type="button"
-                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 hover:-translate-y-1 hover:scale-110 duration-300 hover:border-[#349fcf]"
-                  data-te-ripple-init
-                  data-te-ripple-color="light">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="mx-auto h-full w-4"
-                    fill="currentColor"
-                    viewBox="0 0 24 24">
-                    <path
-                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                  </svg>
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/grachiever/"
-                  type="button"
-                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 hover:-translate-y-1 hover:scale-110 duration-300 hover:border-[#349fcf]"
-                  data-te-ripple-init
-                  data-te-ripple-color="light">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="mx-auto h-full w-4"
-                    fill="currentColor"
-                    viewBox="0 0 24 24">
-                    <path
-                      d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                  </svg>
-                </a>
-          
+            <!--===============-->
+            <div class="p-5 mt-0 sm:mt-0 md:mt-20 lg:mt-0">
+                  <p class="font-bold text-lg mb-5 ">About</p>
+                  <p class="">Home Page</p>
+                  <p class="">About Page</p>
+                  <p class="">Class Section</p>
+                  <p class="">Contact Us Page</p>
               </div>
+              <div class="p-5 ">
+                  <p class="font-bold text-lg mb-5">Categories</p> 
+                  <p class="">Sales</p> 
+                  <p class="">Courses</p> 
+                  <p class="">Designer</p> 
+                  <p class="">Our Plane</p> 
+              </div>
+              <div class="p-5">
+                  <p class="font-bold text-lg mb-5">Support</p>
+                  <p class="">Visit us</p>
+                  <p class="">Pricing </p>
+                  <p class="">service</p>
+                  <p class="">cust</p>
+              </div>
+              <div class=""></div>
+            
+          </div>
+        
+          <div
+            class="p-4 text-center"
+            style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2023 Copyright:
+            <a class="text-white" href="https://tailwind-elements.com/"
+              >Grachiever.com</a
+            >
+          </div>
+        </footer>
 
-        </div>
-          <!--===============-->
-          <div class="p-5 mt-0 sm:mt-0 md:mt-20 lg:mt-0">
-                <p class="font-bold text-lg mb-5 ">About</p>
-                <p class="">Home Page</p>
-                <p class="">About Page</p>
-                <p class="">Class Section</p>
-                <p class="">Contact Us Page</p>
-            </div>
-            <div class="p-5 ">
-                <p class="font-bold text-lg mb-5">Categories</p> 
-                <p class="">Sales</p> 
-                <p class="">Courses</p> 
-                <p class="">Designer</p> 
-                <p class="">Our Plane</p> 
-            </div>
-            <div class="p-5">
-                <p class="font-bold text-lg mb-5">Support</p>
-                <p class="">Visit us</p>
-                <p class="">Pricing </p>
-                <p class="">service</p>
-                <p class="">cust</p>
-            </div>
-            <div class=""></div>
-           
-        </div>
-      
-        <div
-          class="p-4 text-center"
-          style="background-color: rgba(0, 0, 0, 0.2)">
-          © 2023 Copyright:
-          <a class="text-white" href="https://tailwind-elements.com/"
-            >Grachiever.com</a
-          >
-        </div>
-      </footer>
+      </section>
 
-    </section>
+  <script>
+      // Get the dropdown element
 
-<script>
-     // Get the dropdown element
-
-     var dropdown = document.querySelector(".dropdown");
-        // Add an event listener for the mouseover event
-        dropdown.addEventListener("mouseover", function() {
-            // Show the dropdown menu
+      var dropdown = document.querySelector(".dropdown");
+          // Add an event listener for the mouseover event
+          dropdown.addEventListener("mouseover", function() {
+              // Show the dropdown menu
+              var dropdownMenu = this.querySelector(".dropdown-menu");
+              dropdownMenu.style.display = "block";
+          });
+        // Add an event listener for the mouseout event
+        dropdown.addEventListener("mouseout", function() {
+            // Hide the dropdown menu
             var dropdownMenu = this.querySelector(".dropdown-menu");
-            dropdownMenu.style.display = "block";
+            dropdownMenu.style.display = "none";
         });
-      // Add an event listener for the mouseout event
-      dropdown.addEventListener("mouseout", function() {
-          // Hide the dropdown menu
-          var dropdownMenu = this.querySelector(".dropdown-menu");
-          dropdownMenu.style.display = "none";
-      });
 
-//     document.getElementById('scard01').addEventListener("click",()=>{
-//     var id1=this.id;
-//     console.log("this is id",id1);
-// })
-</script>
+  //     document.getElementById('scard01').addEventListener("click",()=>{
+  //     var id1=this.id;
+  //     console.log("this is id",id1);
+  // })
+  </script>
 
-<script src="index.js"></script>
+  <script src="index.js"></script>
 
-<!-- ............... main navbar tailwind js link .............  -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+  <!-- ............... main navbar tailwind js link .............  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 
-    <!-- Scroll Animation Script -->
-   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-   <script>
-     AOS.init();
-   </script>
+      <!-- Scroll Animation Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
-   <!-- OwlCarousel JQuery link -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <!-- Owl carousal Script -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- OwlCarousel JQuery link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Owl carousal Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-   <script>
-    $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    dots:false,
-    autoplay:true,
-    autoplayTimeout:2000,
-    responsive:{
-        0:{
-            items:2
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
-   </script>
-  </body>
+    <script>
+      $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      dots:false,
+      autoplay:true,
+      autoplayTimeout:2000,
+      responsive:{
+          0:{
+              items:2
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:5
+          }
+      }
+  })
+    </script>
+    </body>
 
-</html>
+  </html>
